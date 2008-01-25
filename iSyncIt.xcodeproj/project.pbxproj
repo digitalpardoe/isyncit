@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* ISI_Main.m */; settings = {ATTRIBUTES = (); }; };
+		FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */; };
+		FA20E7EF0C7B6342005D96BB /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */; };
+		FA20E7FB0C7B637D005D96BB /* ISI_Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA20E7FA0C7B637D005D96BB /* ISI_Preferences.nib */; };
+		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
+		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		FA31A10F0C7DEE1300F4D141 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA31A10E0C7DEE1300F4D141 /* Localizable.strings */; };
+		FA31A11E0C7E1BC500F4D141 /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */; };
+		FA364F190AC7BAE0004949DC /* ISI_MenuIconItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */; };
+		FA3BE71B0CA7BEF200FF9D4D /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
+		FA3BE71E0CA7BEFE00FF9D4D /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
+		FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */; };
+		FA3FF2620BB4918E00F489EA /* ISI_Scheduling.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */; };
+		FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */; };
+		FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */; };
+		FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */; };
+		FA48CFA10A5D6B3200467826 /* ISI_MenuIcon_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA48CFA00A5D6B3200467826 /* ISI_MenuIcon_On.png */; };
+		FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */; };
+		FA4AEA0F0A59B70000B0557F /* ISI_Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */; };
+		FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
+		FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */; };
+		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
+		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
+		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
+		FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE219250C4E3B0400672183 /* ISI_Scheduling.m */; };
+		FAE21C400C4E68C400672183 /* relaunch.app in Resources */ = {isa = PBXBuildFile; fileRef = FAE21C3F0C4E68C400672183 /* relaunch.app */; };
+		FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */; };
+		FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */; };
+		FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */; };
+		FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */; };
+		FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */; };
+		FAF8763E0A6A964600FDA7C1 /* ISI_PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */; };
+		FAF8786B0A6AC3D400FDA7C1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */; };
+		FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA24E9F30A57DE0D007E34DF /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA3BE71E0CA7BEFE00FF9D4D /* Growl.framework in Copy Frameworks */,
+				FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* ISI_Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Main.m; sourceTree = "<group>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* iSyncIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSyncIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0DE6620A58607B0048564E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
+		FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
+		FA20E7F00C7B6351005D96BB /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ISI_Menus.nib; sourceTree = "<group>"; };
+		FA20E7FC0C7B6388005D96BB /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ISI_Preferences.nib; sourceTree = "<group>"; };
+		FA31A1060C7DEDED00F4D141 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA31A1100C7DEE1A00F4D141 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA31A11F0C7E1BD200F4D141 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ISI_ChangeLog.nib; sourceTree = "<group>"; };
+		FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconItem.tif; sourceTree = "<group>"; };
+		FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIconAlternate_On.png; sourceTree = "<group>"; };
+		FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Scheduling.tif; sourceTree = "<group>"; };
+		FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StartupChecks.h; sourceTree = "<group>"; };
+		FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StartupChecks.m; sourceTree = "<group>"; };
+		FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ChangeLog.rtf; sourceTree = "<group>"; };
+		FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_ChangeLogController.h; sourceTree = "<group>"; };
+		FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_ChangeLogController.m; sourceTree = "<group>"; };
+		FA48CFA00A5D6B3200467826 /* ISI_MenuIcon_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIcon_On.png; sourceTree = "<group>"; };
+		FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
+		FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ISI_Icon.icns; sourceTree = "<group>"; };
+		FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Bluetooth.h; sourceTree = "<group>"; };
+		FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Bluetooth.m; sourceTree = "<group>"; };
+		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
+		FAB950E10A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_ChangeLog.nib; sourceTree = "<group>"; };
+		FAB950E20A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_Menus.nib; sourceTree = "<group>"; };
+		FAB950E30A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_Preferences.nib; sourceTree = "<group>"; };
+		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
+		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
+		FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIcon.tif; sourceTree = "<group>"; };
+		FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconAlternate.tif; sourceTree = "<group>"; };
+		FAE219240C4E3B0400672183 /* ISI_Scheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Scheduling.h; sourceTree = "<group>"; };
+		FAE219250C4E3B0400672183 /* ISI_Scheduling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Scheduling.m; sourceTree = "<group>"; };
+		FAE21C3F0C4E68C400672183 /* relaunch.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = relaunch.app; sourceTree = "<group>"; };
+		FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSApplicationAdditions.h; sourceTree = "<group>"; };
+		FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSApplicationAdditions.m; sourceTree = "<group>"; };
+		FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_PrefItems.h; sourceTree = "<group>"; };
+		FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefItems.m; sourceTree = "<group>"; };
+		FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Bluetooth.tif; sourceTree = "<group>"; };
+		FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Updates.tif; sourceTree = "<group>"; };
+		FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_WindowController.h; sourceTree = "<group>"; };
+		FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_WindowController.m; sourceTree = "<group>"; };
+		FAF8763B0A6A964600FDA7C1 /* ISI_PrefController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_PrefController.h; sourceTree = "<group>"; };
+		FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefController.m; sourceTree = "<group>"; };
+		FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */,
+				FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */,
+				FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */,
+				FAF8786B0A6AC3D400FDA7C1 /* Sparkle.framework in Frameworks */,
+				FA3BE71B0CA7BEF200FF9D4D /* Growl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAE9AA330A6EBD6B00CF5F76 /* Application */,
+				FAE9AA320A6EBD4F00CF5F76 /* Preferences */,
+				FAE9AA340A6EBD8100CF5F76 /* Change Log */,
+				FAE9AA350A6EBDB800CF5F76 /* Misc */,
+				FAE21C450C4E68E800672183 /* Relaunch */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* iSyncIt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* iSyncIt */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = iSyncIt;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAE9AA370A6EBDDE00CF5F76 /* Images */,
+				FAE9AA360A6EBDCD00CF5F76 /* Interface */,
+				FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */,
+				FAE21C3F0C4E68C400672183 /* relaunch.app */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */,
+				FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */,
+				FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FA48CFA00A5D6B3200467826 /* ISI_MenuIcon_On.png */,
+				FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */,
+				FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */,
+				FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */,
+			);
+			name = "Menu Bar Icons";
+			sourceTree = "<group>";
+		};
+		FAE21C450C4E68E800672183 /* Relaunch */ = {
+			isa = PBXGroup;
+			children = (
+				FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */,
+				FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */,
+			);
+			name = Relaunch;
+			sourceTree = "<group>";
+		};
+		FAE9AA320A6EBD4F00CF5F76 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */,
+				FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */,
+				FAF8763B0A6A964600FDA7C1 /* ISI_PrefController.h */,
+				FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		FAE9AA330A6EBD6B00CF5F76 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FAB951110A6826AD008669D9 /* ISI_MenusController.h */,
+				FAB951120A6826AD008669D9 /* ISI_MenusController.m */,
+				FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */,
+				FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */,
+				FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */,
+				FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */,
+				FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */,
+				FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */,
+				FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */,
+				FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */,
+				FAE219240C4E3B0400672183 /* ISI_Scheduling.h */,
+				FAE219250C4E3B0400672183 /* ISI_Scheduling.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		FAE9AA340A6EBD8100CF5F76 /* Change Log */ = {
+			isa = PBXGroup;
+			children = (
+				FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */,
+				FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */,
+			);
+			name = "Change Log";
+			sourceTree = "<group>";
+		};
+		FAE9AA350A6EBDB800CF5F76 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* ISI_Main.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		FAE9AA360A6EBDCD00CF5F76 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */,
+				FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */,
+				FA20E7FA0C7B637D005D96BB /* ISI_Preferences.nib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		FAE9AA370A6EBDDE00CF5F76 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */,
+				FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */,
+				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */ = {
+			isa = PBXGroup;
+			children = (
+				FA31A10E0C7DEE1300F4D141 /* Localizable.strings */,
+				FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */,
+				FA0DE6620A58607B0048564E /* Credits.rtf */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = "Text & Property List";
+			sourceTree = "<group>";
+		};
+		FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */,
+				FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */,
+				FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */,
+				FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */,
+				FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */,
+			);
+			name = "Toolbar Icons";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* iSyncIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iSyncIt" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				FA24E9F30A57DE0D007E34DF /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSyncIt;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iSyncIt;
+			productReference = 8D1107320486CEB800E47090 /* iSyncIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iSyncIt" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* iSyncIt */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* iSyncIt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */,
+				FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */,
+				FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */,
+				FA48CFA10A5D6B3200467826 /* ISI_MenuIcon_On.png in Resources */,
+				FA31A11E0C7E1BC500F4D141 /* ISI_ChangeLog.nib in Resources */,
+				FA20E7EF0C7B6342005D96BB /* ISI_Menus.nib in Resources */,
+				FA20E7FB0C7B637D005D96BB /* ISI_Preferences.nib in Resources */,
+				FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */,
+				FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */,
+				FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */,
+				FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */,
+				FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */,
+				FA364F190AC7BAE0004949DC /* ISI_MenuIconItem.tif in Resources */,
+				FA3FF2620BB4918E00F489EA /* ISI_Scheduling.tif in Resources */,
+				FAE21C400C4E68C400672183 /* relaunch.app in Resources */,
+				FA31A10F0C7DEE1300F4D141 /* Localizable.strings in Resources */,
+				FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */,
+				FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */,
+				FA4AEA0F0A59B70000B0557F /* ISI_Bluetooth.m in Sources */,
+				FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */,
+				FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */,
+				FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */,
+				FAF8763E0A6A964600FDA7C1 /* ISI_PrefController.m in Sources */,
+				FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */,
+				FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */,
+				FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */,
+				FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */,
+				FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB950E20A681177008669D9 /* English */,
+				FA20E7F00C7B6351005D96BB /* German */,
+			);
+			name = ISI_Menus.nib;
+			sourceTree = "<group>";
+		};
+		FA20E7FA0C7B637D005D96BB /* ISI_Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB950E30A681177008669D9 /* English */,
+				FA20E7FC0C7B6388005D96BB /* German */,
+			);
+			name = ISI_Preferences.nib;
+			sourceTree = "<group>";
+		};
+		FA31A10E0C7DEE1300F4D141 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA31A1060C7DEDED00F4D141 /* English */,
+				FA31A1100C7DEE1A00F4D141 /* German */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB950E10A681177008669D9 /* English */,
+				FA31A11F0C7E1BD200F4D141 /* German */,
+			);
+			name = ISI_ChangeLog.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = iSyncIt;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iSyncIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iSyncIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

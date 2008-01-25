@@ -1,0 +1,45 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                "pref_Act_ActivateSchedule" = id; 
+                "pref_Act_ActivateTimedSchedule" = id; 
+                "pref_Act_AddToLogin" = id; 
+                "pref_Act_ChangeMenuIcon" = id; 
+                "pref_Act_ChangeSchedule" = id; 
+                "pref_Act_ChangeTimedSchedule" = id; 
+                "pref_Act_RestartApp" = id; 
+                "pref_Act_SwitchBluetooth" = id; 
+            }; 
+            CLASS = "ISI_PrefController"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "pref_Out_BTControlOption" = NSButton; 
+                "pref_Out_SchedulingCombo" = NSComboBox; 
+                "pref_Out_SchedulingTime" = NSDatePicker; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = "ISI_PrefItems"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                prefsPanel1 = NSView; 
+                prefsPanel3 = NSView; 
+                prefsPanel4 = NSView; 
+                prefsPanel5 = NSView; 
+                prefsPanel6 = NSView; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = "ISI_WindowController"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = NSDatePicker; LANGUAGE = ObjC; SUPERCLASS = NSControl; }
+    ); 
+    IBVersion = 1; 
+}
