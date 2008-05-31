@@ -9,7 +9,7 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import <Growl/Growl.h>
+#import "DPGrowl.h"
 #import "ISI_Bluetooth.h"
 #import "ISI_WindowController.h"
 #import "ISI_Sync.h"
@@ -17,7 +17,7 @@
 #import "ISI_Scheduling.h"
 #import "SS_PrefsController.h"
 
-@interface ISI_MenusController : NSObject <GrowlApplicationBridgeDelegate>
+@interface ISI_MenusController : NSObject
 {
     IBOutlet NSMenuItem *menuBT_Out_SendFile;
     IBOutlet NSMenuItem *menuBT_Out_SetUpDev;
@@ -33,11 +33,10 @@
 	BOOL enableBluetooth;
 	BOOL menuBarIcon;
 	
-	BOOL growlReady;
-	
 	ISI_Scheduling *schedulingControl;
 	ISI_Sync *syncControl;
 	SS_PrefsController *prefs;
+	DPGrowl *growler;
 }
 
 - (void)initialiseMenu;
@@ -45,10 +44,6 @@
 - (void)changeMenu;
 
 - (void)readMenuDefaults;
-
-- (void)initializeGrowl;
-
-- (void)showGrowlNotification : (NSString *)growlName : (NSString *)growlTitle : (NSString *)gowlDescription;
 
 - (IBAction)menuBM_Act_SendFile:(id)sender;
 

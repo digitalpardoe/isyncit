@@ -12,68 +12,6 @@
 
 @implementation ISI_MenusController
 
-/*
- * Growl Control Code
- * Seperated for ease of access during current development.
- *
- */
- 
- 
- - (void) initializeGrowl
-{
-	growlReady = YES;
-	
-	// Tells the Growl framework that this class will receive callbacks
-	[GrowlApplicationBridge setGrowlDelegate:self];
-	[self registrationDictionaryForGrowl];
-}
-
-- (NSDictionary*) registrationDictionaryForGrowl
-{
-	// For this application, only one notification is registered
-	NSArray* defaultNotifications = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
-	NSArray* allNotifications = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
-	
-	NSDictionary* growlRegistration = [NSDictionary dictionaryWithObjectsAndKeys: 
-		defaultNotifications, GROWL_NOTIFICATIONS_DEFAULT,
-		allNotifications, GROWL_NOTIFICATIONS_ALL, nil];
-	
-	return growlRegistration;
-}
-
-- (void) growlIsReady
-{
-	// Only get called when Growl is starting. Not called when Growl is already running so we leave growlReady to YES by default...
-	growlReady = YES;
-}
-
-- (NSString *) applicationNameForGrowl
-{
-	return [NSString stringWithFormat:@"iSyncIt"];
-}
-
-- (void)showGrowlNotification : (NSString *)growlName : (NSString *)growlTitle : (NSString *)growlDescription
-{
-	if (!growlReady)
-	{
-		return;
-	}
-
-	// Don't forget to create relevant localizations for the Growl alerts.
-	[GrowlApplicationBridge notifyWithTitle:[NSString stringWithFormat:NSLocalizedString(growlTitle, nil)]
-								description:[NSString stringWithFormat:NSLocalizedString(growlDescription, nil)]
-								notificationName:growlName
-								iconData:nil
-								priority:0
-								isSticky:NO
-								clickContext:nil ];
-}
- 
- /*
-  * End Growl Control Code
-  *
-  */
-
 - (void)awakeFromNib
 {
 	// Pull to front, mainly for first runs.
@@ -89,7 +27,9 @@
 	
 	[self initialiseMenu];
 	
-	[self initializeGrowl];
+	growler = [[DPGrowl alloc] init];
+	
+	[growler initializeGrowl:3];
 
 	// Read the bluetooth settings from user defaults.
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
@@ -163,10 +103,10 @@
 	if (IOBluetoothPreferencesAvailable()) {
 		if ((BTPowerState() ? "on" : "off") == "on") {
 			BTSetPowerState(0);
-			[self showGrowlNotification : @"2" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
+			[growler showGrowlNotification : @"2" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
 		} else {
 			BTSetPowerState(1);
-			[self showGrowlNotification : @"1" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+			[growler showGrowlNotification : @"1" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
 		}
 	}
 			
@@ -209,7 +149,7 @@
 {
 	syncControl = [[ISI_Sync alloc] init];
 	[syncControl startSync : enableBluetooth];
-	// [self showGrowlNotification : @"3" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
+	// [growler showGrowlNotification : @"3" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
 }
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender
@@ -289,6 +229,8 @@
 	[schedulingControl release];
 	[syncControl release];
 	[defaults release];
+	[growler release];
+	[prefs release];
 	[super dealloc];
 }
 

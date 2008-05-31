@@ -26,6 +26,7 @@
 		FA4AEA0F0A59B70000B0557F /* ISI_Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */; };
 		FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
 		FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		FA5951000DF1C057001DAC7A /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950FF0DF1C057001DAC7A /* DPGrowl.m */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
 		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
@@ -155,6 +156,8 @@
 		FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ISI_Icon.icns; sourceTree = "<group>"; };
 		FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Bluetooth.h; sourceTree = "<group>"; };
 		FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Bluetooth.m; sourceTree = "<group>"; };
+		FA5950FE0DF1C057001DAC7A /* DPGrowl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGrowl.h; sourceTree = "<group>"; };
+		FA5950FF0DF1C057001DAC7A /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
 		FAB950E10A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_ChangeLog.nib; sourceTree = "<group>"; };
 		FAB950E20A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_Menus.nib; sourceTree = "<group>"; };
@@ -255,6 +258,8 @@
 		080E96DDFE201D6D7F000001 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				FAF0C54D0DF1524300ECEB02 /* Third Party Classes */,
+				FA5950F10DF1C038001DAC7A /* Custom Classes */,
 				FAE9AA330A6EBD6B00CF5F76 /* Application */,
 				FAE9AA340A6EBD8100CF5F76 /* Change Log */,
 				FAE9AA350A6EBDB800CF5F76 /* Misc */,
@@ -278,7 +283,6 @@
 		29B97314FDCFA39411CA2CEA /* iSyncIt */ = {
 			isa = PBXGroup;
 			children = (
-				FAF0C54D0DF1524300ECEB02 /* Third Party Classes */,
 				080E96DDFE201D6D7F000001 /* Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				FAF0C57A0DF152F500ECEB02 /* Preference Panes */,
@@ -308,6 +312,15 @@
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5950F10DF1C038001DAC7A /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA5950FE0DF1C057001DAC7A /* DPGrowl.h */,
+				FA5950FF0DF1C057001DAC7A /* DPGrowl.m */,
+			);
+			name = "Custom Classes";
 			sourceTree = "<group>";
 		};
 		FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */ = {
@@ -694,6 +707,7 @@
 				FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */,
 				FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */,
 				FAF0C5540DF1526200ECEB02 /* SS_PrefsController.m in Sources */,
+				FA5951000DF1C057001DAC7A /* DPGrowl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
