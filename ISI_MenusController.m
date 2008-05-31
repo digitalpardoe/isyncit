@@ -148,8 +148,7 @@
 - (IBAction)menuMM_Act_SyncNow:(id)sender
 {
 	syncControl = [[ISI_Sync alloc] init];
-	[syncControl startSync : enableBluetooth];
-	// [growler showGrowlNotification : @"3" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
+	[syncControl startSync : enableBluetooth growl : growler];
 }
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender

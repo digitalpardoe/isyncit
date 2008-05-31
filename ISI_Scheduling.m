@@ -60,7 +60,7 @@
 {
 	if ([defaults boolForKey:@"ISI_EnableScheduling"]) {
 		syncControl = [[ISI_Sync alloc] init];
-		[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"]];
+		[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"] growl : nil];
 	}
 }
 
@@ -69,12 +69,12 @@
 	if ([defaults boolForKey:@"ISI_EnableTimedScheduling"]) {
 		if ([self timeIsNow]) {
 			syncControl = [[ISI_Sync alloc] init];
-			[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"]];
+			[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"] growl : nil];
 		}
 	}
 }
 
-- (BOOL) timeIsNow
+- (BOOL)timeIsNow
 {
 	NSDate *d_then;
 	NSDate *d_now;
@@ -85,7 +85,7 @@
 	return [d_then isEqual:d_now];
 }
 
--(void) dealloc
+- (void)dealloc
 {
 	[defaults release];
 	[timer release];

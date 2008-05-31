@@ -288,6 +288,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>12</integer>
+									<integer>10</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -322,12 +325,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>FA55A6470A8DB5C7009EF7EB</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DPGrowl.h</string>
+								<string>ISI_MenusController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -335,11 +340,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>FA55A6480A8DB5C7009EF7EB</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DPGrowl.h</string>
+										<string>ISI_MenusController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FA5952030DF1D44E001DAC7A</string>
+										<string>FA59529B0DF2043B001DAC7A</string>
 										<key>history</key>
 										<array>
 											<string>FAF0C9C70DF1AF5900ECEB02</string>
@@ -358,12 +363,18 @@
 											<string>FA5951070DF1C18B001DAC7A</string>
 											<string>FA5951080DF1C18B001DAC7A</string>
 											<string>FA5951090DF1C18B001DAC7A</string>
-											<string>FA59516D0DF1D03F001DAC7A</string>
-											<string>FA59516E0DF1D03F001DAC7A</string>
-											<string>FA59519F0DF1D201001DAC7A</string>
-											<string>FA5951CE0DF1D3B2001DAC7A</string>
-											<string>FA5952010DF1D44E001DAC7A</string>
-											<string>FA5951CF0DF1D3B2001DAC7A</string>
+											<string>FA5952090DF1FCAD001DAC7A</string>
+											<string>FA59520A0DF1FCAD001DAC7A</string>
+											<string>FA5952490DF2025D001DAC7A</string>
+											<string>FA59524C0DF2025D001DAC7A</string>
+											<string>FA59524D0DF2025D001DAC7A</string>
+											<string>FA59524E0DF2025D001DAC7A</string>
+											<string>FA59524F0DF2025D001DAC7A</string>
+											<string>FA5952500DF2025D001DAC7A</string>
+											<string>FA5952890DF203C8001DAC7A</string>
+											<string>FA59528A0DF203C8001DAC7A</string>
+											<string>FA5952930DF2041A001DAC7A</string>
+											<string>FA5952940DF2041A001DAC7A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -380,9 +391,7 @@
 											<string>FAF0C9E00DF1AF5900ECEB02</string>
 											<string>FAF0C9FF0DF1B3B700ECEB02</string>
 											<string>FAF0CA020DF1B3B700ECEB02</string>
-											<string>FAF0CA170DF1B4C800ECEB02</string>
 											<string>FA5950A30DF1BC17001DAC7A</string>
-											<string>FA59510E0DF1C18B001DAC7A</string>
 											<string>FA59510F0DF1C18B001DAC7A</string>
 											<string>FA5951100DF1C18B001DAC7A</string>
 											<string>FA5951110DF1C18B001DAC7A</string>
@@ -399,31 +408,22 @@
 											<string>FA59511C0DF1C18B001DAC7A</string>
 											<string>FA59511D0DF1C18B001DAC7A</string>
 											<string>FA59511E0DF1C18B001DAC7A</string>
-											<string>FA59511F0DF1C18B001DAC7A</string>
 											<string>FA5951200DF1C18B001DAC7A</string>
-											<string>FA5951210DF1C18B001DAC7A</string>
 											<string>FA5951220DF1C18B001DAC7A</string>
-											<string>FA5951230DF1C18B001DAC7A</string>
 											<string>FA5951240DF1C18B001DAC7A</string>
 											<string>FA5951250DF1C18B001DAC7A</string>
 											<string>FA5951260DF1C18B001DAC7A</string>
 											<string>FA5951270DF1C18B001DAC7A</string>
-											<string>FA5951280DF1C18B001DAC7A</string>
 											<string>FA5951290DF1C18B001DAC7A</string>
 											<string>FA59512A0DF1C18B001DAC7A</string>
 											<string>FA59512B0DF1C18B001DAC7A</string>
 											<string>FA59512C0DF1C18B001DAC7A</string>
 											<string>FA59512D0DF1C18B001DAC7A</string>
-											<string>FA59512E0DF1C18B001DAC7A</string>
 											<string>FA59512F0DF1C18B001DAC7A</string>
 											<string>FA5951300DF1C18B001DAC7A</string>
-											<string>FA59513E0DF1C1BC001DAC7A</string>
 											<string>FA59513F0DF1C1BC001DAC7A</string>
-											<string>FA5951480DF1CEE9001DAC7A</string>
 											<string>FA5951490DF1CEE9001DAC7A</string>
-											<string>FA59514A0DF1CEE9001DAC7A</string>
 											<string>FA59514B0DF1CEE9001DAC7A</string>
-											<string>FA5951710DF1D03F001DAC7A</string>
 											<string>FA5951720DF1D03F001DAC7A</string>
 											<string>FA5951730DF1D03F001DAC7A</string>
 											<string>FA5951740DF1D03F001DAC7A</string>
@@ -440,14 +440,67 @@
 											<string>FA5951930DF1D1D3001DAC7A</string>
 											<string>FA5951940DF1D1D3001DAC7A</string>
 											<string>FA5951950DF1D1D3001DAC7A</string>
-											<string>FA5951A00DF1D201001DAC7A</string>
 											<string>FA5951A10DF1D201001DAC7A</string>
 											<string>FA5951C70DF1D3A0001DAC7A</string>
 											<string>FA5951C80DF1D3A0001DAC7A</string>
-											<string>FA5951D10DF1D3B2001DAC7A</string>
 											<string>FA5951D20DF1D3B2001DAC7A</string>
 											<string>FA5951D30DF1D3B2001DAC7A</string>
 											<string>FA5952020DF1D44E001DAC7A</string>
+											<string>FA59520C0DF1FCAD001DAC7A</string>
+											<string>FA59520D0DF1FCAD001DAC7A</string>
+											<string>FA59520E0DF1FCAD001DAC7A</string>
+											<string>FA5952210DF20022001DAC7A</string>
+											<string>FA5952220DF20022001DAC7A</string>
+											<string>FA5952230DF20022001DAC7A</string>
+											<string>FA5952240DF20022001DAC7A</string>
+											<string>FA5952250DF20022001DAC7A</string>
+											<string>FA5952260DF20022001DAC7A</string>
+											<string>FA5952270DF20022001DAC7A</string>
+											<string>FA5952280DF20022001DAC7A</string>
+											<string>FA5952290DF20022001DAC7A</string>
+											<string>FA59522A0DF20022001DAC7A</string>
+											<string>FA5952520DF2025D001DAC7A</string>
+											<string>FA5952530DF2025D001DAC7A</string>
+											<string>FA5952540DF2025D001DAC7A</string>
+											<string>FA5952550DF2025D001DAC7A</string>
+											<string>FA5952560DF2025D001DAC7A</string>
+											<string>FA5952570DF2025D001DAC7A</string>
+											<string>FA5952580DF2025D001DAC7A</string>
+											<string>FA5952590DF2025D001DAC7A</string>
+											<string>FA59525A0DF2025D001DAC7A</string>
+											<string>FA59525B0DF2025D001DAC7A</string>
+											<string>FA59525C0DF2025D001DAC7A</string>
+											<string>FA59525D0DF2025D001DAC7A</string>
+											<string>FA59525E0DF2025D001DAC7A</string>
+											<string>FA59525F0DF2025D001DAC7A</string>
+											<string>FA5952600DF2025D001DAC7A</string>
+											<string>FA5952610DF2025D001DAC7A</string>
+											<string>FA5952620DF2025D001DAC7A</string>
+											<string>FA5952630DF2025D001DAC7A</string>
+											<string>FA5952640DF2025D001DAC7A</string>
+											<string>FA5952650DF2025D001DAC7A</string>
+											<string>FA5952660DF2025D001DAC7A</string>
+											<string>FA5952670DF2025D001DAC7A</string>
+											<string>FA5952680DF2025D001DAC7A</string>
+											<string>FA5952690DF2025D001DAC7A</string>
+											<string>FA59526A0DF2025D001DAC7A</string>
+											<string>FA59526B0DF2025D001DAC7A</string>
+											<string>FA59526C0DF2025D001DAC7A</string>
+											<string>FA59526D0DF2025D001DAC7A</string>
+											<string>FA5952730DF20297001DAC7A</string>
+											<string>FA59527B0DF20352001DAC7A</string>
+											<string>FA59527C0DF20352001DAC7A</string>
+											<string>FA59527D0DF20352001DAC7A</string>
+											<string>FA59527E0DF20352001DAC7A</string>
+											<string>FA59527F0DF20352001DAC7A</string>
+											<string>FA5952800DF20352001DAC7A</string>
+											<string>FA5952810DF20352001DAC7A</string>
+											<string>FA59528B0DF203C8001DAC7A</string>
+											<string>FA59528C0DF203C8001DAC7A</string>
+											<string>FA59528D0DF203C8001DAC7A</string>
+											<string>FA59528E0DF203C8001DAC7A</string>
+											<string>FA5952950DF2041A001DAC7A</string>
+											<string>FA5952960DF2041A001DAC7A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -487,6 +540,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1672, 140}}</string>
+										<key>RubberWindowFrame</key>
+										<string>-1 79 1920 1099 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -508,8 +563,6 @@
 									<string>PBXProjectFindModule</string>
 								</dict>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXCVSModuleFilterTypeKey</key>
@@ -544,8 +597,6 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {1672, 140}}</string>
-										<key>RubberWindowFrame</key>
-										<string>-1 79 1920 1099 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXCVSModule</string>
@@ -655,7 +706,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {0, 0}}</string>
+							<string>{{0, 0}, {1898, 1040}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -686,7 +737,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>FA55A6470A8DB5C7009EF7EB</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ISI_MenusController.m</string>
+								<string>ISI_Sync.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -694,7 +745,73 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>FA55A6480A8DB5C7009EF7EB</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ISI_MenusController.m</string>
+										<string>ISI_Sync.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>FA59529C0DF2043B001DAC7A</string>
+										<key>history</key>
+										<array>
+											<string>FAF0C9C70DF1AF5900ECEB02</string>
+											<string>FAF0C9C80DF1AF5900ECEB02</string>
+											<string>FAF0C9CA0DF1AF5900ECEB02</string>
+											<string>FAF0C9CC0DF1AF5900ECEB02</string>
+											<string>FAF0C9CE0DF1AF5900ECEB02</string>
+											<string>FAF0C9FB0DF1B3B700ECEB02</string>
+											<string>FAF0C9FC0DF1B3B700ECEB02</string>
+											<string>FAF0CA120DF1B4C800ECEB02</string>
+											<string>FAF0CA130DF1B4C800ECEB02</string>
+											<string>FAF0CA140DF1B4C800ECEB02</string>
+											<string>FAF0CA150DF1B4C800ECEB02</string>
+											<string>FA5950A10DF1BC17001DAC7A</string>
+											<string>FA5951060DF1C18B001DAC7A</string>
+											<string>FA5951070DF1C18B001DAC7A</string>
+											<string>FA5951080DF1C18B001DAC7A</string>
+											<string>FA5951090DF1C18B001DAC7A</string>
+											<string>FA5952090DF1FCAD001DAC7A</string>
+											<string>FA59520A0DF1FCAD001DAC7A</string>
+											<string>FA5952480DF2025D001DAC7A</string>
+											<string>FA5952490DF2025D001DAC7A</string>
+											<string>FA59524A0DF2025D001DAC7A</string>
+											<string>FA59524B0DF2025D001DAC7A</string>
+											<string>FA59524C0DF2025D001DAC7A</string>
+											<string>FA59524D0DF2025D001DAC7A</string>
+											<string>FA59524E0DF2025D001DAC7A</string>
+											<string>FA59524F0DF2025D001DAC7A</string>
+											<string>FA5952500DF2025D001DAC7A</string>
+											<string>FA59526E0DF2025D001DAC7A</string>
+										</array>
+										<key>prevStack</key>
+										<array>
+											<string>FAF0C9D10DF1AF5900ECEB02</string>
+											<string>FAF0C9D20DF1AF5900ECEB02</string>
+											<string>FAF0C9D40DF1AF5900ECEB02</string>
+											<string>FAF0C9D50DF1AF5900ECEB02</string>
+											<string>FAF0C9DA0DF1AF5900ECEB02</string>
+											<string>FAF0C9DB0DF1AF5900ECEB02</string>
+											<string>FAF0C9DC0DF1AF5900ECEB02</string>
+											<string>FAF0C9DD0DF1AF5900ECEB02</string>
+											<string>FAF0C9DE0DF1AF5900ECEB02</string>
+											<string>FAF0C9DF0DF1AF5900ECEB02</string>
+											<string>FAF0C9E00DF1AF5900ECEB02</string>
+											<string>FAF0C9FF0DF1B3B700ECEB02</string>
+											<string>FAF0CA020DF1B3B700ECEB02</string>
+											<string>FA59510F0DF1C18B001DAC7A</string>
+											<string>FA5951100DF1C18B001DAC7A</string>
+											<string>FA5951110DF1C18B001DAC7A</string>
+											<string>FA5951130DF1C18B001DAC7A</string>
+											<string>FA5951140DF1C18B001DAC7A</string>
+											<string>FA59512B0DF1C18B001DAC7A</string>
+											<string>FA5951730DF1D03F001DAC7A</string>
+											<string>FA5951740DF1D03F001DAC7A</string>
+											<string>FA5952210DF20022001DAC7A</string>
+											<string>FA5952220DF20022001DAC7A</string>
+											<string>FA5952230DF20022001DAC7A</string>
+											<string>FA59525E0DF2025D001DAC7A</string>
+											<string>FA5952630DF2025D001DAC7A</string>
+											<string>FA5952650DF2025D001DAC7A</string>
+											<string>FA5952660DF2025D001DAC7A</string>
+										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -716,7 +833,7 @@
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>0pt</string>
+							<string>316pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -734,7 +851,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {0, -27}}</string>
+										<string>{{10, 27}, {0, 289}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
