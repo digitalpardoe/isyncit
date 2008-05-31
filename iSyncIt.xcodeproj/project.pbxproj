@@ -36,6 +36,7 @@
 		FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE219250C4E3B0400672183 /* ISI_Scheduling.m */; };
 		FAE21C400C4E68C400672183 /* relaunch.app in Resources */ = {isa = PBXBuildFile; fileRef = FAE21C3F0C4E68C400672183 /* relaunch.app */; };
 		FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */; };
+		FAF0C5540DF1526200ECEB02 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */; };
 		FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */; };
 		FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */; };
 		FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */; };
@@ -103,6 +104,9 @@
 		FAE21C3F0C4E68C400672183 /* relaunch.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = relaunch.app; sourceTree = "<group>"; };
 		FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSApplicationAdditions.h; sourceTree = "<group>"; };
 		FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSApplicationAdditions.m; sourceTree = "<group>"; };
+		FAF0C5510DF1526200ECEB02 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
+		FAF0C5520DF1526200ECEB02 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PrefsController.h; sourceTree = "<group>"; };
+		FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_PrefsController.m; sourceTree = "<group>"; };
 		FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_PrefItems.h; sourceTree = "<group>"; };
 		FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefItems.m; sourceTree = "<group>"; };
 		FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Bluetooth.tif; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 		29B97314FDCFA39411CA2CEA /* iSyncIt */ = {
 			isa = PBXGroup;
 			children = (
+				FAF0C54D0DF1524300ECEB02 /* Third Party Classes */,
 				080E96DDFE201D6D7F000001 /* Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -284,6 +289,24 @@
 			name = "Text & Property List";
 			sourceTree = "<group>";
 		};
+		FAF0C54D0DF1524300ECEB02 /* Third Party Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C54E0DF1524E00ECEB02 /* SS_PrefsController */,
+			);
+			name = "Third Party Classes";
+			sourceTree = "<group>";
+		};
+		FAF0C54E0DF1524E00ECEB02 /* SS_PrefsController */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C5510DF1526200ECEB02 /* SS_PreferencePaneProtocol.h */,
+				FAF0C5520DF1526200ECEB02 /* SS_PrefsController.h */,
+				FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */,
+			);
+			name = SS_PrefsController;
+			sourceTree = "<group>";
+		};
 		FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +402,7 @@
 				FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */,
 				FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */,
 				FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */,
+				FAF0C5540DF1526200ECEB02 /* SS_PrefsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
