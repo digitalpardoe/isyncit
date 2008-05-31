@@ -14,19 +14,11 @@
 
 int startupChecks()
 {
-	moveOldPrefs();
-
 	lastSyncCheck();
 	bluetoothCheck();
 	updateCheck();
 	iconCheck();
 	donateCheck();
-}
-
-int moveOldPrefs()
-{
-	NSFileManager *fileManager = [NSFileManager defaultManager];
-	[fileManager movePath:@"~/Library/Preferences/co.uk.digitalpardoe.iSyncIt.plist" toPath:@"~/Library/Preferences/uk.co.digitalpardoe.iSyncIt.plist" handler:nil];
 }
 
 int bluetoothCheck()

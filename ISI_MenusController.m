@@ -192,8 +192,24 @@
 {
 	// Makes sure the app is frontmost and displays the Preferences.
 	[NSApp activateIgnoringOtherApps:YES];
-	ISI_WindowController *prefWindow = [[ISI_WindowController alloc] initWithWindowNibName:@"ISI_Preferences"];
-	[prefWindow showWindow:self];
+	
+	if (!prefs)
+	{
+		// Determine path to the sample preference panes
+		NSString *pathToPanes = [NSString stringWithFormat:@"%@/../Preference Panes", [[NSBundle mainBundle] resourcePath]];
+		
+		prefs = [[SS_PrefsController alloc] initWithPanesSearchPath:pathToPanes];
+		
+		[prefs setAlwaysShowsToolbar:YES];
+		[prefs setDebug:NO];
+		
+		[prefs setAlwaysOpensCentered:YES];
+		
+		[prefs setPanesOrder:[NSArray arrayWithObjects:@"Bluetooth", @"Scheduling", @"Menu Icon", @"Login Item", @"Updates", nil]];
+	}
+    
+	// Show the preferences window.
+	[prefs showPreferencesWindow];
 }
 
 - (IBAction)menuMM_Act_SyncNow:(id)sender

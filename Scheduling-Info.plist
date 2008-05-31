@@ -6,31 +6,19 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleGetInfoString</key>
-	<string>iSyncIt 1.4, Copyright © digital:pardoe, 2006 - 2008</string>
-	<key>CFBundleIconFile</key>
-	<string>ISI_Icon.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>uk.co.digitalpardoe.iSyncIt</string>
+	<string>uk.co.digitalpardoe.preferences.Scheduling</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>BNDL</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.4</string>
+	<string>1.0</string>
 	<key>NSMainNibFile</key>
-	<string>ISI_Menus</string>
+	<string>ISI_SchedulingView</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-	<key>NSUIElement</key>
-	<string>1</string>
-	<key>SUCheckAtStartup</key>
-	<false/>
-	<key>SUFeedURL</key>
-	<string>http://digitalpardoe.co.uk/appcast/main/iSyncIt</string>
+	<string>ISI_SchedulingPrefController</string>
 </dict>
 </plist>

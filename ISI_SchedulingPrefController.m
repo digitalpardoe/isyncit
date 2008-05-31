@@ -1,24 +1,17 @@
-/*
- * ISI_PrefController.m
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_SchedulingPrefController.m
+//  iSyncIt
+//
+//  Created by Alex on 31/05/2008.
+//  Copyright 2008 digital:pardoe. All rights reserved.
+//
 
-#import "ISI_PrefController.h"
+#import "ISI_SchedulingPrefController.h"
 
-@implementation ISI_PrefController
+@implementation ISI_SchedulingPrefController
 
 - (void)awakeFromNib
 {
-	// Disables bluetooth preference if it is not available.
-	if (!IOBluetoothPreferencesAvailable()) {
-		[pref_Out_BTControlOption setEnabled:NO];
-	}
-	
 	if (![[NSUserDefaults standardUserDefaults] boolForKey:@"ISI_EnableScheduling"]) {
 		[pref_Out_SchedulingCombo setEnabled:NO];
 		enableScheduling = NO;
@@ -36,24 +29,6 @@
 	}
 }
 
-- (IBAction)pref_Act_ChangeMenuIcon:(id)sender
-{
-	[[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (IBAction)pref_Act_SwitchBluetooth:(id)sender
-{
-	[[NSUserDefaults standardUserDefaults] synchronize];
-}
-
-- (IBAction)pref_Act_AddToLogin:(id)sender
-{
-	// Writes the AppleScript to add iSyncIt to "Login Items".
-	NSString *addToLoginString = @"tell application \"System Events\"\r if (count of (login items whose name is equal to \"iSyncIt\")) is not 0 then\r display dialog \"iSyncIt has already been added your login items.\"\r end if\r set the_file to (file of application processes whose name is equal to \"iSyncIt\")\r if (count of the_file) is 0 then\r display dialog \"An error has occured and iSyncIt cannot be found. You will need to add iSyncIt to your login items manually.\"\r end if\r end tell\r set the_path to POSIX path of first item of the_file\r tell application \"System Events\"\r make new login item at the end of login items with properties {path:the_path}\r end tell";
-	NSAppleScript *addToLogin = [[NSAppleScript alloc] initWithSource:addToLoginString];
-	[addToLogin executeAndReturnError:nil];
-}
-
 - (IBAction)pref_Act_ActivateSchedule:(id)sender
 {
 	if (!enableScheduling) {
@@ -69,7 +44,7 @@
 		[pref_Out_SchedulingCombo setEnabled:NO];
 		enableScheduling = NO;
 	}
-
+	
 }
 
 - (IBAction)pref_Act_ActivateTimedSchedule:(id)sender
@@ -87,7 +62,7 @@
 		[pref_Out_SchedulingTime setEnabled:NO];
 		enableTimedScheduling = NO;
 	}
-
+	
 }
 
 - (IBAction)pref_Act_ChangeSchedule:(id)sender
@@ -100,16 +75,49 @@
 	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (IBAction)pref_Act_RestartApp:(id)sender
++ (NSArray *)preferencePanes
 {
-	[[NSApplication sharedApplication] relaunch:self];
+    return [NSArray arrayWithObjects:[[[ISI_SchedulingPrefController alloc] init] autorelease], nil];
 }
 
-- (void)dealloc
+- (NSView *)paneView
 {
-	[pref_Out_BTControlOption release];
-	[pref_Out_SchedulingCombo release];
-	[super dealloc];
+    BOOL loaded = YES;
+    
+    if (!prefsView) {
+        loaded = [NSBundle loadNibNamed:@"ISI_SchedulingView" owner:self];
+    }
+    
+    if (loaded) {
+        return prefsView;
+    }
+    
+    return nil;
+}
+
+- (NSString *)paneName
+{
+    return @"Scheduling";
+}
+
+- (NSImage *)paneIcon
+{
+    return [[[NSImage alloc] initWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForImageResource:@"ISI_Scheduling"]] autorelease];
+}
+
+- (NSString *)paneToolTip
+{
+    return @"Scheduling Preferences";
+}
+
+- (BOOL)allowsHorizontalResizing
+{
+    return NO;
+}
+
+- (BOOL)allowsVerticalResizing
+{
+    return NO;
 }
 
 @end

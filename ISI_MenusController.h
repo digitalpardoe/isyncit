@@ -15,6 +15,7 @@
 #import "ISI_Sync.h"
 #import "ISI_StartupChecks.h"
 #import "ISI_Scheduling.h"
+#import "SS_PrefsController.h"
 
 @interface ISI_MenusController : NSObject <GrowlApplicationBridgeDelegate>
 {
@@ -36,6 +37,7 @@
 	
 	ISI_Scheduling *schedulingControl;
 	ISI_Sync *syncControl;
+	SS_PrefsController *prefs;
 }
 
 - (void)initialiseMenu;

@@ -10,16 +10,13 @@
 		8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* ISI_Main.m */; settings = {ATTRIBUTES = (); }; };
 		FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */; };
 		FA20E7EF0C7B6342005D96BB /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */; };
-		FA20E7FB0C7B637D005D96BB /* ISI_Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA20E7FA0C7B637D005D96BB /* ISI_Preferences.nib */; };
 		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
 		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		FA31A10F0C7DEE1300F4D141 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA31A10E0C7DEE1300F4D141 /* Localizable.strings */; };
 		FA31A11E0C7E1BC500F4D141 /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */; };
-		FA364F190AC7BAE0004949DC /* ISI_MenuIconItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */; };
 		FA3BE71B0CA7BEF200FF9D4D /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
 		FA3BE71E0CA7BEFE00FF9D4D /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
 		FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */; };
-		FA3FF2620BB4918E00F489EA /* ISI_Scheduling.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */; };
 		FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */; };
 		FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */; };
 		FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */; };
@@ -29,22 +26,74 @@
 		FA4AEA0F0A59B70000B0557F /* ISI_Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */; };
 		FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
 		FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
-		FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
 		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
 		FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE219250C4E3B0400672183 /* ISI_Scheduling.m */; };
-		FAE21C400C4E68C400672183 /* relaunch.app in Resources */ = {isa = PBXBuildFile; fileRef = FAE21C3F0C4E68C400672183 /* relaunch.app */; };
-		FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */; };
 		FAF0C5540DF1526200ECEB02 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */; };
-		FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */; };
-		FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */; };
-		FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */; };
+		FAF0C62B0DF15BAE00ECEB02 /* Updates.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FAF0C5820DF154DB00ECEB02 /* Updates.preferencePane */; };
+		FAF0C62C0DF15BAE00ECEB02 /* Bluetooth.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FAF0C58A0DF154EA00ECEB02 /* Bluetooth.preferencePane */; };
+		FAF0C62D0DF15BAE00ECEB02 /* LoginItem.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FAF0C59C0DF1551300ECEB02 /* LoginItem.preferencePane */; };
+		FAF0C62E0DF15BAE00ECEB02 /* Scheduling.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FAF0C5A40DF1551F00ECEB02 /* Scheduling.preferencePane */; };
+		FAF0C62F0DF15BAE00ECEB02 /* MenuIcon.preferencePane in Copy Preference Panes */ = {isa = PBXBuildFile; fileRef = FAF0C5AC0DF1552C00ECEB02 /* MenuIcon.preferencePane */; };
+		FAF0C6600DF15CB400ECEB02 /* ISI_MenuIconPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C65F0DF15CB400ECEB02 /* ISI_MenuIconPrefController.m */; };
+		FAF0C6610DF15CCE00ECEB02 /* ISI_MenuIconItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */; };
+		FAF0C6630DF15CDA00ECEB02 /* ISI_Scheduling.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */; };
+		FAF0C6650DF15CE200ECEB02 /* ISI_LoginItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */; };
+		FAF0C6670DF15CEB00ECEB02 /* ISI_Bluetooth.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */; };
+		FAF0C6690DF15CF100ECEB02 /* ISI_Updates.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */; };
+		FAF0C69C0DF15E8200ECEB02 /* ISI_SchedulingPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C69B0DF15E8200ECEB02 /* ISI_SchedulingPrefController.m */; };
+		FAF0C69F0DF15E9200ECEB02 /* ISI_LoginItemPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C69E0DF15E9200ECEB02 /* ISI_LoginItemPrefController.m */; };
+		FAF0C6A20DF15EA400ECEB02 /* ISI_BluetoothPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C6A10DF15EA400ECEB02 /* ISI_BluetoothPrefController.m */; };
+		FAF0C6A50DF15EC400ECEB02 /* ISI_UpdatesPrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C6A40DF15EC400ECEB02 /* ISI_UpdatesPrefController.m */; };
+		FAF0C7800DF1634C00ECEB02 /* ISI_MenuIconView.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C77F0DF1634C00ECEB02 /* ISI_MenuIconView.nib */; };
+		FAF0C7870DF163A600ECEB02 /* ISI_SchedulingView.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C7860DF163A600ECEB02 /* ISI_SchedulingView.nib */; };
+		FAF0C7890DF163B100ECEB02 /* ISI_LoginItemView.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C7880DF163B100ECEB02 /* ISI_LoginItemView.nib */; };
+		FAF0C78B0DF163BC00ECEB02 /* ISI_BluetoothView.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C78A0DF163BC00ECEB02 /* ISI_BluetoothView.nib */; };
+		FAF0C78D0DF163C700ECEB02 /* ISI_UpdatesView.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C78C0DF163C700ECEB02 /* ISI_UpdatesView.nib */; };
+		FAF0C9980DF1ADDF00ECEB02 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
 		FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */; };
-		FAF8763E0A6A964600FDA7C1 /* ISI_PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */; };
 		FAF8786B0A6AC3D400FDA7C1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */; };
 		FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAF0C6020DF15B6900ECEB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF0C5810DF154DB00ECEB02;
+			remoteInfo = Updates;
+		};
+		FAF0C6040DF15B6900ECEB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF0C5890DF154EA00ECEB02;
+			remoteInfo = Bluetooth;
+		};
+		FAF0C6060DF15B6900ECEB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF0C59B0DF1551300ECEB02;
+			remoteInfo = LoginItem;
+		};
+		FAF0C6080DF15B6900ECEB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF0C5A30DF1551F00ECEB02;
+			remoteInfo = Scheduling;
+		};
+		FAF0C60A0DF15B6900ECEB02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAF0C5AB0DF1552C00ECEB02;
+			remoteInfo = MenuIcon;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FA24E9F30A57DE0D007E34DF /* Copy Frameworks */ = {
@@ -57,6 +106,21 @@
 				FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C6150DF15B9B00ECEB02 /* Copy Preference Panes */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "../Preference Panes";
+			dstSubfolderSpec = 7;
+			files = (
+				FAF0C62B0DF15BAE00ECEB02 /* Updates.preferencePane in Copy Preference Panes */,
+				FAF0C62C0DF15BAE00ECEB02 /* Bluetooth.preferencePane in Copy Preference Panes */,
+				FAF0C62D0DF15BAE00ECEB02 /* LoginItem.preferencePane in Copy Preference Panes */,
+				FAF0C62E0DF15BAE00ECEB02 /* Scheduling.preferencePane in Copy Preference Panes */,
+				FAF0C62F0DF15BAE00ECEB02 /* MenuIcon.preferencePane in Copy Preference Panes */,
+			);
+			name = "Copy Preference Panes";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -101,20 +165,38 @@
 		FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconAlternate.tif; sourceTree = "<group>"; };
 		FAE219240C4E3B0400672183 /* ISI_Scheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Scheduling.h; sourceTree = "<group>"; };
 		FAE219250C4E3B0400672183 /* ISI_Scheduling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Scheduling.m; sourceTree = "<group>"; };
-		FAE21C3F0C4E68C400672183 /* relaunch.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = relaunch.app; sourceTree = "<group>"; };
-		FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSApplicationAdditions.h; sourceTree = "<group>"; };
-		FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSApplicationAdditions.m; sourceTree = "<group>"; };
 		FAF0C5510DF1526200ECEB02 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
 		FAF0C5520DF1526200ECEB02 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PrefsController.h; sourceTree = "<group>"; };
 		FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_PrefsController.m; sourceTree = "<group>"; };
-		FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_PrefItems.h; sourceTree = "<group>"; };
-		FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefItems.m; sourceTree = "<group>"; };
+		FAF0C5820DF154DB00ECEB02 /* Updates.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Updates.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF0C5830DF154DB00ECEB02 /* Updates-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Updates-Info.plist"; sourceTree = "<group>"; };
+		FAF0C58A0DF154EA00ECEB02 /* Bluetooth.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bluetooth.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF0C58B0DF154EA00ECEB02 /* Bluetooth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bluetooth-Info.plist"; sourceTree = "<group>"; };
+		FAF0C59C0DF1551300ECEB02 /* LoginItem.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginItem.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF0C59D0DF1551300ECEB02 /* LoginItem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginItem-Info.plist"; sourceTree = "<group>"; };
+		FAF0C5A40DF1551F00ECEB02 /* Scheduling.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Scheduling.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF0C5A50DF1551F00ECEB02 /* Scheduling-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scheduling-Info.plist"; sourceTree = "<group>"; };
+		FAF0C5AC0DF1552C00ECEB02 /* MenuIcon.preferencePane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuIcon.preferencePane; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF0C5AD0DF1552C00ECEB02 /* MenuIcon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MenuIcon-Info.plist"; sourceTree = "<group>"; };
+		FAF0C65E0DF15CB400ECEB02 /* ISI_MenuIconPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_MenuIconPrefController.h; sourceTree = "<group>"; };
+		FAF0C65F0DF15CB400ECEB02 /* ISI_MenuIconPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_MenuIconPrefController.m; sourceTree = "<group>"; };
+		FAF0C69A0DF15E8200ECEB02 /* ISI_SchedulingPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_SchedulingPrefController.h; sourceTree = "<group>"; };
+		FAF0C69B0DF15E8200ECEB02 /* ISI_SchedulingPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_SchedulingPrefController.m; sourceTree = "<group>"; };
+		FAF0C69D0DF15E9200ECEB02 /* ISI_LoginItemPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_LoginItemPrefController.h; sourceTree = "<group>"; };
+		FAF0C69E0DF15E9200ECEB02 /* ISI_LoginItemPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_LoginItemPrefController.m; sourceTree = "<group>"; };
+		FAF0C6A00DF15EA400ECEB02 /* ISI_BluetoothPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_BluetoothPrefController.h; sourceTree = "<group>"; };
+		FAF0C6A10DF15EA400ECEB02 /* ISI_BluetoothPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_BluetoothPrefController.m; sourceTree = "<group>"; };
+		FAF0C6A30DF15EC400ECEB02 /* ISI_UpdatesPrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_UpdatesPrefController.h; sourceTree = "<group>"; };
+		FAF0C6A40DF15EC400ECEB02 /* ISI_UpdatesPrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_UpdatesPrefController.m; sourceTree = "<group>"; };
+		FAF0C77F0DF1634C00ECEB02 /* ISI_MenuIconView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_MenuIconView.nib; sourceTree = "<group>"; };
+		FAF0C7860DF163A600ECEB02 /* ISI_SchedulingView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_SchedulingView.nib; sourceTree = "<group>"; };
+		FAF0C7880DF163B100ECEB02 /* ISI_LoginItemView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_LoginItemView.nib; sourceTree = "<group>"; };
+		FAF0C78A0DF163BC00ECEB02 /* ISI_BluetoothView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_BluetoothView.nib; sourceTree = "<group>"; };
+		FAF0C78C0DF163C700ECEB02 /* ISI_UpdatesView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_UpdatesView.nib; sourceTree = "<group>"; };
 		FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Bluetooth.tif; sourceTree = "<group>"; };
 		FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Updates.tif; sourceTree = "<group>"; };
 		FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_WindowController.h; sourceTree = "<group>"; };
 		FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_WindowController.m; sourceTree = "<group>"; };
-		FAF8763B0A6A964600FDA7C1 /* ISI_PrefController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_PrefController.h; sourceTree = "<group>"; };
-		FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefController.m; sourceTree = "<group>"; };
 		FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +213,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAF0C5800DF154DB00ECEB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5880DF154EA00ECEB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C9980DF1ADDF00ECEB02 /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C59A0DF1551300ECEB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5A20DF1551F00ECEB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5AA0DF1552C00ECEB02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,10 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				FAE9AA330A6EBD6B00CF5F76 /* Application */,
-				FAE9AA320A6EBD4F00CF5F76 /* Preferences */,
 				FAE9AA340A6EBD8100CF5F76 /* Change Log */,
 				FAE9AA350A6EBDB800CF5F76 /* Misc */,
-				FAE21C450C4E68E800672183 /* Relaunch */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -150,6 +266,11 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* iSyncIt.app */,
+				FAF0C5820DF154DB00ECEB02 /* Updates.preferencePane */,
+				FAF0C58A0DF154EA00ECEB02 /* Bluetooth.preferencePane */,
+				FAF0C59C0DF1551300ECEB02 /* LoginItem.preferencePane */,
+				FAF0C5A40DF1551F00ECEB02 /* Scheduling.preferencePane */,
+				FAF0C5AC0DF1552C00ECEB02 /* MenuIcon.preferencePane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +281,7 @@
 				FAF0C54D0DF1524300ECEB02 /* Third Party Classes */,
 				080E96DDFE201D6D7F000001 /* Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				FAF0C57A0DF152F500ECEB02 /* Preference Panes */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -172,7 +294,6 @@
 				FAE9AA370A6EBDDE00CF5F76 /* Images */,
 				FAE9AA360A6EBDCD00CF5F76 /* Interface */,
 				FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */,
-				FAE21C3F0C4E68C400672183 /* relaunch.app */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -198,26 +319,6 @@
 				FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */,
 			);
 			name = "Menu Bar Icons";
-			sourceTree = "<group>";
-		};
-		FAE21C450C4E68E800672183 /* Relaunch */ = {
-			isa = PBXGroup;
-			children = (
-				FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */,
-				FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */,
-			);
-			name = Relaunch;
-			sourceTree = "<group>";
-		};
-		FAE9AA320A6EBD4F00CF5F76 /* Preferences */ = {
-			isa = PBXGroup;
-			children = (
-				FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */,
-				FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */,
-				FAF8763B0A6A964600FDA7C1 /* ISI_PrefController.h */,
-				FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */,
-			);
-			name = Preferences;
 			sourceTree = "<group>";
 		};
 		FAE9AA330A6EBD6B00CF5F76 /* Application */ = {
@@ -271,7 +372,6 @@
 			isa = PBXGroup;
 			children = (
 				FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */,
-				FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */,
 				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
 			);
 			name = Images;
@@ -307,16 +407,76 @@
 			name = SS_PrefsController;
 			sourceTree = "<group>";
 		};
-		FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */ = {
+		FAF0C57A0DF152F500ECEB02 /* Preference Panes */ = {
 			isa = PBXGroup;
 			children = (
-				FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */,
-				FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */,
-				FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */,
-				FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */,
-				FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */,
+				FAF0C5FA0DF1595200ECEB02 /* MenuIcon */,
+				FAF0C5F90DF1594A00ECEB02 /* Scheduling */,
+				FAF0C5F80DF1594200ECEB02 /* LoginItem */,
+				FAF0C5F70DF1593700ECEB02 /* Bluetooth */,
+				FAF0C5F50DF1593000ECEB02 /* Updates */,
 			);
-			name = "Toolbar Icons";
+			name = "Preference Panes";
+			sourceTree = "<group>";
+		};
+		FAF0C5F50DF1593000ECEB02 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C78C0DF163C700ECEB02 /* ISI_UpdatesView.nib */,
+				FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */,
+				FAF0C5830DF154DB00ECEB02 /* Updates-Info.plist */,
+				FAF0C6A30DF15EC400ECEB02 /* ISI_UpdatesPrefController.h */,
+				FAF0C6A40DF15EC400ECEB02 /* ISI_UpdatesPrefController.m */,
+			);
+			name = Updates;
+			sourceTree = "<group>";
+		};
+		FAF0C5F70DF1593700ECEB02 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C78A0DF163BC00ECEB02 /* ISI_BluetoothView.nib */,
+				FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */,
+				FAF0C58B0DF154EA00ECEB02 /* Bluetooth-Info.plist */,
+				FAF0C6A00DF15EA400ECEB02 /* ISI_BluetoothPrefController.h */,
+				FAF0C6A10DF15EA400ECEB02 /* ISI_BluetoothPrefController.m */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
+		FAF0C5F80DF1594200ECEB02 /* LoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C7880DF163B100ECEB02 /* ISI_LoginItemView.nib */,
+				FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */,
+				FAF0C59D0DF1551300ECEB02 /* LoginItem-Info.plist */,
+				FAF0C69D0DF15E9200ECEB02 /* ISI_LoginItemPrefController.h */,
+				FAF0C69E0DF15E9200ECEB02 /* ISI_LoginItemPrefController.m */,
+			);
+			name = LoginItem;
+			sourceTree = "<group>";
+		};
+		FAF0C5F90DF1594A00ECEB02 /* Scheduling */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C7860DF163A600ECEB02 /* ISI_SchedulingView.nib */,
+				FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */,
+				FAF0C5A50DF1551F00ECEB02 /* Scheduling-Info.plist */,
+				FAF0C69A0DF15E8200ECEB02 /* ISI_SchedulingPrefController.h */,
+				FAF0C69B0DF15E8200ECEB02 /* ISI_SchedulingPrefController.m */,
+			);
+			name = Scheduling;
+			sourceTree = "<group>";
+		};
+		FAF0C5FA0DF1595200ECEB02 /* MenuIcon */ = {
+			isa = PBXGroup;
+			children = (
+				FAF0C77F0DF1634C00ECEB02 /* ISI_MenuIconView.nib */,
+				FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */,
+				FAF0C5AD0DF1552C00ECEB02 /* MenuIcon-Info.plist */,
+				FAF0C65E0DF15CB400ECEB02 /* ISI_MenuIconPrefController.h */,
+				FAF0C65F0DF15CB400ECEB02 /* ISI_MenuIconPrefController.m */,
+			);
+			name = MenuIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,16 +490,107 @@
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				FA24E9F30A57DE0D007E34DF /* Copy Frameworks */,
+				FAF0C6150DF15B9B00ECEB02 /* Copy Preference Panes */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAF0C6030DF15B6900ECEB02 /* PBXTargetDependency */,
+				FAF0C6050DF15B6900ECEB02 /* PBXTargetDependency */,
+				FAF0C6070DF15B6900ECEB02 /* PBXTargetDependency */,
+				FAF0C6090DF15B6900ECEB02 /* PBXTargetDependency */,
+				FAF0C60B0DF15B6900ECEB02 /* PBXTargetDependency */,
 			);
 			name = iSyncIt;
 			productInstallPath = "$(HOME)/Applications";
 			productName = iSyncIt;
 			productReference = 8D1107320486CEB800E47090 /* iSyncIt.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FAF0C5810DF154DB00ECEB02 /* Updates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF0C5850DF154DB00ECEB02 /* Build configuration list for PBXNativeTarget "Updates" */;
+			buildPhases = (
+				FAF0C57E0DF154DB00ECEB02 /* Resources */,
+				FAF0C57F0DF154DB00ECEB02 /* Sources */,
+				FAF0C5800DF154DB00ECEB02 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Updates;
+			productName = Updates;
+			productReference = FAF0C5820DF154DB00ECEB02 /* Updates.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FAF0C5890DF154EA00ECEB02 /* Bluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF0C58D0DF154EB00ECEB02 /* Build configuration list for PBXNativeTarget "Bluetooth" */;
+			buildPhases = (
+				FAF0C5860DF154EA00ECEB02 /* Resources */,
+				FAF0C5870DF154EA00ECEB02 /* Sources */,
+				FAF0C5880DF154EA00ECEB02 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bluetooth;
+			productName = Bluetooth;
+			productReference = FAF0C58A0DF154EA00ECEB02 /* Bluetooth.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FAF0C59B0DF1551300ECEB02 /* LoginItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF0C59F0DF1551400ECEB02 /* Build configuration list for PBXNativeTarget "LoginItem" */;
+			buildPhases = (
+				FAF0C5980DF1551300ECEB02 /* Resources */,
+				FAF0C5990DF1551300ECEB02 /* Sources */,
+				FAF0C59A0DF1551300ECEB02 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginItem;
+			productName = LoginItem;
+			productReference = FAF0C59C0DF1551300ECEB02 /* LoginItem.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FAF0C5A30DF1551F00ECEB02 /* Scheduling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF0C5A70DF1551F00ECEB02 /* Build configuration list for PBXNativeTarget "Scheduling" */;
+			buildPhases = (
+				FAF0C5A00DF1551F00ECEB02 /* Resources */,
+				FAF0C5A10DF1551F00ECEB02 /* Sources */,
+				FAF0C5A20DF1551F00ECEB02 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scheduling;
+			productName = Scheduling;
+			productReference = FAF0C5A40DF1551F00ECEB02 /* Scheduling.preferencePane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FAF0C5AB0DF1552C00ECEB02 /* MenuIcon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF0C5AF0DF1552C00ECEB02 /* Build configuration list for PBXNativeTarget "MenuIcon" */;
+			buildPhases = (
+				FAF0C5A80DF1552C00ECEB02 /* Resources */,
+				FAF0C5A90DF1552C00ECEB02 /* Sources */,
+				FAF0C5AA0DF1552C00ECEB02 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenuIcon;
+			productName = MenuIcon;
+			productReference = FAF0C5AC0DF1552C00ECEB02 /* MenuIcon.preferencePane */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -354,6 +605,11 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* iSyncIt */,
+				FAF0C5810DF154DB00ECEB02 /* Updates */,
+				FAF0C5890DF154EA00ECEB02 /* Bluetooth */,
+				FAF0C59B0DF1551300ECEB02 /* LoginItem */,
+				FAF0C5A30DF1551F00ECEB02 /* Scheduling */,
+				FAF0C5AB0DF1552C00ECEB02 /* MenuIcon */,
 			);
 		};
 /* End PBXProject section */
@@ -369,18 +625,56 @@
 				FA48CFA10A5D6B3200467826 /* ISI_MenuIcon_On.png in Resources */,
 				FA31A11E0C7E1BC500F4D141 /* ISI_ChangeLog.nib in Resources */,
 				FA20E7EF0C7B6342005D96BB /* ISI_Menus.nib in Resources */,
-				FA20E7FB0C7B637D005D96BB /* ISI_Preferences.nib in Resources */,
-				FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */,
-				FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */,
-				FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */,
 				FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */,
 				FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */,
-				FA364F190AC7BAE0004949DC /* ISI_MenuIconItem.tif in Resources */,
-				FA3FF2620BB4918E00F489EA /* ISI_Scheduling.tif in Resources */,
-				FAE21C400C4E68C400672183 /* relaunch.app in Resources */,
 				FA31A10F0C7DEE1300F4D141 /* Localizable.strings in Resources */,
 				FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */,
 				FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C57E0DF154DB00ECEB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6690DF15CF100ECEB02 /* ISI_Updates.tif in Resources */,
+				FAF0C78D0DF163C700ECEB02 /* ISI_UpdatesView.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5860DF154EA00ECEB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6670DF15CEB00ECEB02 /* ISI_Bluetooth.tif in Resources */,
+				FAF0C78B0DF163BC00ECEB02 /* ISI_BluetoothView.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5980DF1551300ECEB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6650DF15CE200ECEB02 /* ISI_LoginItem.tif in Resources */,
+				FAF0C7890DF163B100ECEB02 /* ISI_LoginItemView.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5A00DF1551F00ECEB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6630DF15CDA00ECEB02 /* ISI_Scheduling.tif in Resources */,
+				FAF0C7870DF163A600ECEB02 /* ISI_SchedulingView.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5A80DF1552C00ECEB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6610DF15CCE00ECEB02 /* ISI_MenuIconItem.tif in Resources */,
+				FAF0C7800DF1634C00ECEB02 /* ISI_MenuIconView.nib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,19 +688,84 @@
 				8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */,
 				FA4AEA0F0A59B70000B0557F /* ISI_Bluetooth.m in Sources */,
 				FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */,
-				FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */,
 				FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */,
-				FAF8763E0A6A964600FDA7C1 /* ISI_PrefController.m in Sources */,
 				FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */,
 				FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */,
 				FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */,
 				FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */,
-				FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */,
 				FAF0C5540DF1526200ECEB02 /* SS_PrefsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAF0C57F0DF154DB00ECEB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6A50DF15EC400ECEB02 /* ISI_UpdatesPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5870DF154EA00ECEB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6A20DF15EA400ECEB02 /* ISI_BluetoothPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5990DF1551300ECEB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C69F0DF15E9200ECEB02 /* ISI_LoginItemPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5A10DF1551F00ECEB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C69C0DF15E8200ECEB02 /* ISI_SchedulingPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF0C5A90DF1552C00ECEB02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF0C6600DF15CB400ECEB02 /* ISI_MenuIconPrefController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAF0C6030DF15B6900ECEB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF0C5810DF154DB00ECEB02 /* Updates */;
+			targetProxy = FAF0C6020DF15B6900ECEB02 /* PBXContainerItemProxy */;
+		};
+		FAF0C6050DF15B6900ECEB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF0C5890DF154EA00ECEB02 /* Bluetooth */;
+			targetProxy = FAF0C6040DF15B6900ECEB02 /* PBXContainerItemProxy */;
+		};
+		FAF0C6070DF15B6900ECEB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF0C59B0DF1551300ECEB02 /* LoginItem */;
+			targetProxy = FAF0C6060DF15B6900ECEB02 /* PBXContainerItemProxy */;
+		};
+		FAF0C6090DF15B6900ECEB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF0C5A30DF1551F00ECEB02 /* Scheduling */;
+			targetProxy = FAF0C6080DF15B6900ECEB02 /* PBXContainerItemProxy */;
+		};
+		FAF0C60B0DF15B6900ECEB02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAF0C5AB0DF1552C00ECEB02 /* MenuIcon */;
+			targetProxy = FAF0C60A0DF15B6900ECEB02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */ = {
@@ -451,25 +810,22 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_2)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_3)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)\"";
-				FRAMEWORK_SEARCH_PATHS_QUOTED_3 = "\"$(SRCROOT)\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ISI_Prefix.pch;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = iSyncIt;
-				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -481,9 +837,134 @@
 					i386,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+		FAF0C5840DF154DB00ECEB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Updates-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Updates;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		FAF0C58C0DF154EA00ECEB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Bluetooth-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Bluetooth;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		FAF0C59E0DF1551400ECEB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "LoginItem-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LoginItem;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		FAF0C5A60DF1551F00ECEB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Scheduling-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Scheduling;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		FAF0C5AE0DF1552C00ECEB02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "MenuIcon-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = MenuIcon;
+				WRAPPER_EXTENSION = preferencePane;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -502,6 +983,46 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF0C5850DF154DB00ECEB02 /* Build configuration list for PBXNativeTarget "Updates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF0C5840DF154DB00ECEB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF0C58D0DF154EB00ECEB02 /* Build configuration list for PBXNativeTarget "Bluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF0C58C0DF154EA00ECEB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF0C59F0DF1551400ECEB02 /* Build configuration list for PBXNativeTarget "LoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF0C59E0DF1551400ECEB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF0C5A70DF1551F00ECEB02 /* Build configuration list for PBXNativeTarget "Scheduling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF0C5A60DF1551F00ECEB02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF0C5AF0DF1552C00ECEB02 /* Build configuration list for PBXNativeTarget "MenuIcon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF0C5AE0DF1552C00ECEB02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
