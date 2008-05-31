@@ -64,8 +64,8 @@
 								description:[NSString stringWithFormat:NSLocalizedString(growlDescription, nil)]
 								notificationName:growlName
 								iconData:nil
-								priority:nil
-								isSticky:nil
+								priority:0
+								isSticky:NO
 								clickContext:nil ];
 }
  
@@ -109,13 +109,6 @@
     [menuBarItem setHighlightMode:YES];
 	
 	[self changeMenu];
-	
-	/* 
-	 * To set the status bar item as text use:
-	 *		[statusItem setTitle:[NSString stringWithFormat:@"%C",0x27B2]];
-	 * instead of setImage.
-	 *
-	 */
 	
 	// Initialise the menu bar so the user can operate the program.
     [menuBarItem setMenu:menuMM_Out];

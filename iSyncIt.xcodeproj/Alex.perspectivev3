@@ -278,11 +278,8 @@
 								<string>FAE9AA360A6EBDCD00CF5F76</string>
 								<string>FAE9AA380A6EBE4B00CF5F76</string>
 								<string>FAF0C57A0DF152F500ECEB02</string>
-								<string>FAF0C5FA0DF1595200ECEB02</string>
 								<string>FAF0C5F90DF1594A00ECEB02</string>
-								<string>FAF0C5F80DF1594200ECEB02</string>
 								<string>FAF0C5F70DF1593700ECEB02</string>
-								<string>FAF0C5F50DF1593000ECEB02</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -290,11 +287,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>47</integer>
+									<integer>42</integer>
+									<integer>40</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {226, 1040}}</string>
+							<string>{{0, 10}, {226, 1040}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,12 +324,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>FA55A6470A8DB5C7009EF7EB</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ISI_MenusController.h</string>
+								<string>ISI_SchedulingPrefController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -337,25 +339,27 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>FA55A6480A8DB5C7009EF7EB</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ISI_MenusController.h</string>
+										<string>ISI_SchedulingPrefController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FAF0C9E30DF1AF5900ECEB02</string>
+										<string>FAF0CA1F0DF1B4D600ECEB02</string>
 										<key>history</key>
 										<array>
-											<string>FAF0C9C50DF1AF5900ECEB02</string>
-											<string>FAF0C9C60DF1AF5900ECEB02</string>
 											<string>FAF0C9C70DF1AF5900ECEB02</string>
 											<string>FAF0C9C80DF1AF5900ECEB02</string>
-											<string>FAF0C9C90DF1AF5900ECEB02</string>
 											<string>FAF0C9CA0DF1AF5900ECEB02</string>
-											<string>FAF0C9CB0DF1AF5900ECEB02</string>
 											<string>FAF0C9CC0DF1AF5900ECEB02</string>
-											<string>FAF0C9CD0DF1AF5900ECEB02</string>
 											<string>FAF0C9CE0DF1AF5900ECEB02</string>
-											<string>FAF0C9CF0DF1AF5900ECEB02</string>
-											<string>FAF0C9D00DF1AF5900ECEB02</string>
+											<string>FAF0C9FB0DF1B3B700ECEB02</string>
+											<string>FAF0C9FC0DF1B3B700ECEB02</string>
+											<string>FAF0C9FD0DF1B3B700ECEB02</string>
+											<string>FAF0CA110DF1B4C800ECEB02</string>
+											<string>FAF0CA120DF1B4C800ECEB02</string>
+											<string>FAF0CA130DF1B4C800ECEB02</string>
+											<string>FAF0CA140DF1B4C800ECEB02</string>
+											<string>FAF0CA150DF1B4C800ECEB02</string>
+											<string>FAF0CA160DF1B4C800ECEB02</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -377,6 +381,16 @@
 											<string>FAF0C9E00DF1AF5900ECEB02</string>
 											<string>FAF0C9E10DF1AF5900ECEB02</string>
 											<string>FAF0C9E20DF1AF5900ECEB02</string>
+											<string>FAF0C9FF0DF1B3B700ECEB02</string>
+											<string>FAF0CA000DF1B3B700ECEB02</string>
+											<string>FAF0CA010DF1B3B700ECEB02</string>
+											<string>FAF0CA020DF1B3B700ECEB02</string>
+											<string>FAF0CA030DF1B3B700ECEB02</string>
+											<string>FAF0CA170DF1B4C800ECEB02</string>
+											<string>FAF0CA180DF1B4C800ECEB02</string>
+											<string>FAF0CA190DF1B4C800ECEB02</string>
+											<string>FAF0CA1A0DF1B4C800ECEB02</string>
+											<string>FAF0CA1B0DF1B4C800ECEB02</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -390,18 +404,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1672, 817}}</string>
+								<string>{{0, 0}, {1672, 886}}</string>
 								<key>RubberWindowFrame</key>
 								<string>-1 79 1920 1099 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>817pt</string>
+							<string>886pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>236pt</string>
+							<string>167pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -415,7 +429,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1672, 112}}</string>
+										<string>{{10, 27}, {1672, 140}}</string>
+										<key>RubberWindowFrame</key>
+										<string>-1 79 1920 1099 0 0 1920 1178 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -437,8 +453,6 @@
 									<string>PBXProjectFindModule</string>
 								</dict>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXCVSModuleFilterTypeKey</key>
@@ -472,9 +486,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1672, 209}}</string>
-										<key>RubberWindowFrame</key>
-										<string>-1 79 1920 1099 0 0 1920 1178 </string>
+										<string>{{10, 27}, {1672, 140}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXCVSModule</string>
@@ -867,6 +879,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>FAF0CA0E0DF1B40900ECEB02</string>
+		<string>FAF0CA0F0DF1B40900ECEB02</string>
 		<string>/Users/Alex/Development/Objective-C/iSyncIt/Working Release/iSyncIt.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
