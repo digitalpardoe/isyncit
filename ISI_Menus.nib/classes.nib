@@ -1,0 +1,37 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                "menuBM_Act_SendFile" = id; 
+                "menuBM_Act_SetUpDev" = id; 
+                "menuBM_Act_TurnOn" = id; 
+                "menuMM_Act_AboutDialog" = id; 
+                "menuMM_Act_ChangeLog" = id; 
+                "menuMM_Act_Donate" = id; 
+                "menuMM_Act_Preferences" = id; 
+                "menuMM_Act_SyncNow" = id; 
+            }; 
+            CLASS = "ISI_MenusController"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "menuBT_Out_SendFile" = NSMenuItem; 
+                "menuBT_Out_SetUpDev" = NSMenuItem; 
+                "menuBT_Out_TurnOn" = NSMenuItem; 
+                "menuMM_Out" = NSMenu; 
+                "menuMM_Out_Bluetooth" = NSMenuItem; 
+                "menuMM_Out_CheckUpdates" = NSMenuItem; 
+                "menuMM_Out_LastSync" = NSMenuItem; 
+                "menuMM_Out_SyncNow" = NSMenuItem; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
