@@ -1,37 +1,78 @@
-{
-    IBClasses = (
-        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
-        {
-            ACTIONS = {
-                "menuBM_Act_SendFile" = id; 
-                "menuBM_Act_SetUpDev" = id; 
-                "menuBM_Act_TurnOn" = id; 
-                "menuMM_Act_AboutDialog" = id; 
-                "menuMM_Act_ChangeLog" = id; 
-                "menuMM_Act_Donate" = id; 
-                "menuMM_Act_Preferences" = id; 
-                "menuMM_Act_SyncNow" = id; 
-            }; 
-            CLASS = "ISI_MenusController"; 
-            LANGUAGE = ObjC; 
-            OUTLETS = {
-                "menuBT_Out_SendFile" = NSMenuItem; 
-                "menuBT_Out_SetUpDev" = NSMenuItem; 
-                "menuBT_Out_TurnOn" = NSMenuItem; 
-                "menuMM_Out" = NSMenu; 
-                "menuMM_Out_Bluetooth" = NSMenuItem; 
-                "menuMM_Out_CheckUpdates" = NSMenuItem; 
-                "menuMM_Out_LastSync" = NSMenuItem; 
-                "menuMM_Out_SyncNow" = NSMenuItem; 
-            }; 
-            SUPERCLASS = NSObject; 
-        }, 
-        {
-            ACTIONS = {checkForUpdates = id; }; 
-            CLASS = SUUpdater; 
-            LANGUAGE = ObjC; 
-            SUPERCLASS = NSObject; 
-        }
-    ); 
-    IBVersion = 1; 
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>doSendFile</key>
+				<string>id</string>
+				<key>doSetUpDevice</key>
+				<string>id</string>
+				<key>doSync</key>
+				<string>id</string>
+				<key>makeDonation</key>
+				<string>id</string>
+				<key>showAboutDialog</key>
+				<string>id</string>
+				<key>showChangeLog</key>
+				<string>id</string>
+				<key>showPreferences</key>
+				<string>id</string>
+				<key>turnBluetoothOn</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>ISI_MenusController</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>bluetoothMenu</key>
+				<string>NSMenuItem</string>
+				<key>lastSyncTime</key>
+				<string>NSMenuItem</string>
+				<key>menuMM_Out_SyncNow</key>
+				<string>NSMenuItem</string>
+				<key>sendFileItem</key>
+				<string>NSMenuItem</string>
+				<key>setUpDevice</key>
+				<string>NSMenuItem</string>
+				<key>theMenu</key>
+				<string>NSMenu</string>
+				<key>turnOnBluetooth</key>
+				<string>NSMenuItem</string>
+				<key>updateCheck</key>
+				<string>NSMenuItem</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>checkForUpdates</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>SUUpdater</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>

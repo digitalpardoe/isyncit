@@ -158,7 +158,6 @@
 		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
 		FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_ChangeLog.nib; sourceTree = "<group>"; };
 		FAB950E20A681177008669D9 /* ISI_Menus.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Menus.nib; sourceTree = "<group>"; };
-		FAB950E30A681177008669D9 /* ISI_Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Preferences.nib; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
 		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
 		FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIcon.tif; sourceTree = "<group>"; };
@@ -375,7 +374,6 @@
 			children = (
 				FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */,
 				FAB950E20A681177008669D9 /* ISI_Menus.nib */,
-				FAB950E30A681177008669D9 /* ISI_Preferences.nib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";

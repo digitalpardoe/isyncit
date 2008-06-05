@@ -12,7 +12,7 @@
 
 @implementation ISI_Sync
 
-- (void)startSync : (BOOL)defaultsValue growl : (DPGrowl*)theGrowl
+- (void)startSync : (BOOL)defaultsValue
 {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setObject:[NSDate date] forKey:@"ISI_LastSync"];
@@ -45,10 +45,7 @@
 		}
 	}
 	
-	if (theGrowl != nil)
-	{
-		[theGrowl showGrowlNotification : @"3" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
-	}
+	[[DPGrowl theGrowl] showGrowlNotification : @"3" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
 	
 	[syncNowString release];
 	[syncNowScript release];

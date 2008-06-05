@@ -19,13 +19,13 @@
 
 @interface ISI_MenusController : NSObject
 {
-    IBOutlet NSMenuItem *menuBT_Out_SendFile;
-    IBOutlet NSMenuItem *menuBT_Out_SetUpDev;
-    IBOutlet NSMenuItem *menuBT_Out_TurnOn;
-    IBOutlet NSMenu *menuMM_Out;
-    IBOutlet NSMenuItem *menuMM_Out_Bluetooth;
-    IBOutlet NSMenuItem *menuMM_Out_LastSync;
-	IBOutlet NSMenuItem *menuMM_Out_CheckUpdates;
+    IBOutlet NSMenuItem *sendFile;
+    IBOutlet NSMenuItem *setUpDevice;
+    IBOutlet NSMenuItem *turnOnBluetooth;
+    IBOutlet NSMenu *theMenu;
+    IBOutlet NSMenuItem *bluetoothMenu;
+    IBOutlet NSMenuItem *lastSyncTime;
+	IBOutlet NSMenuItem *updateCheck;
 	
 	NSStatusItem *menuBarItem;
 	
@@ -36,7 +36,6 @@
 	ISI_Scheduling *schedulingControl;
 	ISI_Sync *syncControl;
 	SS_PrefsController *prefs;
-	DPGrowl *growler;
 }
 
 - (void)initialiseMenu;
@@ -45,20 +44,20 @@
 
 - (void)readMenuDefaults;
 
-- (IBAction)menuBM_Act_SendFile:(id)sender;
+- (IBAction)doSendFile:(id)sender;
 
-- (IBAction)menuBM_Act_SetUpDev:(id)sender;
+- (IBAction)doSetUpDevice:(id)sender;
 
-- (IBAction)menuBM_Act_TurnOn:(id)sender;
+- (IBAction)turnBluetoothOn:(id)sender;
 
-- (IBAction)menuMM_Act_ChangeLog:(id)sender;
+- (IBAction)showChangeLog:(id)sender;
 
-- (IBAction)menuMM_Act_Preferences:(id)sender;
+- (IBAction)showPreferences:(id)sender;
 
-- (IBAction)menuMM_Act_SyncNow:(id)sender;
+- (IBAction)doSync:(id)sender;
 
-- (IBAction)menuMM_Act_AboutDialog:(id)sender;
+- (IBAction)showAboutDialog:(id)sender;
 
-- (IBAction)menuMM_Act_Donate:(id)sender;
+- (IBAction)makeDonation:(id)sender;
 
 @end

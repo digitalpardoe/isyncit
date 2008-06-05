@@ -60,7 +60,7 @@
 {
 	if ([defaults boolForKey:@"ISI_EnableScheduling"]) {
 		syncControl = [[ISI_Sync alloc] init];
-		[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"] growl : nil];
+		[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"]];
 	}
 }
 
@@ -69,7 +69,7 @@
 	if ([defaults boolForKey:@"ISI_EnableTimedScheduling"]) {
 		if ([self timeIsNow]) {
 			syncControl = [[ISI_Sync alloc] init];
-			[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"] growl : nil];
+			[syncControl startSync : [defaults boolForKey:@"ISI_EnableBluetooth"]];
 		}
 	}
 }

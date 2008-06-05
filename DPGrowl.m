@@ -12,7 +12,23 @@ int numberMessages;
 
 @implementation DPGrowl
 
-- (void)initializeGrowl : (int)noMessages;
+static DPGrowl *singleton;
+
++ (DPGrowl *)theGrowl
+{
+	if (!singleton)
+		singleton = [[DPGrowl alloc] init];
+	
+	return singleton;
+}
+
++ (id)alloc
+{
+	singleton = [super alloc];
+	return singleton;
+}
+
+- (void)initializeGrowl : (int)noMessages
 {
 	numberMessages = noMessages;
 	

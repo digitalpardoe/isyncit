@@ -15,6 +15,6 @@
 {
 }
 
-- (void)startSync : (BOOL)defaultsValue growl : (DPGrowl*)theGrowl;
+- (void)startSync : (BOOL)defaultsValue;
 
 @end
