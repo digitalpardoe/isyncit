@@ -19,6 +19,7 @@
 		FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */; };
 		FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */; };
 		FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */; };
+		FA45561D0DF7E011002A3CE5 /* DPLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA45561C0DF7E011002A3CE5 /* DPLoginItem.m */; };
 		FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */; };
 		FA48CFA10A5D6B3200467826 /* ISI_MenuIcon_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA48CFA00A5D6B3200467826 /* ISI_MenuIcon_On.png */; };
 		FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -149,6 +150,8 @@
 		FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StartupChecks.h; sourceTree = "<group>"; };
 		FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StartupChecks.m; sourceTree = "<group>"; };
 		FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ChangeLog.rtf; sourceTree = "<group>"; };
+		FA45561B0DF7E011002A3CE5 /* DPLoginItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPLoginItem.h; sourceTree = "<group>"; };
+		FA45561C0DF7E011002A3CE5 /* DPLoginItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPLoginItem.m; sourceTree = "<group>"; };
 		FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_ChangeLogController.h; sourceTree = "<group>"; };
 		FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_ChangeLogController.m; sourceTree = "<group>"; };
 		FA48CFA00A5D6B3200467826 /* ISI_MenuIcon_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIcon_On.png; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 			children = (
 				FA5950FE0DF1C057001DAC7A /* DPGrowl.h */,
 				FA5950FF0DF1C057001DAC7A /* DPGrowl.m */,
+				FA45561B0DF7E011002A3CE5 /* DPLoginItem.h */,
+				FA45561C0DF7E011002A3CE5 /* DPLoginItem.m */,
 			);
 			name = "Custom Classes";
 			sourceTree = "<group>";
@@ -732,6 +737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAF0C69F0DF15E9200ECEB02 /* ISI_LoginItemPrefController.m in Sources */,
+				FA45561D0DF7E011002A3CE5 /* DPLoginItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

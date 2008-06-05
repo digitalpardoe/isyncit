@@ -17,7 +17,6 @@ int startupChecks()
 	lastSyncCheck();
 	bluetoothCheck();
 	updateCheck();
-	iconCheck();
 	donateCheck();
 }
 
@@ -45,28 +44,16 @@ int updateCheck()
 	[updateChecking release];
 }
 
-int iconCheck()
-{
-	NSNumber *iconChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_AlternateMenuBarItem"];
-	if (!iconChecking) {
-		iconChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Use alternate menu bar icon?", nil), [NSString stringWithFormat:NSLocalizedString(@"Would you like to use the alternate (colourful) menu bar icon?", nil)], NSLocalizedString(@"Alternate Icon", nil), NSLocalizedString(@"Original Icon", nil), nil) == NSAlertDefaultReturn];
-		[[NSUserDefaults standardUserDefaults] setObject:iconChecking forKey:@"ISI_AlternateMenuBarItem"];
-		[[NSUserDefaults standardUserDefaults] synchronize];
-	}
-
-	[iconChecking release];
-}
-
 int donateCheck()
 {
 	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
 	if (!donateChecking) {
-		donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Would you like to donate?", nil), [NSString stringWithFormat:NSLocalizedString(@"A lot of effort goes into writing and testing iSyncIt. If you like the results please consider making a donation via the button on the right of the website.", nil)], NSLocalizedString(@"Donate", nil), NSLocalizedString(@"Not Now", nil), nil) == NSAlertDefaultReturn];
+		donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Would you like to donate?", nil), [NSString stringWithFormat:NSLocalizedString(@"A lot of effort goes into writing and testing iSyncIt. If you like the results please consider making a donation.", nil)], NSLocalizedString(@"Donate", nil), NSLocalizedString(@"Not Now", nil), nil) == NSAlertDefaultReturn];
 		[[NSUserDefaults standardUserDefaults] setObject:donateChecking forKey:@"ISI_Donation"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 		
 		if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ISI_Donation"]) {
-			[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"http://digitalpardoe.co.uk/"]];
+			[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=contact%40digitalpardoe%2eco%2euk&item_name=digital%3apardoe&no_shipping=1&no_note=1&tax=0&currency_code=GBP&lc=GB&bn=PP%2dDonationsBF&charset=UTF%2d8"]];
 		}
 	}
 }

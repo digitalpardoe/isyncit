@@ -10,12 +10,26 @@
 
 @implementation ISI_LoginItemPrefController
 
+- (void)awakeFromNib
+{
+	doLogin = [[DPLoginItem alloc] init];
+	
+	if ([doLogin inLoginItems])
+	{
+		[loginButton setState:1];
+	} else {
+		[loginButton setState:0];
+	}
+}
+
 - (IBAction)pref_Act_AddToLogin:(id)sender
 {
-	// Writes the AppleScript to add iSyncIt to "Login Items".
-	NSString *addToLoginString = @"tell application \"System Events\"\r if (count of (login items whose name is equal to \"iSyncIt\")) is not 0 then\r display dialog \"iSyncIt has already been added your login items.\"\r end if\r set the_file to (file of application processes whose name is equal to \"iSyncIt\")\r if (count of the_file) is 0 then\r display dialog \"An error has occured and iSyncIt cannot be found. You will need to add iSyncIt to your login items manually.\"\r end if\r end tell\r set the_path to POSIX path of first item of the_file\r tell application \"System Events\"\r make new login item at the end of login items with properties {path:the_path}\r end tell";
-	NSAppleScript *addToLogin = [[NSAppleScript alloc] initWithSource:addToLoginString];
-	[addToLogin executeAndReturnError:nil];
+	if (![doLogin inLoginItems])
+	{
+		[doLogin addToLoginItems];
+	} else {
+		[doLogin removeFromLoginItems];
+	}
 }
 
 + (NSArray *)preferencePanes

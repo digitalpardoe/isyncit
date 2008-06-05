@@ -205,12 +205,7 @@
 - (IBAction)menuMM_Act_Donate:(id)sender
 {
 	// Forces the user into donation.
-	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
-	[NSApp activateIgnoringOtherApps:YES];
-	donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Making a donation.", nil), [NSString stringWithFormat:NSLocalizedString(@"Please make a donation by clicking the button on the right hand side of the website.", nil)], NSLocalizedString(@"Donate", nil), nil, nil) == NSAlertDefaultReturn];
-	if (donateChecking) {
-		[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"http://digitalpardoe.co.uk/"]];
-	}
+	[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=contact%40digitalpardoe%2eco%2euk&item_name=digital%3apardoe&no_shipping=1&no_note=1&tax=0&currency_code=GBP&lc=GB&bn=PP%2dDonationsBF&charset=UTF%2d8"]];
 }
 
 
