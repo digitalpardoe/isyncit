@@ -78,7 +78,7 @@
 	}
 	
 	NSString *tempString = [@"" stringByAppendingString:[[defaults objectForKey:@"ISI_LastSync"] descriptionWithCalendarFormat:@"%a %d %b, %H:%M" timeZone:[NSTimeZone systemTimeZone] locale:[[NSUserDefaults standardUserDefaults] dictionaryRepresentation]]];
-	[menuMM_Out_LastSync setTitle:[[[@"" stringByAppendingString:NSLocalizedString(@"Last Sync", nil)] stringByAppendingString:@": "] stringByAppendingString:tempString]];
+	[menuMM_Out_LastSync setTitle:[[[@"" stringByAppendingString:@"Last Sync"] stringByAppendingString:@": "] stringByAppendingString:tempString]];
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender
@@ -180,7 +180,7 @@
 		
 		// Enables the menu items and sets the bluetooth control menu item title if the bluetooth is turned on.
 		if ((BTPowerState() ? "on" : "off") == "on") {
-			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:NSLocalizedString(@"Turn Off", nil)]];
+			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:@"Turn Off"]];
 			if (menuItem == menuBT_Out_SendFile) {
 				return YES;
 			}
@@ -191,7 +191,7 @@
 		
 		// Disables the menu items and sets the bluetooth control menu item title if the bluetooth is turned off.
 		if ((BTPowerState() ? "on" : "off") == "off") {
-			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:NSLocalizedString(@"Turn On", nil)]];
+			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:@"Turn On"]];
 			if (menuItem == menuBT_Out_SendFile) {
 				return NO;
 			}

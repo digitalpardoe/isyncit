@@ -24,7 +24,7 @@ int bluetoothCheck()
 {
 	NSNumber *bluetoothSyncing = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_EnableBluetooth"];
 	if (!bluetoothSyncing) {
-		bluetoothSyncing = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Enable automatic bluetooth control?", nil), [NSString stringWithFormat:NSLocalizedString(@"Would you like bluetooth to be automatically controlled by iSyncIt during syncing?", nil)], NSLocalizedString(@"Enable", nil), NSLocalizedString(@"Don't Enable", nil), nil) == NSAlertDefaultReturn];
+		bluetoothSyncing = [NSNumber numberWithBool:NSRunAlertPanel(@"Enable automatic bluetooth control?", [NSString stringWithFormat:@"Would you like bluetooth to be automatically controlled by iSyncIt during syncing?"], @"Enable", @"Don't Enable", nil) == NSAlertDefaultReturn];
 		[[NSUserDefaults standardUserDefaults] setObject:bluetoothSyncing forKey:@"ISI_EnableBluetooth"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
@@ -36,7 +36,7 @@ int updateCheck()
 {
 	NSNumber *updateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"SUCheckAtStartup"];
 	if (!updateChecking) {
-		updateChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Check for updates on startup?", nil), [NSString stringWithFormat:NSLocalizedString(@"Would you like iSyncIt to check for updates on startup? If not, you can initiate the check manually from the application menu", nil)], NSLocalizedString(@"Yes", nil), NSLocalizedString(@"No", nil), nil) == NSAlertDefaultReturn];
+		updateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Check for updates on startup?", [NSString stringWithFormat:@"Would you like iSyncIt to check for updates on startup? If not, you can initiate the check manually from the application menu"], @"Yes", @"No", nil) == NSAlertDefaultReturn];
 		[[NSUserDefaults standardUserDefaults] setObject:updateChecking forKey:@"SUCheckAtStartup"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
@@ -48,7 +48,7 @@ int donateCheck()
 {
 	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
 	if (!donateChecking) {
-		donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Would you like to donate?", nil), [NSString stringWithFormat:NSLocalizedString(@"A lot of effort goes into writing and testing iSyncIt. If you like the results please consider making a donation.", nil)], NSLocalizedString(@"Donate", nil), NSLocalizedString(@"Not Now", nil), nil) == NSAlertDefaultReturn];
+		donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Would you like to donate?", [NSString stringWithFormat:@"A lot of effort goes into writing and testing iSyncIt. If you like the results please consider making a donation."], @"Donate", @"Not Now", nil) == NSAlertDefaultReturn];
 		[[NSUserDefaults standardUserDefaults] setObject:donateChecking forKey:@"ISI_Donation"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 		

@@ -9,11 +9,8 @@
 /* Begin PBXBuildFile section */
 		8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* ISI_Main.m */; settings = {ATTRIBUTES = (); }; };
 		FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */; };
-		FA20E7EF0C7B6342005D96BB /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */; };
 		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
 		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
-		FA31A10F0C7DEE1300F4D141 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA31A10E0C7DEE1300F4D141 /* Localizable.strings */; };
-		FA31A11E0C7E1BC500F4D141 /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */; };
 		FA3BE71B0CA7BEF200FF9D4D /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
 		FA3BE71E0CA7BEFE00FF9D4D /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
 		FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */; };
@@ -28,6 +25,8 @@
 		FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
 		FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
 		FA5951000DF1C057001DAC7A /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950FF0DF1C057001DAC7A /* DPGrowl.m */; };
+		FA6DC9300DF82B3F00F3F39F /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */; };
+		FA6DC9320DF82B4E00F3F39F /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E20A681177008669D9 /* ISI_Menus.nib */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
 		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
@@ -138,11 +137,6 @@
 		FA0DE6620A58607B0048564E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
 		FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
-		FA20E7F00C7B6351005D96BB /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ISI_Menus.nib; sourceTree = "<group>"; };
-		FA20E7FC0C7B6388005D96BB /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ISI_Preferences.nib; sourceTree = "<group>"; };
-		FA31A1060C7DEDED00F4D141 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FA31A1100C7DEE1A00F4D141 /* German */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = German; path = German.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FA31A11F0C7E1BD200F4D141 /* German */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = German; path = German.lproj/ISI_ChangeLog.nib; sourceTree = "<group>"; };
 		FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconItem.tif; sourceTree = "<group>"; };
 		FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIconAlternate_On.png; sourceTree = "<group>"; };
@@ -162,9 +156,9 @@
 		FA5950FE0DF1C057001DAC7A /* DPGrowl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGrowl.h; sourceTree = "<group>"; };
 		FA5950FF0DF1C057001DAC7A /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
-		FAB950E10A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_ChangeLog.nib; sourceTree = "<group>"; };
-		FAB950E20A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_Menus.nib; sourceTree = "<group>"; };
-		FAB950E30A681177008669D9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_Preferences.nib; sourceTree = "<group>"; };
+		FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_ChangeLog.nib; sourceTree = "<group>"; };
+		FAB950E20A681177008669D9 /* ISI_Menus.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Menus.nib; sourceTree = "<group>"; };
+		FAB950E30A681177008669D9 /* ISI_Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Preferences.nib; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
 		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
 		FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIcon.tif; sourceTree = "<group>"; };
@@ -379,9 +373,9 @@
 		FAE9AA360A6EBDCD00CF5F76 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */,
-				FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */,
-				FA20E7FA0C7B637D005D96BB /* ISI_Preferences.nib */,
+				FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */,
+				FAB950E20A681177008669D9 /* ISI_Menus.nib */,
+				FAB950E30A681177008669D9 /* ISI_Preferences.nib */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -398,7 +392,6 @@
 		FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */ = {
 			isa = PBXGroup;
 			children = (
-				FA31A10E0C7DEE1300F4D141 /* Localizable.strings */,
 				FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */,
 				FA0DE6620A58607B0048564E /* Credits.rtf */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -641,11 +634,10 @@
 				FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */,
 				FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */,
 				FA48CFA10A5D6B3200467826 /* ISI_MenuIcon_On.png in Resources */,
-				FA31A11E0C7E1BC500F4D141 /* ISI_ChangeLog.nib in Resources */,
-				FA20E7EF0C7B6342005D96BB /* ISI_Menus.nib in Resources */,
+				FA6DC9300DF82B3F00F3F39F /* ISI_ChangeLog.nib in Resources */,
+				FA6DC9320DF82B4E00F3F39F /* ISI_Menus.nib in Resources */,
 				FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */,
 				FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */,
-				FA31A10F0C7DEE1300F4D141 /* Localizable.strings in Resources */,
 				FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */,
 				FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */,
 			);
@@ -786,45 +778,6 @@
 			targetProxy = FAF0C60A0DF15B6900ECEB02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FA20E7EE0C7B6342005D96BB /* ISI_Menus.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB950E20A681177008669D9 /* English */,
-				FA20E7F00C7B6351005D96BB /* German */,
-			);
-			name = ISI_Menus.nib;
-			sourceTree = "<group>";
-		};
-		FA20E7FA0C7B637D005D96BB /* ISI_Preferences.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB950E30A681177008669D9 /* English */,
-				FA20E7FC0C7B6388005D96BB /* German */,
-			);
-			name = ISI_Preferences.nib;
-			sourceTree = "<group>";
-		};
-		FA31A10E0C7DEE1300F4D141 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA31A1060C7DEDED00F4D141 /* English */,
-				FA31A1100C7DEE1A00F4D141 /* German */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		FA31A11D0C7E1BC500F4D141 /* ISI_ChangeLog.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAB950E10A681177008669D9 /* English */,
-				FA31A11F0C7E1BD200F4D141 /* German */,
-			);
-			name = ISI_ChangeLog.nib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C01FCF4C08A954540054247B /* Release */ = {
