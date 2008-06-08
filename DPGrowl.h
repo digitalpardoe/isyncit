@@ -17,7 +17,7 @@
 // Implemented to follow the singleton design pattern.
 + (DPGrowl *)theGrowl;
 
-- (void)initializeGrowl : (int)noMessages;
+//- (void)initializeGrowl : (int)noMessages;
 
 - (void)showGrowlNotification : (NSString *)growlName : (NSString *)growlTitle : (NSString *)gowlDescription;
 

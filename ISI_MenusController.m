@@ -26,8 +26,6 @@
 	[self readMenuDefaults];
 	
 	[self initialiseMenu];
-	
-	[[DPGrowl theGrowl] initializeGrowl:3];
 
 	// Read the bluetooth settings from user defaults.
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
@@ -101,10 +99,10 @@
 	if (IOBluetoothPreferencesAvailable()) {
 		if ((BTPowerState() ? "on" : "off") == "on") {
 			BTSetPowerState(0);
-			[[DPGrowl theGrowl] showGrowlNotification : @"2" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
+			[[DPGrowl theGrowl] showGrowlNotification : @"BluetoothOff" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
 		} else {
 			BTSetPowerState(1);
-			[[DPGrowl theGrowl] showGrowlNotification : @"1" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+			[[DPGrowl theGrowl] showGrowlNotification : @"BluetoothOn" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
 		}
 	}
 			
