@@ -11,13 +11,12 @@
 
 @interface DPGrowl : NSObject <GrowlApplicationBridgeDelegate>
 {
-	BOOL growlReady;
 }
 
 // Implemented to follow the singleton design pattern.
 + (DPGrowl *)theGrowl;
 
-//- (void)initializeGrowl : (int)noMessages;
+- (void)initializeGrowl;
 
 - (void)showGrowlNotification : (NSString *)growlName : (NSString *)growlTitle : (NSString *)gowlDescription;
 

@@ -30,6 +30,8 @@
 	// Read the bluetooth settings from user defaults.
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
 	
+	[[DPGrowl theGrowl] initializeGrowl];
+	
 	// Start the scheduler.
 	schedulingControl = [[ISI_Scheduling alloc] init];
 	[schedulingControl goSchedule];

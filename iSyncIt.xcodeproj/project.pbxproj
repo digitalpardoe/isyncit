@@ -27,7 +27,6 @@
 		FA5951000DF1C057001DAC7A /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950FF0DF1C057001DAC7A /* DPGrowl.m */; };
 		FA6DC9300DF82B3F00F3F39F /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */; };
 		FA6DC9320DF82B4E00F3F39F /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E20A681177008669D9 /* ISI_Menus.nib */; };
-		FAAE32710DFC835B00E558AA /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = FAAE32700DFC82D800E558AA /* Growl Registration Ticket.growlRegDict */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
 		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
@@ -157,7 +156,6 @@
 		FA5950FE0DF1C057001DAC7A /* DPGrowl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPGrowl.h; sourceTree = "<group>"; };
 		FA5950FF0DF1C057001DAC7A /* DPGrowl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPGrowl.m; sourceTree = "<group>"; };
 		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
-		FAAE32700DFC82D800E558AA /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_ChangeLog.nib; sourceTree = "<group>"; };
 		FAB950E20A681177008669D9 /* ISI_Menus.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Menus.nib; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
@@ -396,7 +394,6 @@
 				FA0DE6620A58607B0048564E /* Credits.rtf */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
-				FAAE32700DFC82D800E558AA /* Growl Registration Ticket.growlRegDict */,
 			);
 			name = "Text & Property List";
 			sourceTree = "<group>";
@@ -631,7 +628,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAAE32710DFC835B00E558AA /* Growl Registration Ticket.growlRegDict in Resources */,
 				FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */,
 				FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */,
 				FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */,
