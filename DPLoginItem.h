@@ -13,7 +13,9 @@
 }
 
 - (BOOL)inLoginItems;
+
 - (void)removeFromLoginItems;
+
 - (void)addToLoginItems;
 
 @end
