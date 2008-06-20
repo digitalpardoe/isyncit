@@ -12,7 +12,6 @@
 		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
 		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		FA3BE71B0CA7BEF200FF9D4D /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
-		FA3BE71E0CA7BEFE00FF9D4D /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
 		FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate_On.png */; };
 		FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */; };
 		FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */; };
@@ -27,6 +26,7 @@
 		FA5951000DF1C057001DAC7A /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950FF0DF1C057001DAC7A /* DPGrowl.m */; };
 		FA6DC9300DF82B3F00F3F39F /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */; };
 		FA6DC9320DF82B4E00F3F39F /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E20A681177008669D9 /* ISI_Menus.nib */; };
+		FA77E1C40E0BBC9E00E57730 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
 		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
@@ -54,8 +54,6 @@
 		FAF0C78D0DF163C700ECEB02 /* ISI_UpdatesView.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAF0C78C0DF163C700ECEB02 /* ISI_UpdatesView.nib */; };
 		FAF0C9980DF1ADDF00ECEB02 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
 		FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */; };
-		FAF8786B0A6AC3D400FDA7C1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */; };
-		FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +101,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA3BE71E0CA7BEFE00FF9D4D /* Growl.framework in Copy Frameworks */,
-				FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */,
+				FA77E1C40E0BBC9E00E57730 /* Growl.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +193,6 @@
 		FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Updates.tif; sourceTree = "<group>"; };
 		FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_WindowController.h; sourceTree = "<group>"; };
 		FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_WindowController.m; sourceTree = "<group>"; };
-		FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +203,6 @@
 				FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */,
 				FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */,
 				FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */,
-				FAF8786B0A6AC3D400FDA7C1 /* Sparkle.framework in Frameworks */,
 				FA3BE71B0CA7BEF200FF9D4D /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				FA3BE71A0CA7BEF200FF9D4D /* Growl.framework */,
-				FAF8786A0A6AC3D400FDA7C1 /* Sparkle.framework */,
 				FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
@@ -781,8 +775,6 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -803,14 +795,14 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				GCC_ENABLE_OBJC_GC = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				VALID_ARCHS = "i386 ppc ppc64 ppc7400 ppc970 x86_64";
 			};
 			name = Release;
 		};

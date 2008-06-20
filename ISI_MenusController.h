@@ -34,7 +34,6 @@
 	BOOL menuBarIcon;
 	
 	ISI_Scheduling *schedulingControl;
-	ISI_Sync *syncControl;
 	SS_PrefsController *prefs;
 }
 

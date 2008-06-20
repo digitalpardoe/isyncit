@@ -28,8 +28,6 @@ int bluetoothCheck()
 		[[NSUserDefaults standardUserDefaults] setObject:bluetoothSyncing forKey:@"ISI_EnableBluetooth"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
-	
-	[bluetoothSyncing release];
 }
 
 int updateCheck()
@@ -40,8 +38,6 @@ int updateCheck()
 		[[NSUserDefaults standardUserDefaults] setObject:updateChecking forKey:@"SUCheckAtStartup"];
 		[[NSUserDefaults standardUserDefaults] synchronize];
 	}
-	
-	[updateChecking release];
 }
 
 int donateCheck()

@@ -18,8 +18,6 @@
 	NSTimeInterval otherStart;
 	NSTimer *timer;
 	NSTimer *timedTimer;
-	
-	ISI_Sync *syncControl;
 }
 
 - (void)goSchedule;

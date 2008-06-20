@@ -120,12 +120,4 @@
     return NO;
 }
 
-- (void)dealloc
-{
-	[pref_Out_SchedulingCombo release];
-	[pref_Out_SchedulingTime release];
-	
-	[super dealloc];
-}
-
 @end

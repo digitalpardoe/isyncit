@@ -145,8 +145,7 @@
 
 - (IBAction)doSync:(id)sender
 {
-	syncControl = [[ISI_Sync alloc] init];
-	[syncControl startSync : enableBluetooth];
+	[ISI_Sync startSync : enableBluetooth];
 }
 
 - (IBAction)showAboutDialog:(id)sender
@@ -204,25 +203,6 @@
 {
 	// Forces the user into donation.
 	[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=contact%40digitalpardoe%2eco%2euk&item_name=digital%3apardoe&no_shipping=1&no_note=1&tax=0&currency_code=GBP&lc=GB&bn=PP%2dDonationsBF&charset=UTF%2d8"]];
-}
-
-
-- (void)dealloc
-{
-	// De-allocate the necessary resources.
-	[sendFile release];
-    [setUpDevice release];
-    [turnOnBluetooth release];
-    [theMenu release];
-    [bluetoothMenu release];
-    [lastSyncTime release];
-	[theMenu release];
-	[menuBarItem release];
-	[schedulingControl release];
-	[syncControl release];
-	[defaults release];
-	[prefs release];
-	[super dealloc];
 }
 
 @end

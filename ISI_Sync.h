@@ -15,6 +15,6 @@
 {
 }
 
-- (void)startSync : (BOOL)defaultsValue;
++ (void)startSync : (BOOL)defaultsValue;
 
 @end
