@@ -37,11 +37,7 @@
 	SS_PrefsController *prefs;
 }
 
-- (void)initialiseMenu;
-
-- (void)changeMenu;
-
-- (void)readMenuDefaults;
+- (void)updateMenu;
 
 - (IBAction)doSendFile:(id)sender;
 

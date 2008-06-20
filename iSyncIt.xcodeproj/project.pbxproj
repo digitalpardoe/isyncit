@@ -55,6 +55,7 @@
 		FAF3D8F30E0BFFE600A9E6F6 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF3D8EA0E0BFFB000A9E6F6 /* Sparkle.framework */; };
 		FAF3D9B90E0C015A00A9E6F6 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF3D9B80E0C015A00A9E6F6 /* Growl.framework */; };
 		FAF3D9BA0E0C015C00A9E6F6 /* Growl.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAF3D9B80E0C015A00A9E6F6 /* Growl.framework */; };
+		FAF3DA060E0C080400A9E6F6 /* Growl Registration Ticket.growlRegDict in Resources */ = {isa = PBXBuildFile; fileRef = FAF3DA030E0C07BB00A9E6F6 /* Growl Registration Ticket.growlRegDict */; };
 		FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +194,7 @@
 		FAF0C78C0DF163C700ECEB02 /* ISI_UpdatesView.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_UpdatesView.nib; sourceTree = "<group>"; };
 		FAF3D8EA0E0BFFB000A9E6F6 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		FAF3D9B80E0C015A00A9E6F6 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		FAF3DA030E0C07BB00A9E6F6 /* Growl Registration Ticket.growlRegDict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Growl Registration Ticket.growlRegDict"; sourceTree = "<group>"; };
 		FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Bluetooth.tif; sourceTree = "<group>"; };
 		FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Updates.tif; sourceTree = "<group>"; };
 		FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_WindowController.h; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 				FA0DE6620A58607B0048564E /* Credits.rtf */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+				FAF3DA030E0C07BB00A9E6F6 /* Growl Registration Ticket.growlRegDict */,
 			);
 			name = "Text & Property List";
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF3DA060E0C080400A9E6F6 /* Growl Registration Ticket.growlRegDict in Resources */,
 				FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */,
 				FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */,
 				FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */,

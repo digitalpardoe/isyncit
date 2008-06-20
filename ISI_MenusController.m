@@ -23,9 +23,20 @@
 	// Load the user preferences file into memory.
 	defaults = [NSUserDefaults standardUserDefaults];
 	
-	[self readMenuDefaults];
+	// Read the icon settings from user defaults.
+	menuBarIcon = [defaults boolForKey:@"ISI_AlternateMenuBarItem"];
 	
-	[self initialiseMenu];
+	// Fill the menu bar item.
+    menuBarItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
+	
+	// Set up the menu bar item & fill it.
+    [menuBarItem setHighlightMode:YES];
+	
+	[self updateMenu];
+	
+	// Initialise the menu bar so the user can operate the program.
+    [menuBarItem setMenu:theMenu];
+    [menuBarItem setEnabled:YES];
 
 	// Read the bluetooth settings from user defaults.
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
@@ -37,29 +48,7 @@
 	[schedulingControl goSchedule];
 }
 
-- (void)initialiseMenu
-{
-	// Fill the menu bar item.
-    menuBarItem = [[[NSStatusBar systemStatusBar]
-            statusItemWithLength:NSSquareStatusItemLength] retain];
-	
-	// Set up the menu bar item & fill it.
-    [menuBarItem setHighlightMode:YES];
-	
-	[self changeMenu];
-	
-	// Initialise the menu bar so the user can operate the program.
-    [menuBarItem setMenu:theMenu];
-    [menuBarItem setEnabled:YES];
-}
-
-- (void)readMenuDefaults
-{
-	// Read the icon settings from user defaults.
-	menuBarIcon = [defaults boolForKey:@"ISI_AlternateMenuBarItem"];
-}
-
-- (void)changeMenu
+- (void)updateMenu
 {
 	if (menuBarIcon == TRUE) {
 		if ((BTPowerState() ? "on" : "off") == "off") {
@@ -101,14 +90,14 @@
 	if (IOBluetoothPreferencesAvailable()) {
 		if ((BTPowerState() ? "on" : "off") == "on") {
 			BTSetPowerState(0);
-			[[DPGrowl theGrowl] showGrowlNotification : @"BluetoothOff" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
+			[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth Off" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
 		} else {
 			BTSetPowerState(1);
-			[[DPGrowl theGrowl] showGrowlNotification : @"BluetoothOn" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+			[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth On" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
 		}
 	}
 			
-	[self changeMenu];
+	[self updateMenu];
 }
 
 - (IBAction)showChangeLog:(id)sender

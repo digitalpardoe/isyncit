@@ -45,7 +45,7 @@
 		}
 	}
 	
-	[[DPGrowl theGrowl] showGrowlNotification : @"SyncComplete" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
+	[[DPGrowl theGrowl] showGrowlNotification : @"Sync Complete" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
 }
 
 @end
