@@ -14,4 +14,14 @@
 {
 }
 
++ (void)setPowerState:(int)state;
+
++ (int)getPowerState;
+
++ (void)togglePowerState;
+
++ (BOOL)available;
+
++ (void)_message;
+
 @end

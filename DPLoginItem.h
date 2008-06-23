@@ -12,10 +12,10 @@
 {
 }
 
-- (BOOL)inLoginItems;
++ (BOOL)inLoginItems;
 
-- (void)removeFromLoginItems;
++ (void)removeFromLoginItems;
 
-- (void)addToLoginItems;
++ (void)addToLoginItems;
 
 @end

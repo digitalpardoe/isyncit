@@ -10,7 +10,7 @@
 
 @implementation DPLoginItem
 
-- (BOOL)inLoginItems
++ (BOOL)inLoginItems
 {
 	NSString *appName = [[[NSBundle mainBundle] bundlePath] lastPathComponent];
 	NSString *loginWindowPlistPath = [@"~/Library/Preferences/loginwindow.plist" stringByExpandingTildeInPath]; 
@@ -28,7 +28,7 @@
 	return NO;
 }
 
-- (void)removeFromLoginItems
++ (void)removeFromLoginItems
 {
 	NSString *appName = [[[NSBundle mainBundle] bundlePath] lastPathComponent];
 	NSString *loginWindowPlistPath = [@"~/Library/Preferences/loginwindow.plist" stringByExpandingTildeInPath]; 
@@ -39,10 +39,6 @@
 	id application;
 	while ( application = [enumerator nextObject] ) {
 		if ( [[[application valueForKey:@"Path"] lastPathComponent] isEqualToString: appName] ) {
-			
-			// These 4 lines are run if the app is found in "Login Items".
-			// You can replace these lines with something like "return YES;"
-			// if you just want a method that checks for your app in the list.
 			[launchItems removeObject:application];
 			[loginWindowPrefsDictionary setObject:launchItems forKey:@"AutoLaunchedApplicationDictionary"];
 			[loginWindowPrefsDictionary writeToFile:loginWindowPlistPath atomically:YES];
@@ -51,7 +47,7 @@
 	}
 }
 
-- (void)addToLoginItems
++ (void)addToLoginItems
 {
 	NSString *fullPath = [[NSBundle mainBundle] bundlePath];
 	NSString *script = [NSString stringWithFormat:@"set appPath to \"%@\" \ntell application \"System Events\" \nmake login item at end with properties {path:appPath, hidden:false} \nend tell", fullPath];

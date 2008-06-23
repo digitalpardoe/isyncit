@@ -12,17 +12,56 @@
 
 @implementation ISI_Bluetooth
 
-// Set the bluetooth power state using an integer; 0 = off, 1 = on.
-int BTSetPowerState(int powerState)
++ (void)setPowerState:(int)state
 {
-	IOBluetoothPreferenceSetControllerPowerState(powerState);
-	return EXIT_SUCCESS;
+	if ([self available])
+	{
+		IOBluetoothPreferenceSetControllerPowerState(state);
+		[self _message];
+	}
 }
 
-// Return the power state with; BTPowerState() ? "on" : "off".
-int BTPowerState()
++ (int)getPowerState
 {
-	return IOBluetoothPreferenceGetControllerPowerState();
+	if ([self available])
+	{
+		return IOBluetoothPreferenceGetControllerPowerState();
+	} else {
+		return 0;
+	}
+}
+
++ (void)togglePowerState
+{
+	if ([self available])
+	{
+		if ([self getPowerState] == 0)
+		{
+			[self setPowerState:1];
+		} else {
+			[self setPowerState:0];
+		}
+	}
+}
+
++ (BOOL)available
+{
+	if (IOBluetoothPreferencesAvailable())
+	{
+		return YES;
+	} else {
+		return NO;
+	}
+}
+
++ (void)_message
+{
+	if ([self getPowerState] == 0)
+	{
+		[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth Off" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
+	} else {
+		[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth On" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+	}
 }
 
 @end

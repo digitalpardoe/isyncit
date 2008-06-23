@@ -12,9 +12,7 @@
 
 - (void)awakeFromNib
 {
-	doLogin = [[DPLoginItem alloc] init];
-	
-	if ([doLogin inLoginItems])
+	if ([DPLoginItem inLoginItems])
 	{
 		[loginButton setState:1];
 	} else {
@@ -24,11 +22,11 @@
 
 - (IBAction)pref_Act_AddToLogin:(id)sender
 {
-	if (![doLogin inLoginItems])
+	if (![DPLoginItem inLoginItems])
 	{
-		[doLogin addToLoginItems];
+		[DPLoginItem addToLoginItems];
 	} else {
-		[doLogin removeFromLoginItems];
+		[DPLoginItem removeFromLoginItems];
 	}
 }
 

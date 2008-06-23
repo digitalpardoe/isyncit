@@ -14,8 +14,6 @@
 {
 	IBOutlet NSView *prefsView;
 	IBOutlet NSButton *loginButton;
-	
-	DPLoginItem *doLogin;
 }
 
 - (IBAction)pref_Act_AddToLogin:(id)sender;

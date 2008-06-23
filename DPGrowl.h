@@ -13,11 +13,10 @@
 {
 }
 
-// Implemented to follow the singleton design pattern.
 + (DPGrowl *)theGrowl;
 
 - (void)initializeGrowl;
 
-- (void)showGrowlNotification : (NSString *)growlName : (NSString *)growlTitle : (NSString *)gowlDescription;
+- (void)showGrowlNotification:(NSString *)growlName:(NSString *)growlTitle:(NSString *)gowlDescription;
 
 @end

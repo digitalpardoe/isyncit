@@ -12,15 +12,15 @@
 
 @implementation ISI_StartupChecks
 
-int startupChecks()
++ (void)startupChecks
 {
-	lastSyncCheck();
-	bluetoothCheck();
-	updateCheck();
-	donateCheck();
+	[self _lastSyncCheck];
+	[self _bluetoothCheck];
+	[self _updateCheck];
+	[self _donateCheck];
 }
 
-int bluetoothCheck()
++ (void)_bluetoothCheck
 {
 	NSNumber *bluetoothSyncing = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_EnableBluetooth"];
 	if (!bluetoothSyncing) {
@@ -30,7 +30,7 @@ int bluetoothCheck()
 	}
 }
 
-int updateCheck()
++ (void)_updateCheck
 {
 	NSNumber *updateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"SUCheckAtStartup"];
 	if (!updateChecking) {
@@ -40,7 +40,7 @@ int updateCheck()
 	}
 }
 
-int donateCheck()
++ (void) _donateCheck
 {
 	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
 	if (!donateChecking) {
@@ -54,7 +54,7 @@ int donateCheck()
 	}
 }
 
-int lastSyncCheck()
++ (void)_lastSyncCheck
 {
 	NSNumber *lastSyncChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_LastSync"];
 	if (!lastSyncChecking) {

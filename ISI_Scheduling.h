@@ -9,7 +9,6 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "ISI_Sync.h"
 
 @interface ISI_Scheduling : NSObject
 {
@@ -21,12 +20,19 @@
 }
 
 - (void)goSchedule;
+
 - (void)startTimer;
+
 - (void)startOtherTimer;
+
 - (void)stopTimer;
+
 - (void)stopOtherTimer;
+
 - (void)tick;
+
 - (void)otherTick;
+
 - (BOOL)timeIsNow;
 
 @end

@@ -10,4 +10,7 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+	#import "DPGrowl.h"
+	#import "ISI_Bluetooth.h"
+	#import "ISI_Sync.h"
 #endif

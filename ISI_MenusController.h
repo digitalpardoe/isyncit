@@ -9,10 +9,7 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "DPGrowl.h"
-#import "ISI_Bluetooth.h"
 #import "ISI_WindowController.h"
-#import "ISI_Sync.h"
 #import "ISI_StartupChecks.h"
 #import "ISI_Scheduling.h"
 #import "SS_PrefsController.h"

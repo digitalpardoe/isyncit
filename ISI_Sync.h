@@ -9,12 +9,11 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import "DPGrowl.h"
 
 @interface ISI_Sync : NSObject
 {
 }
 
-+ (void)startSync : (BOOL)defaultsValue;
++ (void)startSync:(BOOL)defaultsValue;
 
 @end
