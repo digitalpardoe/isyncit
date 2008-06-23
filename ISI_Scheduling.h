@@ -13,25 +13,25 @@
 @interface ISI_Scheduling : NSObject
 {
 	NSUserDefaults *defaults;
-	NSTimeInterval start;
-	NSTimeInterval otherStart;
-	NSTimer *timer;
-	NSTimer *timedTimer;
+	NSTimeInterval intervalStart;
+	NSTimeInterval scheduleStart;
+	NSTimer *intervalTimer;
+	NSTimer *scheduleTimer;
 }
 
 - (void)goSchedule;
 
-- (void)startTimer;
+- (void)startIntervalTimer;
 
-- (void)startOtherTimer;
+- (void)startScheduleTimer;
 
-- (void)stopTimer;
+- (void)stopIntervalTimer;
 
-- (void)stopOtherTimer;
+- (void)stopScheduleTimer;
 
-- (void)tick;
+- (void)intervalTick;
 
-- (void)otherTick;
+- (void)scheduleTick;
 
 - (BOOL)timeIsNow;
 

@@ -60,4 +60,10 @@
     return NO;
 }
 
+- (void)dealloc
+{
+	[prefsView release];
+	[super dealloc];
+}
+
 @end

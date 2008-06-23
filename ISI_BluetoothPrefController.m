@@ -68,4 +68,11 @@
     return NO;
 }
 
+- (void)dealloc
+{
+	[pref_Out_BTControlOption release];
+	[prefsView release];
+	[super dealloc];
+}
+
 @end

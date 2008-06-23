@@ -75,4 +75,11 @@
     return NO;
 }
 
+- (void)dealloc
+{
+	[prefsView release];
+	[loginButton release];
+	[super dealloc];
+}
+
 @end
