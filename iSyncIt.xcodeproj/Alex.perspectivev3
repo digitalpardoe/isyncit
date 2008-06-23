@@ -234,6 +234,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -294,6 +296,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>37</integer>
+									<integer>36</integer>
+									<integer>31</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -333,7 +338,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>FA6DC91E0DF82A5600F3F39F</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DPLoginItem.m</string>
+								<string>ChangeLog.rtf</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -341,21 +346,18 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>FA6DC91F0DF82A5600F3F39F</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DPLoginItem.m</string>
+										<string>ChangeLog.rtf</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FAE3804A0E0FEED800915D10</string>
+										<string>FAE3811E0E0FF1F100915D10</string>
 										<key>history</key>
 										<array>
-											<string>FA0675F00DFD1AE600E417DB</string>
-											<string>FAF3D7A20E0BF64A00A9E6F6</string>
 											<string>FAF3D9260E0C004600A9E6F6</string>
 											<string>FAF3DA410E0C19B400A9E6F6</string>
 											<string>FAF3DB020E0C22E300A9E6F6</string>
 											<string>FAF3DB5F0E0C34AB00A9E6F6</string>
 											<string>FAE37F1E0E0FE46B00915D10</string>
-											<string>FAE37F430E0FE55900915D10</string>
 											<string>FAE37FEC0E0FEED800915D10</string>
 											<string>FAE37FED0E0FEED800915D10</string>
 											<string>FAE37FEE0E0FEED800915D10</string>
@@ -385,7 +387,10 @@
 											<string>FAE380060E0FEED800915D10</string>
 											<string>FAE380070E0FEED800915D10</string>
 											<string>FAE380080E0FEED800915D10</string>
-											<string>FAE380090E0FEED800915D10</string>
+											<string>FAE381180E0FF1F100915D10</string>
+											<string>FAE381190E0FF1F100915D10</string>
+											<string>FAE3811A0E0FF1F100915D10</string>
+											<string>FAE37F430E0FE55900915D10</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -593,6 +598,9 @@
 											<string>FAE380470E0FEED800915D10</string>
 											<string>FAE380480E0FEED800915D10</string>
 											<string>FAE380490E0FEED800915D10</string>
+											<string>FAE3811B0E0FF1F100915D10</string>
+											<string>FAE3811C0E0FF1F100915D10</string>
+											<string>FAE3811D0E0FF1F100915D10</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -653,8 +661,6 @@
 									<string>PBXProjectFindModule</string>
 								</dict>
 								<dict>
-									<key>BecomeActive</key>
-									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXCVSModuleFilterTypeKey</key>
