@@ -33,8 +33,8 @@ static DPGrowl *singleton;
 
 - (void)showGrowlNotification:(NSString *)growlName:(NSString *)growlTitle:(NSString *)growlDescription
 {
-	[GrowlApplicationBridge notifyWithTitle:[NSString stringWithFormat:NSLocalizedString(growlTitle, nil)]
-								description:[NSString stringWithFormat:NSLocalizedString(growlDescription, nil)]
+	[GrowlApplicationBridge notifyWithTitle:growlTitle
+								description:growlDescription
 						   notificationName:growlName
 								   iconData:nil
 								   priority:0

@@ -173,7 +173,7 @@
 	FA0DE6620A58607B0048564E /* Credits.rtf */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1601, 866}}";
-			sepNavSelRange = "{542, 0}";
+			sepNavSelRange = "{533, 0}";
 			sepNavVisRect = "{{0, 0}, {1601, 866}}";
 		};
 	};
@@ -1001,8 +1001,8 @@
 	FAF0C65F0DF15CB400ECEB02 /* ISI_MenuIconPrefController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1587, 980}}";
-			sepNavSelRange = "{1102, 59}";
-			sepNavVisRange = "{185, 983}";
+			sepNavSelRange = "{929, 0}";
+			sepNavVisRange = "{146, 1022}";
 		};
 	};
 	FAF0C69A0DF15E8200ECEB02 /* ISI_SchedulingPrefController.h */ = {
