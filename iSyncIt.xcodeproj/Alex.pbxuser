@@ -298,9 +298,9 @@
 	};
 	FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1587, 938}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1587, 896}}";
 			sepNavSelRange = "{714, 0}";
-			sepNavVisRange = "{64, 981}";
+			sepNavVisRange = "{0, 894}";
 		};
 	};
 	FA4FE5170DF8860400669025 /* PBXTextBookmark */ = {
@@ -452,7 +452,7 @@
 		rLen = 0;
 		rLoc = 0;
 		rType = 0;
-		vrLen = 1465;
+		vrLen = 1311;
 		vrLoc = 0;
 	};
 	FA6DC9660DF82CC600F3F39F /* PBXTextBookmark */ = {
@@ -532,7 +532,7 @@
 		rLen = 0;
 		rLoc = 3337;
 		rType = 0;
-		vrLen = 777;
+		vrLen = 64;
 		vrLoc = 4850;
 	};
 	FAAE32AD0DFC873C00E558AA /* PBXTextBookmark */ = {
@@ -566,7 +566,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1710, 2534}}";
 			sepNavSelRange = "{1846, 0}";
-			sepNavVisRange = "{3564, 1350}";
+			sepNavVisRange = "{3570, 1344}";
 			sepNavWindowFrame = "{{15, 464}, {750, 709}}";
 		};
 	};
