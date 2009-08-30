@@ -28,7 +28,7 @@ static DPGrowl *singleton;
 
 - (void)initializeGrowl
 {
-	[GrowlApplicationBridge setGrowlDelegate:@""];
+	[GrowlApplicationBridge setGrowlDelegate:self];
 }
 
 - (void)showGrowlNotification:(NSString *)growlName:(NSString *)growlTitle:(NSString *)growlDescription

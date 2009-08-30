@@ -62,6 +62,7 @@
 	NSString *sendFilesString = @"tell application \"Bluetooth File Exchange\"\r activate\r end tell";
 	NSAppleScript *sendFilesScript = [[NSAppleScript alloc] initWithSource:sendFilesString];
 	[sendFilesScript executeAndReturnError:nil];
+	[sendFilesScript release];
 }
 
 - (IBAction)doSetUpDevice:(id)sender
@@ -69,6 +70,7 @@
 	NSString *setDeviceString = @"tell application \"Bluetooth Setup Assistant\"\r activate\r end tell";
 	NSAppleScript *setDeviceScript = [[NSAppleScript alloc] initWithSource:setDeviceString];
 	[setDeviceScript executeAndReturnError:nil];
+	[setDeviceScript release];
 }
 
 - (IBAction)turnBluetoothOn:(id)sender
@@ -82,6 +84,7 @@
 	[NSApp activateIgnoringOtherApps:YES];
 	ISI_WindowController *changeLogWindow = [[ISI_WindowController alloc] initWithWindowNibName:@"ISI_ChangeLog"];
 	[changeLogWindow showWindow:self];
+	[changeLogWindow release];
 }
 
 - (IBAction)showPreferences:(id)sender

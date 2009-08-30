@@ -53,6 +53,7 @@
 	NSString *script = [NSString stringWithFormat:@"set appPath to \"%@\" \ntell application \"System Events\" \nmake login item at end with properties {path:appPath, hidden:false} \nend tell", fullPath];
 	NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
 	[appleScript executeAndReturnError:nil];
+	[appleScript release];
 }
 
 @end

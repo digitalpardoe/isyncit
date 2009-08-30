@@ -18,7 +18,7 @@
 	[defaults setObject:[NSDate date] forKey:@"ISI_LastSync"];
 	[[NSUserDefaults standardUserDefaults] synchronize];
 	
-	int currentStatus;
+	int currentStatus = 0;
 	
 	if ([ISI_Bluetooth available]) {
 		if (defaultsValue == TRUE) {
@@ -32,6 +32,7 @@
 	NSString *syncNowString = @"tell application \"iSync\"\r if not (synchronize) then\r else\r repeat while (syncing is true)\r delay 5\r end repeat\r quit\r end if\r end tell";
 	NSAppleScript *syncNowScript = [[NSAppleScript alloc] initWithSource:syncNowString];
 	[syncNowScript executeAndReturnError:nil];
+	[syncNowScript release];
 	
 	if ([ISI_Bluetooth available]) {
 		if (defaultsValue == TRUE) {
