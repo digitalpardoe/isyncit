@@ -35,6 +35,9 @@
 	[schedulingControl goSchedule];
 	
 	[[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(updateMenu) name:@"uk.co.digitalpardoe.iSyncIt.updateMenu" object:nil];
+
+	[bluetoothWatcher invalidate];
+	bluetoothWatcher = [NSTimer scheduledTimerWithTimeInterval:(0.5) target:self selector:@selector(updateMenu) userInfo:NULL repeats:YES];
 }
 
 - (void)updateMenu
@@ -76,15 +79,13 @@
 - (IBAction)turnBluetoothOn:(id)sender
 {
 	[ISI_Bluetooth togglePowerState];
-	[self updateMenu];
 }
 
 - (IBAction)showChangeLog:(id)sender
 {
 	[NSApp activateIgnoringOtherApps:YES];
-	ISI_WindowController *changeLogWindow = [[ISI_WindowController alloc] initWithWindowNibName:@"ISI_ChangeLog"];
+	changeLogWindow = [[ISI_WindowController alloc] initWithWindowNibName:@"ISI_ChangeLog"];
 	[changeLogWindow showWindow:self];
-	[changeLogWindow release];
 }
 
 - (IBAction)showPreferences:(id)sender
@@ -177,6 +178,8 @@
 	[defaults release];
 	[schedulingControl release];
 	[prefs release];
+	[bluetoothWatcher release];
+	[changeLogWindow release];
 	[super dealloc];
 }
 

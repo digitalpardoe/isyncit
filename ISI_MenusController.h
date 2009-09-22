@@ -32,6 +32,9 @@
 	
 	ISI_Scheduling *schedulingControl;
 	SS_PrefsController *prefs;
+	
+	NSTimer *bluetoothWatcher;
+	ISI_WindowController *changeLogWindow;
 }
 
 - (void)updateMenu;

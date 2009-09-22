@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>iSyncIt 1.5, Copyright © digital:pardoe, 2006 - 2008</string>
+	<string>iSyncIt 1.7, Copyright © digital:pardoe, 2006 - 2009</string>
 	<key>CFBundleIconFile</key>
 	<string>ISI_Icon.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.5</string>
+	<string>1.7</string>
 	<key>NSMainNibFile</key>
 	<string>ISI_Menus</string>
 	<key>NSPrincipalClass</key>

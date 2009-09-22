@@ -56,12 +56,25 @@
 
 + (void)_message
 {
-	if ([self getPowerState] == 0)
-	{
-		[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth Off" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
-	} else {
-		[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth On" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+	SInt32 version;
+	Gestalt(gestaltSystemVersionMinor, &version);
+	
+	if (version <= 5) {
+		if ([self getPowerState] == 0)
+		{
+			[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth Off" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
+		} else {
+			[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth On" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+		}
+	} else if (version >= 6) {
+		if ([self getPowerState] == 1)
+		{
+			[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth Off" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
+		} else {
+			[[DPGrowl theGrowl] showGrowlNotification : @"Bluetooth On" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
+		}
 	}
+
 }
 
 @end
