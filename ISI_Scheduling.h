@@ -1,12 +1,9 @@
-/*
- * ISI_Scheduling.h
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_Scheduling.h
+//  iSyncIt
+//
+//  Copyright digital:pardoe. All rights reserved.
+//
 
 #import <Cocoa/Cocoa.h>
 

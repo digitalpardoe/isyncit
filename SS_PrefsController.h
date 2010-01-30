@@ -1,4 +1,12 @@
-/* SS_PrefsController */
+//
+// SS_PrefsController.h
+// SS_PrefsController
+//
+// Source Code provided by Matt Gemmell
+// http://mattgemmell.com/source
+//
+// See MGLicense.rtf for full details
+//
 
 #import <Cocoa/Cocoa.h>
 

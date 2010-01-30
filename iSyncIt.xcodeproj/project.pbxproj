@@ -31,6 +31,7 @@
 		FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
 		FA5951000DF1C057001DAC7A /* DPGrowl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5950FF0DF1C057001DAC7A /* DPGrowl.m */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
+		FACD15D811147E1700721799 /* MGLicense.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FACD15D711147E1700721799 /* MGLicense.rtf */; };
 		FAD924690C7EEC96000DCC5F /* ISI_MenuIcon.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */; };
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
 		FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE219250C4E3B0400672183 /* ISI_Scheduling.m */; };
@@ -165,6 +166,7 @@
 		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
 		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
+		FACD15D711147E1700721799 /* MGLicense.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = MGLicense.rtf; sourceTree = "<group>"; };
 		FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIcon.tif; sourceTree = "<group>"; };
 		FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconAlternate.tif; sourceTree = "<group>"; };
 		FAE219240C4E3B0400672183 /* ISI_Scheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Scheduling.h; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 				FAF0C5510DF1526200ECEB02 /* SS_PreferencePaneProtocol.h */,
 				FAF0C5520DF1526200ECEB02 /* SS_PrefsController.h */,
 				FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */,
+				FACD15D711147E1700721799 /* MGLicense.rtf */,
 			);
 			name = SS_PrefsController;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */,
 				FA1372DF0E10E3560092B471 /* ISI_ChangeLog.xib in Resources */,
 				FA1372E40E10E3720092B471 /* ISI_Menus.xib in Resources */,
+				FACD15D811147E1700721799 /* MGLicense.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,12 +1,9 @@
-/*
- * ISI_WindowController.m
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_WindowController.m
+//  iSyncIt
+//
+//  Copyright digital:pardoe. All rights reserved.
+//
 
 #import "ISI_WindowController.h"
 

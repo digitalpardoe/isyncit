@@ -1,3 +1,13 @@
+//
+// SS_PreferencePaneProtocol.m
+// SS_PrefsController
+//
+// Source Code provided by Matt Gemmell
+// http://mattgemmell.com/source
+//
+// See MGLicense.rtf for full details
+//
+
 #import <Cocoa/Cocoa.h>
 
 @protocol SS_PreferencePaneProtocol

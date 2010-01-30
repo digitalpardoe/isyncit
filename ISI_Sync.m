@@ -1,12 +1,9 @@
-/*
- * ISI_Sync.m
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_Sync.m
+//  iSyncIt
+//
+//  Copyright digital:pardoe. All rights reserved.
+//
 
 #import "ISI_Sync.h"
 

@@ -1,12 +1,9 @@
-/*
- * ISI_Bluetooth.m
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_Bluetooth.m
+//  iSyncIt
+//
+//  Copyright digital:pardoe. All rights reserved.
+//
 
 #import "ISI_Bluetooth.h"
 

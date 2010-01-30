@@ -1,12 +1,9 @@
-/*
- * ISI_StartupChecks.m
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_StartupChecks.m
+//  iSyncIt
+//
+//  Copyright digital:pardoe. All rights reserved.
+//
 
 #import "ISI_StartupChecks.h"
 

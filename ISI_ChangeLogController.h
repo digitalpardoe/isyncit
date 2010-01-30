@@ -1,12 +1,9 @@
-/*
- * ISI_ChangeLogController.h
- *
- * iSyncIt
- * Simple Sync Software
- * 
- * Created By digital:pardoe
- * 
- */
+//
+//  ISI_ChangeLogController.h
+//  iSyncIt
+//
+//  Copyright digital:pardoe. All rights reserved.
+//
 
 #import <Cocoa/Cocoa.h>
 

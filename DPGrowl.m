@@ -2,8 +2,7 @@
 //  DPGrowl.m
 //  iSyncIt
 //
-//  Created by Alex on 31/05/2008.
-//  Copyright 2008 digital:pardoe. All rights reserved.
+//  Copyright digital:pardoe. All rights reserved.
 //
 
 #import "DPGrowl.h"
