@@ -2,10 +2,10 @@
 // SS_PrefsController.m
 // SS_PrefsController
 //
-// Source Code provided by Matt Gemmell
+// Source Code provided by Matt Gemmell.
 // http://mattgemmell.com/source
 //
-// See MGLicense.rtf for full details
+// See MGLicense.rtf for full details.
 //
 
 #import "SS_PrefsController.h"
