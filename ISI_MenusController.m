@@ -2,8 +2,6 @@
 //  ISI_MenusController.m
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 #import "ISI_MenusController.h"
 

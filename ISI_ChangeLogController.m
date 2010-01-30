@@ -2,8 +2,6 @@
 //  ISI_ChangeLogController.m
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 
 #import "ISI_ChangeLogController.h"

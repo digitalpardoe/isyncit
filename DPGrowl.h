@@ -2,8 +2,6 @@
 //  DPGrowl.h
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 #import <Cocoa/Cocoa.h>
 #import <Growl/Growl.h>

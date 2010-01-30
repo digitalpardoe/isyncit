@@ -2,9 +2,6 @@
 //  ISI_SchedulingPrefController.m
 //  iSyncIt
 //
-//  Created by Alex on 31/05/2008.
-//  Copyright 2008 digital:pardoe. All rights reserved.
-//
 
 #import "ISI_SchedulingPrefController.h"
 

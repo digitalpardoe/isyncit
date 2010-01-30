@@ -2,8 +2,6 @@
 //  ISI_Prefix.pch
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 
 #ifdef __OBJC__

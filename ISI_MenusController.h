@@ -2,8 +2,6 @@
 //  ISI_MenusController.h
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 #import <Cocoa/Cocoa.h>
 #import "ISI_WindowController.h"

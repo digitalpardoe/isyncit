@@ -2,8 +2,6 @@
 //  DPLoginItem.m
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 #import "DPLoginItem.h"
 

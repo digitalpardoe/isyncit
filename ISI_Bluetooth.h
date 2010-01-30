@@ -2,8 +2,6 @@
 //  ISI_Bluetooth.h
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 #import <Cocoa/Cocoa.h>
 

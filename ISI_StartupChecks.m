@@ -2,8 +2,6 @@
 //  ISI_StartupChecks.m
 //  iSyncIt
 //
-//  Copyright digital:pardoe. All rights reserved.
-//
 
 #import "ISI_StartupChecks.h"
 
