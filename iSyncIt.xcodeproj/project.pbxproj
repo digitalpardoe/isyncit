@@ -259,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF0C54D0DF1524300ECEB02 /* Third Party Classes */,
-				FA5950F10DF1C038001DAC7A /* Custom Classes */,
+				FA5950F10DF1C038001DAC7A /* Utility Classes */,
 				FAE9AA330A6EBD6B00CF5F76 /* Application */,
 				FAE9AA340A6EBD8100CF5F76 /* Change Log */,
 				FAE9AA350A6EBDB800CF5F76 /* Misc */,
@@ -314,7 +314,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA5950F10DF1C038001DAC7A /* Custom Classes */ = {
+		FA5950F10DF1C038001DAC7A /* Utility Classes */ = {
 			isa = PBXGroup;
 			children = (
 				FA5950FE0DF1C057001DAC7A /* DPGrowl.h */,
@@ -322,7 +322,7 @@
 				FA45561B0DF7E011002A3CE5 /* DPLoginItem.h */,
 				FA45561C0DF7E011002A3CE5 /* DPLoginItem.m */,
 			);
-			name = "Custom Classes";
+			name = "Utility Classes";
 			sourceTree = "<group>";
 		};
 		FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */ = {
