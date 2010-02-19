@@ -48,6 +48,14 @@ These are some of the more useful classes in the application;
 * *ISI_Scheduling* - Executing periodic events and scheduled events, might be useful but I've never been quite sure if I implemented it correctly.
 * *SS_PrefsController* - Not my code, it was created by [Matt Gemmell](http://mattgemmell.com/) and is therefore awesome code.
 
+Past Versions
+-------------
+Development on iSyncIt started before I cared to learn what a version control system was, let alone
+even consider using Git. The GitHub repository contains all versioned code dating back to when I
+started using SVN (somewhere around version 1.3 of iSyncIt) however I kept archives of all the code
+at each release, you can download these from the 'downloads' section of the GitHub project page (along
+with the compiled binary versions of every release).
+
 Licenses
 --------
 As I mentioned above, some of the code that makes up this application is not mine. The main piece of
