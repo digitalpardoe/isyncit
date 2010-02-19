@@ -2,6 +2,8 @@
 //  ISI_Prefix.pch
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 
 #ifdef __OBJC__

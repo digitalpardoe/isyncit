@@ -2,6 +2,8 @@
 //  ISI_Main.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 
 #import <Cocoa/Cocoa.h>
