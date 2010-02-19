@@ -14,7 +14,7 @@ first release downloads have been consistent and the application has steadily ev
 Objective-C skills have improved.
 
 In the last year & especially since I began to use an iPhone (which syncs through iTunes) my drive
-to develop iSyncIt has wained somewhat so I thought it was about time I gave something back to
+to develop iSyncIt has waned somewhat so I thought it was about time I gave something back to
 community from which I have learned so much thus bringing me to the release of the source code of
 iSyncIt.
 
