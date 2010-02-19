@@ -60,7 +60,7 @@ of my way to avoid giving people credit where credit is due.
 
 All of my code is licensed under the terms found in the LICENSE file, the license is essentially based
 on the BSD new license but breaks down into the following points (and yes, they're a little bit stolen
-from Matt Gemmell, but he is a god & what he says goes, period);
+from Matt Gemmell, but he is god-like & what he says goes, period);
 
 1. You can use the code wherever you wish.
 2. You can modify the code as much as you want and use the modified code wherever you wish.
@@ -85,7 +85,7 @@ suitable fashion so feel free to fork, improve and reuse. Hopefully at least som
 helpful to new developers - perhaps even veteran developers.
 
 If you find any mistakes, problems or want to get your improvements into a release feel free to contact
-me through any of the methods below.
+me using the information below (or through GitHub).
 
 Happy forking!
 
