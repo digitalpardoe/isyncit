@@ -46,7 +46,7 @@ These are some of the more useful classes in the application;
 * *ISI_ChangeLogController* - Loading an RTF file into an NSTextView.
 * *All Over The Place* - Running AppleScript from Objective-C.
 * *ISI_Scheduling* - Executing periodic events and scheduled events, might be useful but I've never been quite sure if I implemented it correctly.
-* *SS_PrefsController* - Not my code, it was created by [Matt Gemmell](http://mattgemmell.com/) and is therefore good code.
+* *SS_PrefsController* - Not my code, it was created by [Matt Gemmell](http://mattgemmell.com/) and is therefore awesome code.
 
 Licenses
 --------
