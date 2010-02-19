@@ -2,6 +2,8 @@
 //  ISI_Scheduling.h
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import <Cocoa/Cocoa.h>
 

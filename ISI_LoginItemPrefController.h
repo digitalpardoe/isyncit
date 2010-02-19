@@ -2,6 +2,8 @@
 //  ISI_LoginItemPrefController.h
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import <Cocoa/Cocoa.h>
 #import "SS_PreferencePaneProtocol.h"

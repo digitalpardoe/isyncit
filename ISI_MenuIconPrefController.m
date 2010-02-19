@@ -2,6 +2,8 @@
 //  ISI_MenuIconPrefController.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_MenuIconPrefController.h"
 

@@ -2,6 +2,8 @@
 //  ISI_StartupChecks.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_StartupChecks.h"
 

@@ -2,6 +2,8 @@
 //  ISI_BluetoothPrefController.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_BluetoothPrefController.h"
 

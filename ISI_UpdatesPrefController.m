@@ -2,6 +2,8 @@
 //  ISI_UpdatesPrefController.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_UpdatesPrefController.h"
 

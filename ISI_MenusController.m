@@ -2,6 +2,8 @@
 //  ISI_MenusController.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_MenusController.h"
 

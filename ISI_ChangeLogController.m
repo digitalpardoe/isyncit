@@ -2,6 +2,8 @@
 //  ISI_ChangeLogController.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 
 #import "ISI_ChangeLogController.h"

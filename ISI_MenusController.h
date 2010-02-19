@@ -2,6 +2,8 @@
 //  ISI_MenusController.h
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import <Cocoa/Cocoa.h>
 #import "ISI_WindowController.h"

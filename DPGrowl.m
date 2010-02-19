@@ -2,6 +2,8 @@
 //  DPGrowl.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "DPGrowl.h"
 

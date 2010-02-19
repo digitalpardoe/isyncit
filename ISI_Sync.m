@@ -2,6 +2,8 @@
 //  ISI_Sync.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_Sync.h"
 

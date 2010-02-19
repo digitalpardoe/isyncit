@@ -2,6 +2,8 @@
 //  ISI_Scheduling.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_Scheduling.h"
 

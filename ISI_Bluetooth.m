@@ -2,6 +2,8 @@
 //  ISI_Bluetooth.m
 //  iSyncIt
 //
+//	See 'LICENSE' for copyright and licensing.
+//
 
 #import "ISI_Bluetooth.h"
 
