@@ -75,7 +75,7 @@ All other code licenses are contained within the files to which they apply.
 Legal
 -----
 I realised several months into development that the name 'iSync' is probably trademarked and all sorts
-of copyright of Apple (TM) and obviously, that's the way it'll stay. Unless I recieve a much coveted
+of copyright of Apple (TM) and obviously, that's the way it'll stay. Unless I receive a much coveted
 letter from Apple (TM) legal however, the name iSyncIt will remain.
 
 Conclusion
