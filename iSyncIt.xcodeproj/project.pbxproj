@@ -165,6 +165,8 @@
 		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
 		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
+		FAC4F500112EC09D009797BF /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+		FAC4F502112EC0B4009797BF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FAD924670C7EEC96000DCC5F /* ISI_MenuIcon.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIcon.tif; sourceTree = "<group>"; };
 		FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconAlternate.tif; sourceTree = "<group>"; };
 		FAE219240C4E3B0400672183 /* ISI_Scheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Scheduling.h; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAC4F4FF112EC081009797BF /* Documents */,
 				FAE9AA370A6EBDDE00CF5F76 /* Images */,
 				FAE9AA360A6EBDCD00CF5F76 /* Interface */,
 				FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */,
@@ -321,6 +324,15 @@
 				FA45561C0DF7E011002A3CE5 /* DPLoginItem.m */,
 			);
 			name = "Utility Classes";
+			sourceTree = "<group>";
+		};
+		FAC4F4FF112EC081009797BF /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				FAC4F500112EC09D009797BF /* README.markdown */,
+				FAC4F502112EC0B4009797BF /* LICENSE */,
+			);
+			name = Documents;
 			sourceTree = "<group>";
 		};
 		FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */ = {
