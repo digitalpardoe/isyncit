@@ -81,8 +81,8 @@ letter from Apple (TM) legal however, the name iSyncIt will remain.
 Conclusion
 ----------
 This document is somewhat rambling for a README file, hopefully I have gotten my points across in a
-suitable fashion so feel free to fork, improve and reuse. Hopefully at least some of the code will be
-helpful to new developers - perhaps even veteran developers.
+suitable fashion so feel free to fork, improve and reuse all the code contained within this repository.
+Hopefully at least some of the code will be helpful to new developers - perhaps even veteran developers.
 
 If you find any mistakes, problems or want to get your improvements into a release feel free to contact
 me using the information below (or through GitHub).
