@@ -22,8 +22,8 @@ Disclaimer
 ----------
 **iSyncIt** was my first piece of OS X software (written before I knew what object-oriented programming
 was) and over the past few years I've made some, effort to improve the quality of the code based on
-Cocoa & Objetive-C paradigms that I have learnt, my main focus has been adding features and making the
-software as stable as possible.
+Cocoa & Objetive-C paradigms that I have learnt, my main focus however has been adding features and
+making the software as stable as possible.
 
 Taking into account the above statement I make no guarantees that any of the code contained within
 ****iSyncIt**** can be considered 'correct' in relation to Cocoa & Objective-C paradigms, the only
