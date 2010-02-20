@@ -9,22 +9,21 @@ it's primary purpose - syncing my phone with OS X, when a PowerBook became my pr
 I added functionality to **iSyncIt** to help preserve the battery life of my computer by automatically
 controlling the power of bluetooth.
 
-As this stage **iSyncIt** was a amateur but reasonable well put together (even if I do say so myself)
+As this stage **iSyncIt** was an amateur but reasonably well put together (even if I do say so myself)
 AppleScript utility I felt other people may find useful so I released it to the public. Since the
 first release downloads have been consistent and the application has steadily evolved as my
 Objective-C skills have improved.
 
 In the last year & especially since I began to use an iPhone (which syncs through iTunes) my drive
 to develop **iSyncIt** has waned somewhat so I thought it was about time I gave something back to
-community from which I have learned so much thus bringing me to the release of the source code of
-**iSyncIt**.
+community from which I have learned so much, hence this source code release of **iSyncIt**.
 
 Disclaimer
 ----------
 **iSyncIt** was my first piece of OS X software (written before I knew what object-oriented programming
-was) and over the past few years I've made some, but not a great deal, of effort to improve the
-quality of the code based on Cocoa & Objetive-C paradigms that I have learnt, my main focus has been
-adding features and making the software as stable as possible.
+was) and over the past few years I've made some, effort to improve the quality of the code based on
+Cocoa & Objetive-C paradigms that I have learnt, my main focus has been adding features and making the
+software as stable as possible.
 
 Taking into account the above statement I make no guarantees that any of the code contained within
 ****iSyncIt**** can be considered 'correct' in relation to Cocoa & Objective-C paradigms, the only
