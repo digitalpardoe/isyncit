@@ -1,5 +1,6 @@
 iSyncIt
 =======
+Simple, scheduled iSync-ing with automatic bluetooth control, all from your menu bar.
 
 A Little History
 ----------------
