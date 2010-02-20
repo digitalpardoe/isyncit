@@ -3,30 +3,30 @@ iSyncIt
 
 A Little History
 ----------------
-iSyncIt is a small utility that I started writing in early-2006 to make it quicker to use iSync for
+**iSyncIt** is a small utility that I started writing in early-2006 to make it quicker to use iSync for
 it's primary purpose - syncing my phone with OS X, when a PowerBook became my primary computer
-I added functionality to iSyncIt to help preserve the battery life of my computer by automatically
+I added functionality to **iSyncIt** to help preserve the battery life of my computer by automatically
 controlling the power of bluetooth.
 
-As this stage iSyncIt was a amateur but reasonable well put together (even if I do say so myself)
+As this stage **iSyncIt** was a amateur but reasonable well put together (even if I do say so myself)
 AppleScript utility I felt other people may find useful so I released it to the public. Since the
 first release downloads have been consistent and the application has steadily evolved as my
 Objective-C skills have improved.
 
 In the last year & especially since I began to use an iPhone (which syncs through iTunes) my drive
-to develop iSyncIt has waned somewhat so I thought it was about time I gave something back to
+to develop **iSyncIt** has waned somewhat so I thought it was about time I gave something back to
 community from which I have learned so much thus bringing me to the release of the source code of
-iSyncIt.
+**iSyncIt**.
 
 Disclaimer
 ----------
-iSyncIt was my first piece of OS X software (written before I knew what object-oriented programming
+**iSyncIt** was my first piece of OS X software (written before I knew what object-oriented programming
 was) and over the past few years I've made some, but not a great deal, of effort to improve the
 quality of the code based on Cocoa & Objetive-C paradigms that I have learnt, my main focus has been
 adding features and making the software as stable as possible.
 
 Taking into account the above statement I make no guarantees that any of the code contained within
-iSyncIt can be considered 'correct' in relation to Cocoa & Objective-C paradigms, the only
+****iSyncIt**** can be considered 'correct' in relation to Cocoa & Objective-C paradigms, the only
 guarantee that I can make is that the code works in the context of this particular application. The
 only code likely to be 'correct' in this repository is the code written by other people.
 
@@ -50,9 +50,9 @@ These are some of the more useful classes in the application;
 
 Past Versions
 -------------
-Development on iSyncIt started before I cared to learn what a version control system was, let alone
+Development on **iSyncIt** started before I cared to learn what a version control system was, let alone
 even consider using Git. The GitHub repository contains all versioned code dating back to when I
-started using SVN (somewhere around version 1.3 of iSyncIt) however I kept archives of all the code
+started using SVN (somewhere around version 1.3 of **iSyncIt**) however I kept archives of all the code
 at each release, you can download these from the 'downloads' section of the GitHub project page (along
 with the compiled binary versions of every release).
 
@@ -60,7 +60,7 @@ Licenses
 --------
 As I mentioned above, some of the code that makes up this application is not mine. The main piece of
 code that comes to mind that isn't mine is *SS_PrefsController* (and associated) by [Matt Gemmell](http://mattgemmell.com/). When
-I started developing iSyncIt 'licenses' didn't really enter my mind. I have endeavoured to make sure
+I started developing **iSyncIt** 'licenses' didn't really enter my mind. I have endeavoured to make sure
 all the code I used is correctly licensed before this release to open source but I am aware that I may
 have forgotten where code originally came from, if you see something that belongs to you please let
 me know so I can correct the situation and apply appropriate licenses. I haven't knowingly gone out
@@ -84,7 +84,7 @@ Legal
 -----
 I realised several months into development that the name 'iSync' is probably trademarked and all sorts
 of copyright of Apple (TM) and obviously, that's the way it'll stay. Unless I receive a much coveted
-letter from Apple (TM) legal however, the name iSyncIt will remain.
+letter from Apple (TM) legal however, the name **iSyncIt** will remain.
 
 Conclusion
 ----------
