@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>digital:pardoe</title>
+    <link>http://digitalpardoe.co.uk/</link>
+    <description>digital:pardoe iSyncIt AppCast</description>
+    <language>en-en</language>
+    <item>
+      <title>iSyncIt 1.6.1</title>
+      <description>&lt;ul&gt;
+&lt;li&gt;Fixed incorrect Growl notifications.&lt;/li&gt;
+&lt;/ul&gt;</description>
+      <enclosure type="application/octet-stream" sparkle:version="1.6.1" url="http://digitalpardoe.co.uk/downloads/isyncit/iSyncIt_1.6.1.dmg" length="627476"/>
+    </item>
+  </channel>
+</rss>
