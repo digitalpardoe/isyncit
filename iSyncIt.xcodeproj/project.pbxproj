@@ -171,6 +171,11 @@
 		FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconAlternate.tif; sourceTree = "<group>"; };
 		FAE219240C4E3B0400672183 /* ISI_Scheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Scheduling.h; sourceTree = "<group>"; };
 		FAE219250C4E3B0400672183 /* ISI_Scheduling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Scheduling.m; sourceTree = "<group>"; };
+		FAE663A01201F47F008E215C /* Application.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Application.psd; sourceTree = "<group>"; };
+		FAE663A11201F47F008E215C /* Menu Bar.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Menu Bar.psd"; sourceTree = "<group>"; };
+		FAE663A41201F4BE008E215C /* Alternate Menu Bar Icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Alternate Menu Bar Icon.psd"; sourceTree = "<group>"; };
+		FAE663A51201F4BE008E215C /* Application Icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Application Icon.psd"; sourceTree = "<group>"; };
+		FAE663A61201F4BE008E215C /* Menu Bar Icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Menu Bar Icon.psd"; sourceTree = "<group>"; };
 		FAF0C5510DF1526200ECEB02 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
 		FAF0C5520DF1526200ECEB02 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_PrefsController.h; sourceTree = "<group>"; };
 		FAF0C5530DF1526200ECEB02 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_PrefsController.m; sourceTree = "<group>"; };
@@ -346,6 +351,26 @@
 			name = "Menu Bar Icons";
 			sourceTree = "<group>";
 		};
+		FAE6639E1201F456008E215C /* Masters */ = {
+			isa = PBXGroup;
+			children = (
+				FAE663A41201F4BE008E215C /* Alternate Menu Bar Icon.psd */,
+				FAE663A51201F4BE008E215C /* Application Icon.psd */,
+				FAE663A61201F4BE008E215C /* Menu Bar Icon.psd */,
+				FAE6639F1201F46D008E215C /* Pre 0.8 Icons */,
+			);
+			name = Masters;
+			sourceTree = "<group>";
+		};
+		FAE6639F1201F46D008E215C /* Pre 0.8 Icons */ = {
+			isa = PBXGroup;
+			children = (
+				FAE663A01201F47F008E215C /* Application.psd */,
+				FAE663A11201F47F008E215C /* Menu Bar.psd */,
+			);
+			name = "Pre 0.8 Icons";
+			sourceTree = "<group>";
+		};
 		FAE9AA330A6EBD6B00CF5F76 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +420,7 @@
 		FAE9AA370A6EBDDE00CF5F76 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6639E1201F456008E215C /* Masters */,
 				FAD9246B0C7EEC9C000DCC5F /* Menu Bar Icons */,
 				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
 			);
