@@ -9,32 +9,12 @@ it's primary purpose - syncing my phone with OS X, when a PowerBook became my pr
 I added functionality to **iSyncIt** to help preserve the battery life of my computer by automatically
 controlling the power of bluetooth.
 
-As this stage **iSyncIt** was an amateur but reasonably well put together (even if I do say so myself)
-AppleScript utility I felt other people may find useful so I released it to the public. Since the
-first release downloads have been consistent and the application has steadily evolved as my
-Objective-C skills have improved.
-
-In the last year & especially since I began to use an iPhone (which syncs through iTunes) my drive
-to develop **iSyncIt** has waned somewhat so I thought it was about time I gave something back to
-community from which I have learned so much, hence this source code release of **iSyncIt**.
-
 Disclaimer
 ----------
-**iSyncIt** was my first piece of OS X software (written before I knew what object-oriented programming
+This was my first piece of OS X software (written before I knew what object-oriented programming
 was) and over the past few years I've made some, effort to improve the quality of the code based on
 Cocoa & Objetive-C paradigms that I have learnt, my main focus however has been adding features and
 making the software as stable as possible.
-
-Taking into account the above statement I make no guarantees that any of the code contained within
-****iSyncIt**** can be considered 'correct' in relation to Cocoa & Objective-C paradigms, the only
-guarantee that I can make is that the code works in the context of this particular application. The
-only code likely to be 'correct' in this repository is the code written by other people.
-
-With all this in mind, I would recommend using the source code contained within this project as a
-stepping stone to more research and awesome re-writing rather than a core component of a final
-product.
-
-Now you can't say I didn't warn you.
 
 Useful Bits
 -----------
@@ -68,7 +48,7 @@ of my way to avoid giving people credit where credit is due.
 
 All of my code is licensed under the terms found in the LICENSE file, the license is essentially based
 on the BSD new license but breaks down into the following points (and yes, they're a little bit stolen
-from Matt Gemmell, but he is god-like & what he says goes, period);
+from Matt Gemmell);
 
 1. You can use the code wherever you wish.
 2. You can modify the code as much as you want and use the modified code wherever you wish.
@@ -88,9 +68,8 @@ letter from Apple (TM) legal however, the name **iSyncIt** will remain.
 
 Conclusion
 ----------
-This document is somewhat rambling for a README file, hopefully I have gotten my points across in a
-suitable fashion so feel free to fork, improve and reuse all the code contained within this repository.
-Hopefully at least some of the code will be helpful to new developers - perhaps even veteran developers.
+Feel free to fork, improve and reuse all the code contained within this repository. Hopefully, at least
+some of the code will be helpful to new developers - perhaps even veteran developers.
 
 If you find any mistakes, problems or want to get your improvements into a release feel free to contact
 me using the information below (or through GitHub).
