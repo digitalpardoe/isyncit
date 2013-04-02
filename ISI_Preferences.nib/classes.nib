@@ -2,7 +2,11 @@
     IBClasses = (
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
-            ACTIONS = {"pref_Act_AddToLogin" = id; "pref_Act_PerformCleanup" = id; }; 
+            ACTIONS = {
+                "pref_Act_AddToLogin" = id; 
+                "pref_Act_PerformCleanup" = id; 
+                "pref_Act_SwitchBluetooth" = id; 
+            }; 
             CLASS = "ISI_PrefController"; 
             LANGUAGE = ObjC; 
             OUTLETS = {"pref_Out_BTControlOption" = NSButton; }; 

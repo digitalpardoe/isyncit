@@ -16,6 +16,8 @@
     IBOutlet NSButton *pref_Out_BTControlOption;
 }
 
+- (IBAction)pref_Act_SwitchBluetooth:(id)sender;
+
 - (IBAction)pref_Act_PerformCleanup:(id)sender;
 
 - (IBAction)pref_Act_AddToLogin:(id)sender;

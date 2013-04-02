@@ -4,7 +4,7 @@
         {
             CLASS = "ISI_ChangeLogController"; 
             LANGUAGE = ObjC; 
-            OUTLETS = {"changeLog_Out_Window" = NSWindow; }; 
+            OUTLETS = {"changeLog_Out_TextView" = NSTextView; "changeLog_Out_Window" = NSWindow; }; 
             SUPERCLASS = NSObject; 
         }, 
         {

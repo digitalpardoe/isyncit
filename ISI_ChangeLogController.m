@@ -15,6 +15,17 @@
 - (void)awakeFromNib
 {
 	[changeLog_Out_Window center];
+	
+	NSBundle * myMainBundle = [NSBundle mainBundle];
+	NSString * rtfFilePath = [myMainBundle pathForResource:@"ChangeLog" ofType:@"rtf"];
+	[changeLog_Out_TextView readRTFDFromFile:rtfFilePath];
+}
+
+- (void)dealloc
+{
+	[changeLog_Out_Window release];
+	[changeLog_Out_TextView release];
+	[super dealloc];
 }
 
 @end

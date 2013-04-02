@@ -24,7 +24,6 @@
 	NSRect panel2Bounds;
 	NSRect panel3Bounds;
 	NSRect panel4Bounds;
-
 }
 
 - (NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSString *)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag;

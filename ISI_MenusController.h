@@ -12,6 +12,7 @@
 #import "ISI_Bluetooth.h"
 #import "ISI_WindowController.h"
 #import "ISI_Sync.h"
+#import "ISI_StartupChecks.h"
 
 @interface ISI_MenusController : NSObject
 {

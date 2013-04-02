@@ -42,6 +42,9 @@ int syncNow(BOOL defaultsValue)
 		}
 	}
 	
+	[syncNowString release];
+	[syncNowScript release];
+	
 	// Return to main program.
 	return EXIT_SUCCESS;
 }

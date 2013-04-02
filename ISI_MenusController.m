@@ -36,6 +36,12 @@
 	// Read the bluetooth settings from user defaults.
 	defaults = [NSUserDefaults standardUserDefaults];
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
+	
+	// Pull to front, mainly for first runs.
+	[NSApp activateIgnoringOtherApps:YES];
+	
+	// First run, start-up checks.
+	startupChecks();
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender
@@ -84,7 +90,6 @@
 
 - (IBAction)menuMM_Act_SyncNow:(id)sender
 {
-	//[self syncNow:(id)sender];
 	syncNow(enableBluetooth);
 }
 
@@ -137,10 +142,9 @@
 			}
 		}
 	}
-
 }
 
-- (void) dealloc
+- (void)dealloc
 {
 	// De-allocate the necessary resources.
 	[menuBT_Out_SendFile release];
@@ -149,6 +153,9 @@
     [menuMM_Out release];
     [menuMM_Out_Bluetooth release];
     [menuMM_Out_SyncNow release];
+	[menuMM_Out release];
+	[menuBarItem release];
+	[defaults release];
 	[super dealloc];
 }
 

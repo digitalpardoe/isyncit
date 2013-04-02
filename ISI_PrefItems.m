@@ -32,7 +32,6 @@ static void addToolbarItem(NSMutableDictionary *theDict,NSString *identifier,NSS
 	[theDict setObject:item forKey:identifier];
 }
 
-
 float ToolbarHeightForWindow(NSWindow *window)
 {
 	// Calculates the toolbar height so it doesn't look out of proportion.
@@ -49,7 +48,6 @@ float ToolbarHeightForWindow(NSWindow *window)
 	
     return toolbarHeight;
 }
-
 
 void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSString * windowTitle, NSWindow *window)
 {
@@ -71,7 +69,6 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
    [window setFrame:newWindowFrame display:YES animate:YES];
 }
 
-
 @implementation ISI_PrefItems
 
 - (IBAction) showPanel1:(id)sender {
@@ -90,7 +87,6 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	showPanelNumber(4, panel4Bounds, prefsPanel4, @"Login Item", window);
 }
 
-
 -(void)awakeFromNib
 {
 	// Initialise the toolbar items and set up the toolbar.
@@ -106,7 +102,7 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	addToolbarItem(toolbarItems,@"BluetoothPrefs",@"Bluetooth",@"Bluetooth",@"This allows bluetooth control options to be set.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Bluetooth.tif"],@selector(showPanel1:),NULL);
 	addToolbarItem(toolbarItems,@"OldFilesPrefs",@"Old Files",@"Old Files",@"This allows files from previous version to be removed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_OldFiles.tif"],@selector(showPanel2:),NULL);
 	addToolbarItem(toolbarItems,@"UpdatePrefs",@"Updates",@"Updates",@"This allows updates to be controlled.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Updates.tif"],@selector(showPanel3:),NULL);
-	addToolbarItem(toolbarItems,@"LoginPrefs",@"Login Item",@"LoginPrefs",@"This allows the login item to be installed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_LoginItem.tif"],@selector(showPanel4:),NULL);
+	addToolbarItem(toolbarItems,@"LoginPrefs",@"Login Item",@"Login Item",@"This allows the login item to be installed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_LoginItem.tif"],@selector(showPanel4:),NULL);
 
 	// Set the toolbar options.
 	[toolbar setDelegate:self];
@@ -129,12 +125,10 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	return YES;
 }
 
-
 - (BOOL)validateToolbarItem:(NSToolbarItem *)theItem
 {
     return YES;
 }
-
 
 - (NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSString *)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag
 {
@@ -176,7 +170,6 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	return [NSArray arrayWithObjects:@"BluetoothPrefs",@"OldFilesPrefs",@"LoginPrefs",NSToolbarSeparatorItemIdentifier,@"UpdatePrefs",nil];
 }
 
-
 - (NSArray *)toolbarAllowedItemIdentifiers:(NSToolbar*)toolbar
 {
 	// Can also have: NSToolbarSeparatorItemIdentifier.
@@ -186,6 +179,11 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 - (void)dealloc
 {
 	// De-allocate the necessary resources.
+	[window release];
+	[prefsPanel1 release];
+	[prefsPanel2 release];
+	[prefsPanel3 release];
+	[prefsPanel4 release];
 	[toolbarItems release];
     [super dealloc];
 }

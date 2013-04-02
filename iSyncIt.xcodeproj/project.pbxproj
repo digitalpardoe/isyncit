@@ -11,6 +11,8 @@
 		FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */; };
 		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
 		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */; };
+		FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */; };
 		FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */; };
 		FA48CFA10A5D6B3200467826 /* ISI_MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */; };
 		FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -58,6 +60,9 @@
 		FA0DE6620A58607B0048564E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
 		FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
+		FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StartupChecks.h; sourceTree = "<group>"; };
+		FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StartupChecks.m; sourceTree = "<group>"; };
+		FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ChangeLog.rtf; sourceTree = "<group>"; };
 		FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_ChangeLogController.h; sourceTree = "<group>"; };
 		FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_ChangeLogController.m; sourceTree = "<group>"; };
 		FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIcon.png; sourceTree = "<group>"; };
@@ -171,6 +176,8 @@
 				FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */,
 				FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */,
 				FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */,
+				FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */,
+				FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 		FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */ = {
 			isa = PBXGroup;
 			children = (
+				FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */,
 				FA0DE6620A58607B0048564E /* Credits.rtf */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -287,6 +295,7 @@
 				FAF875B30A6A85CD00FDA7C1 /* ISI_OldFiles.tif in Resources */,
 				FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */,
 				FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */,
+				FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +314,7 @@
 				FAF8763E0A6A964600FDA7C1 /* ISI_PrefController.m in Sources */,
 				FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */,
 				FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */,
+				FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
