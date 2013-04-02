@@ -22,7 +22,7 @@
     IBOutlet NSMenuItem *menuBT_Out_TurnOn;
     IBOutlet NSMenu *menuMM_Out;
     IBOutlet NSMenuItem *menuMM_Out_Bluetooth;
-    IBOutlet NSMenuItem *menuMM_Out_SyncNow;
+    IBOutlet NSMenuItem *menuMM_Out_LastSync;
 	IBOutlet NSMenuItem *menuMM_Out_CheckUpdates;
 	
 	NSStatusItem *menuBarItem;
@@ -33,6 +33,12 @@
 	
 	ISI_Scheduling *schedulingControl;
 }
+
+- (void)initialiseMenu;
+
+- (void)changeMenu;
+
+- (void)readMenuDefaults;
 
 - (IBAction)menuBM_Act_SendFile:(id)sender;
 

@@ -15,6 +15,10 @@
 // Perform the syncing and the controlling of the bluetooth.
 int syncNow(BOOL defaultsValue)
 {
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setObject:[NSDate date] forKey:@"ISI_LastSync"];
+	[[NSUserDefaults standardUserDefaults] synchronize];
+	
 	// Stores the current status of the bluetooth power.
 	char *currentStatus[3];
 	

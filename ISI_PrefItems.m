@@ -72,23 +72,23 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 @implementation ISI_PrefItems
 
 - (IBAction) showPanel1:(id)sender {
-	showPanelNumber(1, panel1Bounds, prefsPanel1, @"Bluetooth", window);
+	showPanelNumber(1, panel1Bounds, prefsPanel1, NSLocalizedString(@"Bluetooth", nil), window);
 }
    
 - (IBAction) showPanel3:(id)sender {
-	showPanelNumber(3, panel3Bounds, prefsPanel3, @"Updates", window);
+	showPanelNumber(3, panel3Bounds, prefsPanel3, NSLocalizedString(@"Updates", nil), window);
 }
 
 - (IBAction) showPanel4:(id)sender {
-	showPanelNumber(4, panel4Bounds, prefsPanel4, @"Login Item", window);
+	showPanelNumber(4, panel4Bounds, prefsPanel4, NSLocalizedString(@"Login Item", nil), window);
 }
 
 - (IBAction) showPanel5:(id)sender {
-	showPanelNumber(5, panel5Bounds, prefsPanel5, @"Menu Icon", window);
+	showPanelNumber(5, panel5Bounds, prefsPanel5, NSLocalizedString(@"Menu Icon", nil), window);
 }
 
 - (IBAction) showPanel6:(id)sender {
-	showPanelNumber(6, panel6Bounds, prefsPanel6, @"Scheduling", window);
+	showPanelNumber(6, panel6Bounds, prefsPanel6, NSLocalizedString(@"Scheduling", nil), window);
 }
 
 -(void)awakeFromNib
@@ -104,11 +104,11 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 
 	toolbarItems=[[NSMutableDictionary dictionary] retain];
                                                                                                                                                                                                                                        
-	addToolbarItem(toolbarItems,@"BluetoothPrefs",@"Bluetooth",@"Bluetooth",@"This allows bluetooth control options to be set.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Bluetooth.tif"],@selector(showPanel1:),NULL);
-	addToolbarItem(toolbarItems,@"UpdatePrefs",@"Updates",@"Updates",@"This allows updates to be controlled.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Updates.tif"],@selector(showPanel3:),NULL);
-	addToolbarItem(toolbarItems,@"LoginPrefs",@"Login Item",@"Login Item",@"This allows the login item to be installed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_LoginItem.tif"],@selector(showPanel4:),NULL);
-	addToolbarItem(toolbarItems,@"MenuIconPrefs",@"Menu Icon",@"Menu Icon",@"This allows the menu bar icon to be changed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_MenuIconItem.tif"],@selector(showPanel5:),NULL);
-	addToolbarItem(toolbarItems,@"SchedulingPrefs",@"Scheduling",@"Scheduling",@"This allows the syncing cycle to be enabled and changed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Scheduling.tif"],@selector(showPanel6:),NULL);
+	addToolbarItem(toolbarItems,@"BluetoothPrefs", NSLocalizedString(@"Bluetooth", nil), NSLocalizedString(@"Bluetooth", nil), NSLocalizedString(@"This allows bluetooth control options to be set.", nil), self, @selector(setImage:), [NSImage imageNamed:@"ISI_Bluetooth.tif"], @selector(showPanel1:), NULL);
+	addToolbarItem(toolbarItems,@"UpdatePrefs", NSLocalizedString(@"Updates", nil), NSLocalizedString(@"Updates", nil), NSLocalizedString(@"This allows updates to be controlled.", nil), self, @selector(setImage:), [NSImage imageNamed:@"ISI_Updates.tif"], @selector(showPanel3:), NULL);
+	addToolbarItem(toolbarItems,@"LoginPrefs", NSLocalizedString(@"Login Item", nil), NSLocalizedString(@"Login Item", nil), NSLocalizedString(@"This allows the login item to be installed.", nil), self, @selector(setImage:), [NSImage imageNamed:@"ISI_LoginItem.tif"], @selector(showPanel4:), NULL);
+	addToolbarItem(toolbarItems,@"MenuIconPrefs", NSLocalizedString(@"Menu Icon", nil), NSLocalizedString(@"Menu Icon", nil), NSLocalizedString(@"This allows the menu bar icon to be changed.", nil), self, @selector(setImage:), [NSImage imageNamed:@"ISI_MenuIconItem.tif"], @selector(showPanel5:), NULL);
+	addToolbarItem(toolbarItems,@"SchedulingPrefs", NSLocalizedString(@"Scheduling", nil), NSLocalizedString(@"Scheduling", nil), NSLocalizedString(@"This allows the syncing cycle to be enabled and changed.", nil), self, @selector(setImage:), [NSImage imageNamed:@"ISI_Scheduling.tif"], @selector(showPanel6:), NULL);
 
 	// Set the toolbar options.
 	[toolbar setDelegate:self];

@@ -1,0 +1,90 @@
+/* No comment provided by engineer. */
+"A lot of effort goes into writing and testing iSyncIt. If you like the results please consider making a donation via the button on the right of the website." = "Es steckt viel Arbeit im programmieren und testen und weiterentwickeln von iSyncIt. Falls ihnen die Software gefällt, überlegen Sie sich vielleicht etwas über den Knopf auf der Webseite zu spenden.";
+
+/* No comment provided by engineer. */
+"Alternate Icon" = "Alternatives Icon";
+
+/* No comment provided by engineer. */
+"Bluetooth" = "Bluetooth";
+
+/* No comment provided by engineer. */
+"Check for updates on startup?" = "Beim Starten nach Updates suchen?";
+
+/* No comment provided by engineer. */
+"Don't Enable" = "Nicht aktivieren";
+
+/* No comment provided by engineer. */
+"Donate" = "Spenden";
+
+/* No comment provided by engineer. */
+"Enable" = "Aktivieren";
+
+/* No comment provided by engineer. */
+"Enable automatic bluetooth control?" = "Automatische Bluetooth Steuerung aktivieren?";
+
+/* No comment provided by engineer. */
+"Login Item" = "Startobjekt";
+
+/* No comment provided by engineer. */
+"Menu Icon" = "Menuicon";
+
+/* No comment provided by engineer. */
+"No" = "Nein";
+
+/* No comment provided by engineer. */
+"Not Now" = "Nicht jetzt";
+
+/* No comment provided by engineer. */
+"Original Icon" = "Orginal Icon";
+
+/* No comment provided by engineer. */
+"Please make a donation by clicking the button on the right hand side of the website." = "Machen Sie bitte eine Spende über den Knopf auf der rechten Seite der Webseite.";
+
+/* No comment provided by engineer. */
+"Scheduling" = "Zeitplan";
+
+/* No comment provided by engineer. */
+"This allows bluetooth control options to be set." = "Einstellungen der Bluetooth Steuerung.";
+
+/* No comment provided by engineer. */
+"This allows the login item to be installed." = "Diese Einstellung fügt iSyncIt als Startobjekt hinzu.";
+
+/* No comment provided by engineer. */
+"This allows the menu bar icon to be changed." = "Hierdurch wird das Menuleisten-Icon geändert.";
+
+/* No comment provided by engineer. */
+"This allows the syncing cycle to be enabled and changed." = "Hiermit wird der Synchronisationszyklus aktiviert und gesteuert.";
+
+/* No comment provided by engineer. */
+"This allows updates to be controlled." = "Diese Einstellung erlaubt Updates zu kontrollieren.";
+
+/* No comment provided by engineer. */
+"Turn Off" = "Ausschalten";
+
+/* No comment provided by engineer. */
+"Turn On" = "Einschalten";
+
+/* No comment provided by engineer. */
+"Updates" = "Updates";
+
+/* No comment provided by engineer. */
+"Use alternate menu bar icon?" = "Alternatives Menuleisten-Icon benutzen?";
+
+/* No comment provided by engineer. */
+"Would you like bluetooth to be automatically controlled by iSyncIt during syncing?" = "Möchten Sie, dass Bluetooth automatisch von iSyncIt gesteuert wird?";
+
+/* No comment provided by engineer. */
+"Would you like iSyncIt to check for updates on startup? If not, you can initiate the check manually from the application menu" = "Möchten Sie, dass iSyncIt beim Programmstart nach Updates sucht? Falls nicht, können Sie die Überprüfung manuell aus dem Optionsmenu starten.";
+
+/* No comment provided by engineer. */
+"Would you like to donate?" = "Möchten Sie für spenden?";
+
+/* No comment provided by engineer. */
+"Would you like to use the alternate (colourful) menu bar icon?" = "Möchten Sie das alternative (bunte) Menuleisten-Icon benutzen?";
+
+/* No comment provided by engineer. */
+"Yes" = "Ja";
+
+/* No comment provided by engineer. */
+"Last Sync" = "Letztes Synchronisieren";
+

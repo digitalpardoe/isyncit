@@ -14,12 +14,29 @@
 
 - (void)awakeFromNib
 {
+	// First run, start-up checks.
+	startupChecks();
+	
 	// Load the user preferences file into memory.
 	defaults = [NSUserDefaults standardUserDefaults];
 	
-	// Read the icon settings from user defaults.
-	menuBarIcon = [defaults boolForKey:@"ISI_AlternateMenuBarItem"];
+	[self readMenuDefaults];
 	
+	[self initialiseMenu];
+
+	// Read the bluetooth settings from user defaults.
+	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
+	
+	// Pull to front, mainly for first runs.
+	[NSApp activateIgnoringOtherApps:YES];
+	
+	// Start the scheduler.
+	schedulingControl = [[ISI_Scheduling alloc] init];
+	[schedulingControl goSchedule];
+}
+
+- (void)initialiseMenu
+{
 	// Fill the menu bar item.
     menuBarItem = [[[NSStatusBar systemStatusBar]
             statusItemWithLength:NSSquareStatusItemLength] retain];
@@ -27,13 +44,7 @@
 	// Set up the menu bar item & fill it.
     [menuBarItem setHighlightMode:YES];
 	
-	if (menuBarIcon == TRUE) {
-		[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIconAlternate"]];
-	}
-	
-	if (menuBarIcon == FALSE) {
-		[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIcon"]];
-	}
+	[self changeMenu];
 	
 	/* 
 	 * To set the status bar item as text use:
@@ -45,19 +56,32 @@
 	// Initialise the menu bar so the user can operate the program.
     [menuBarItem setMenu:menuMM_Out];
     [menuBarItem setEnabled:YES];
+}
+
+- (void)readMenuDefaults
+{
+	// Read the icon settings from user defaults.
+	menuBarIcon = [defaults boolForKey:@"ISI_AlternateMenuBarItem"];
+}
+
+- (void)changeMenu
+{
+	if (menuBarIcon == TRUE) {
+		if ((BTPowerState() ? "on" : "off") == "off") {
+			[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIconAlternate"]];
+		} else {
+			[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIconAlternate_On"]]; 
+		}
+	} else {
+		if ((BTPowerState() ? "on" : "off") == "off") {
+			[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIcon"]];
+		} else {
+			 [menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIcon_On"]];
+		}
+	}
 	
-	// Read the bluetooth settings from user defaults.
-	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
-	
-	// Pull to front, mainly for first runs.
-	[NSApp activateIgnoringOtherApps:YES];
-	
-	// First run, start-up checks.
-	startupChecks();
-	
-	// Start the scheduler.
-	schedulingControl = [[ISI_Scheduling alloc] init];
-	[schedulingControl goSchedule];
+	NSString *tempString = [@"" stringByAppendingString:[[defaults objectForKey:@"ISI_LastSync"] descriptionWithCalendarFormat:@"%a %d %b, %H:%M" timeZone:nil locale:nil]];
+	[menuMM_Out_LastSync setTitle:[[[@"" stringByAppendingString:NSLocalizedString(@"Last Sync", nil)] stringByAppendingString:@": "] stringByAppendingString:tempString]];
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender
@@ -86,6 +110,8 @@
 			BTSetPowerState(1);
 		}
 	}
+	
+	[self changeMenu];
 }
 
 - (IBAction)menuMM_Act_ChangeLog:(id)sender
@@ -107,6 +133,8 @@
 - (IBAction)menuMM_Act_SyncNow:(id)sender
 {
 	syncNow(enableBluetooth);
+	[self readMenuDefaults];
+	[self changeMenu];
 }
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender
@@ -138,7 +166,7 @@
 		
 		// Enables the menu items and sets the bluetooth control menu item title if the bluetooth is turned on.
 		if ((BTPowerState() ? "on" : "off") == "on") {
-			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:@"Turn Off"]];
+			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:NSLocalizedString(@"Turn Off", nil)]];
 			if (menuItem == menuBT_Out_SendFile) {
 				return YES;
 			}
@@ -149,7 +177,7 @@
 		
 		// Disables the menu items and sets the bluetooth control menu item title if the bluetooth is turned off.
 		if ((BTPowerState() ? "on" : "off") == "off") {
-			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:@"Turn On"]];
+			[menuBT_Out_TurnOn setTitle:[NSString stringWithFormat:NSLocalizedString(@"Turn On", nil)]];
 			if (menuItem == menuBT_Out_SendFile) {
 				return NO;
 			}
@@ -165,7 +193,7 @@
 	// Forces the user into donation.
 	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
 	[NSApp activateIgnoringOtherApps:YES];
-	donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Making a donation.", [NSString stringWithFormat:@"Please make a donation by clicking the button on the right hand side of the website."], @"Donate", nil, nil) == NSAlertDefaultReturn];
+	donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Making a donation.", [NSString stringWithFormat:NSLocalizedString(@"Please make a donation by clicking the button on the right hand side of the website.", nil)], NSLocalizedString(@"Donate", nil), nil, nil) == NSAlertDefaultReturn];
 	if (donateChecking) {
 		[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"http://digitalpardoe.co.uk/"]];
 	}
@@ -180,7 +208,7 @@
     [menuBT_Out_TurnOn release];
     [menuMM_Out release];
     [menuMM_Out_Bluetooth release];
-    [menuMM_Out_SyncNow release];
+    [menuMM_Out_LastSync release];
 	[menuMM_Out release];
 	[menuBarItem release];
 	[schedulingControl release];
