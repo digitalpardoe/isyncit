@@ -14,16 +14,18 @@
 {
     IBOutlet id window;
 	IBOutlet NSView *prefsPanel1;
-    IBOutlet NSView *prefsPanel2;
 	IBOutlet NSView *prefsPanel3;
 	IBOutlet NSView *prefsPanel4;
+	IBOutlet NSView *prefsPanel5;
+	IBOutlet NSView *prefsPanel6;
 	
 	NSMutableDictionary *toolbarItems;
 		
 	NSRect panel1Bounds;
-	NSRect panel2Bounds;
 	NSRect panel3Bounds;
 	NSRect panel4Bounds;
+	NSRect panel5Bounds;
+	NSRect panel6Bounds;
 }
 
 - (NSToolbarItem *)toolbar:(NSToolbar *)toolbar itemForItemIdentifier:(NSString *)itemIdentifier willBeInsertedIntoToolbar:(BOOL)flag;

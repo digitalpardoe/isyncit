@@ -11,6 +11,9 @@
 		FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */; };
 		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
 		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		FA364F190AC7BAE0004949DC /* ISI_MenuIconItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */; };
+		FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate.png in Resources */ = {isa = PBXBuildFile; fileRef = FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate.png */; };
+		FA3FF2620BB4918E00F489EA /* ISI_Scheduling.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */; };
 		FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */; };
 		FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */; };
 		FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */; };
@@ -25,6 +28,10 @@
 		FAB950E50A681178008669D9 /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E20A681177008669D9 /* ISI_Menus.nib */; };
 		FAB950E60A681178008669D9 /* ISI_Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E30A681177008669D9 /* ISI_Preferences.nib */; };
 		FAB951140A6826AD008669D9 /* ISI_MenusController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB951120A6826AD008669D9 /* ISI_MenusController.m */; };
+		FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE219250C4E3B0400672183 /* ISI_Scheduling.m */; };
+		FAE21C400C4E68C400672183 /* relaunch.app in Resources */ = {isa = PBXBuildFile; fileRef = FAE21C3F0C4E68C400672183 /* relaunch.app */; };
+		FAE21C430C4E68D900672183 /* NSApplicationAdditions.h in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */; };
+		FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */; };
 		FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */; };
 		FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */; };
 		FAF875B30A6A85CD00FDA7C1 /* ISI_OldFiles.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875B00A6A85CD00FDA7C1 /* ISI_OldFiles.tif */; };
@@ -43,6 +50,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */,
+				FAE21C430C4E68D900672183 /* NSApplicationAdditions.h in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +68,9 @@
 		FA0DE6620A58607B0048564E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
 		FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
+		FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_MenuIconItem.tif; sourceTree = "<group>"; };
+		FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIconAlternate.png; sourceTree = "<group>"; };
+		FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Scheduling.tif; sourceTree = "<group>"; };
 		FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StartupChecks.h; sourceTree = "<group>"; };
 		FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StartupChecks.m; sourceTree = "<group>"; };
 		FA40A9E60AA0C27F006589FF /* ChangeLog.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ChangeLog.rtf; sourceTree = "<group>"; };
@@ -76,6 +87,11 @@
 		FAB950E30A681177008669D9 /* ISI_Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Preferences.nib; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
 		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
+		FAE219240C4E3B0400672183 /* ISI_Scheduling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Scheduling.h; sourceTree = "<group>"; };
+		FAE219250C4E3B0400672183 /* ISI_Scheduling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Scheduling.m; sourceTree = "<group>"; };
+		FAE21C3F0C4E68C400672183 /* relaunch.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = relaunch.app; sourceTree = "<group>"; };
+		FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NSApplicationAdditions.h; sourceTree = "<group>"; };
+		FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSApplicationAdditions.m; sourceTree = "<group>"; };
 		FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_PrefItems.h; sourceTree = "<group>"; };
 		FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefItems.m; sourceTree = "<group>"; };
 		FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Bluetooth.tif; sourceTree = "<group>"; };
@@ -110,6 +126,7 @@
 				FAE9AA320A6EBD4F00CF5F76 /* Preferences */,
 				FAE9AA340A6EBD8100CF5F76 /* Change Log */,
 				FAE9AA350A6EBDB800CF5F76 /* Misc */,
+				FAE21C450C4E68E800672183 /* Relaunch */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -139,6 +156,7 @@
 				FAE9AA370A6EBDDE00CF5F76 /* Images */,
 				FAE9AA360A6EBDCD00CF5F76 /* Interface */,
 				FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */,
+				FAE21C3F0C4E68C400672183 /* relaunch.app */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -152,6 +170,15 @@
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAE21C450C4E68E800672183 /* Relaunch */ = {
+			isa = PBXGroup;
+			children = (
+				FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */,
+				FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */,
+			);
+			name = Relaunch;
 			sourceTree = "<group>";
 		};
 		FAE9AA320A6EBD4F00CF5F76 /* Preferences */ = {
@@ -178,6 +205,8 @@
 				FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */,
 				FA40A78D0AA0AB48006589FF /* ISI_StartupChecks.h */,
 				FA40A78E0AA0AB48006589FF /* ISI_StartupChecks.m */,
+				FAE219240C4E3B0400672183 /* ISI_Scheduling.h */,
+				FAE219250C4E3B0400672183 /* ISI_Scheduling.m */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -215,6 +244,7 @@
 			children = (
 				FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */,
 				FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */,
+				FA3ECBAB0AC7B5C900788967 /* ISI_MenuIconAlternate.png */,
 				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
 			);
 			name = Images;
@@ -234,6 +264,8 @@
 		FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				FA3FF2610BB4918E00F489EA /* ISI_Scheduling.tif */,
+				FA364F180AC7BAE0004949DC /* ISI_MenuIconItem.tif */,
 				FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */,
 				FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */,
 				FAF875B00A6A85CD00FDA7C1 /* ISI_OldFiles.tif */,
@@ -296,6 +328,10 @@
 				FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */,
 				FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */,
 				FA40A9E70AA0C27F006589FF /* ChangeLog.rtf in Resources */,
+				FA3ECBAC0AC7B5C900788967 /* ISI_MenuIconAlternate.png in Resources */,
+				FA364F190AC7BAE0004949DC /* ISI_MenuIconItem.tif in Resources */,
+				FA3FF2620BB4918E00F489EA /* ISI_Scheduling.tif in Resources */,
+				FAE21C400C4E68C400672183 /* relaunch.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +351,8 @@
 				FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */,
 				FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */,
 				FA40A7900AA0AB48006589FF /* ISI_StartupChecks.m in Sources */,
+				FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */,
+				FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

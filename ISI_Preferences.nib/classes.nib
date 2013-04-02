@@ -3,13 +3,19 @@
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
         {
             ACTIONS = {
+                "pref_Act_ActivateSchedule" = id; 
                 "pref_Act_AddToLogin" = id; 
+                "pref_Act_ChangeSchedule" = id; 
                 "pref_Act_PerformCleanup" = id; 
+                "pref_Act_RestartApp" = id; 
                 "pref_Act_SwitchBluetooth" = id; 
             }; 
             CLASS = "ISI_PrefController"; 
             LANGUAGE = ObjC; 
-            OUTLETS = {"pref_Out_BTControlOption" = NSButton; }; 
+            OUTLETS = {
+                "pref_Out_BTControlOption" = NSButton; 
+                "pref_Out_SchedulingCombo" = NSComboBox; 
+            }; 
             SUPERCLASS = NSObject; 
         }, 
         {
@@ -17,9 +23,10 @@
             LANGUAGE = ObjC; 
             OUTLETS = {
                 prefsPanel1 = NSView; 
-                prefsPanel2 = NSView; 
                 prefsPanel3 = NSView; 
                 prefsPanel4 = NSView; 
+                prefsPanel5 = NSView; 
+                prefsPanel6 = NSView; 
                 window = id; 
             }; 
             SUPERCLASS = NSObject; 

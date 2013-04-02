@@ -6,12 +6,10 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleGetInfoString</key>
-	<string>iSyncIt 1.0, Copyright © digital:pardoe, 2006 - 2007</string>
 	<key>CFBundleIconFile</key>
-	<string>ISI_Icon.icns</string>
+	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>co.uk.digitalpardoe.iSyncIt</string>
+	<string>ch.epfl.cluthi.relaunch</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,18 +17,14 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
-	<string>????</string>
+	<string>ReLa</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>LSUIElement</key>
+    <string>1</string>
 	<key>NSMainNibFile</key>
-	<string>ISI_Menus</string>
+	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSUIElement</key>
-	<string>1</string>
-	<key>SUCheckAtStartup</key>
-	<false/>
-	<key>SUFeedURL</key>
-	<string>http://digitalpardoe.co.uk/appcast/main/iSyncIt</string>
 </dict>
 </plist>

@@ -13,6 +13,7 @@
 #import "ISI_WindowController.h"
 #import "ISI_Sync.h"
 #import "ISI_StartupChecks.h"
+#import "ISI_Scheduling.h"
 
 @interface ISI_MenusController : NSObject
 {
@@ -28,6 +29,9 @@
 	
 	NSUserDefaults *defaults;
 	BOOL enableBluetooth;
+	BOOL menuBarIcon;
+	
+	ISI_Scheduling *schedulingControl;
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender;

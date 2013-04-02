@@ -18,6 +18,14 @@
 	if (!IOBluetoothPreferencesAvailable()) {
 		[pref_Out_BTControlOption setEnabled:NO];
 	}
+	
+	if (![[NSUserDefaults standardUserDefaults] boolForKey:@"ISI_EnableScheduling"]) {
+		[pref_Out_SchedulingCombo setEnabled:NO];
+		enableScheduling = NO;
+	} else {
+		[pref_Out_SchedulingCombo setEnabled:YES];
+		enableScheduling = YES;
+	}
 }
 
 - (IBAction)pref_Act_SwitchBluetooth:(id)sender
@@ -41,9 +49,42 @@
 	[addToLogin executeAndReturnError:nil];
 }
 
+- (IBAction)pref_Act_ActivateSchedule:(id)sender
+{
+	ISI_Scheduling *schedulingControl = [[ISI_Scheduling alloc] init];
+
+	if (!enableScheduling) {
+		[pref_Out_SchedulingCombo setEnabled:YES];
+		enableScheduling = YES;
+		
+		if ([[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_SchedulingSettings"] == nil)
+		{
+			[[NSUserDefaults standardUserDefaults] setObject:@"15" forKey:@"ISI_SchedulingSettings"];
+		}
+		
+		[[NSUserDefaults standardUserDefaults] synchronize];
+		
+	} else {
+		[pref_Out_SchedulingCombo setEnabled:NO];
+		enableScheduling = NO;
+	}
+
+}
+
+- (IBAction)pref_Act_ChangeSchedule:(id)sender
+{
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (IBAction)pref_Act_RestartApp:(id)sender
+{
+	[[NSApplication sharedApplication] relaunch:self];
+}
+
 - (void)dealloc
 {
 	[pref_Out_BTControlOption release];
+	[pref_Out_SchedulingCombo release];
 	[super dealloc];
 }
 

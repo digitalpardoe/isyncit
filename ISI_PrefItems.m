@@ -75,10 +75,6 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	showPanelNumber(1, panel1Bounds, prefsPanel1, @"Bluetooth", window);
 }
    
-- (IBAction) showPanel2:(id)sender {
-	showPanelNumber(2, panel2Bounds, prefsPanel2, @"Old Files", window);
-}
-
 - (IBAction) showPanel3:(id)sender {
 	showPanelNumber(3, panel3Bounds, prefsPanel3, @"Updates", window);
 }
@@ -87,27 +83,37 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	showPanelNumber(4, panel4Bounds, prefsPanel4, @"Login Item", window);
 }
 
+- (IBAction) showPanel5:(id)sender {
+	showPanelNumber(5, panel5Bounds, prefsPanel5, @"Menu Icon", window);
+}
+
+- (IBAction) showPanel6:(id)sender {
+	showPanelNumber(6, panel6Bounds, prefsPanel6, @"Scheduling", window);
+}
+
 -(void)awakeFromNib
 {
 	// Initialise the toolbar items and set up the toolbar.
 	panel1Bounds = [prefsPanel1 bounds];
-	panel2Bounds = [prefsPanel2 bounds];
 	panel3Bounds = [prefsPanel3 bounds];
 	panel4Bounds = [prefsPanel4 bounds];
+	panel5Bounds = [prefsPanel5 bounds];
+	panel6Bounds = [prefsPanel6 bounds];
 
 	NSToolbar *toolbar=[[[NSToolbar alloc] initWithIdentifier:@"myToolbar"] autorelease];
 
 	toolbarItems=[[NSMutableDictionary dictionary] retain];
                                                                                                                                                                                                                                        
 	addToolbarItem(toolbarItems,@"BluetoothPrefs",@"Bluetooth",@"Bluetooth",@"This allows bluetooth control options to be set.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Bluetooth.tif"],@selector(showPanel1:),NULL);
-	addToolbarItem(toolbarItems,@"OldFilesPrefs",@"Old Files",@"Old Files",@"This allows files from previous version to be removed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_OldFiles.tif"],@selector(showPanel2:),NULL);
 	addToolbarItem(toolbarItems,@"UpdatePrefs",@"Updates",@"Updates",@"This allows updates to be controlled.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Updates.tif"],@selector(showPanel3:),NULL);
 	addToolbarItem(toolbarItems,@"LoginPrefs",@"Login Item",@"Login Item",@"This allows the login item to be installed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_LoginItem.tif"],@selector(showPanel4:),NULL);
+	addToolbarItem(toolbarItems,@"MenuIconPrefs",@"Menu Icon",@"Menu Icon",@"This allows the menu bar icon to be changed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_MenuIconItem.tif"],@selector(showPanel5:),NULL);
+	addToolbarItem(toolbarItems,@"SchedulingPrefs",@"Scheduling",@"Scheduling",@"This allows the syncing cycle to be enabled and changed.",self,@selector(setImage:),[NSImage imageNamed:@"ISI_Scheduling.tif"],@selector(showPanel6:),NULL);
 
 	// Set the toolbar options.
 	[toolbar setDelegate:self];
-	[toolbar setAllowsUserCustomization:YES];
-	[toolbar setAutosavesConfiguration:YES];
+	[toolbar setAllowsUserCustomization:NO];
+	[toolbar setAutosavesConfiguration:NO];
 
 	[toolbar setDisplayMode: NSToolbarDisplayModeIconAndLabel];
 	[toolbar setSizeMode:NSToolbarSizeModeRegular];
@@ -161,19 +167,19 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 
 - (NSArray *)toolbarSelectableItemIdentifiers: (NSToolbar *)toolbar;
 {
-	return [NSArray arrayWithObjects:@"BluetoothPrefs",@"OldFilesPrefs",@"UpdatePrefs",@"LoginPrefs",nil];
+	return [NSArray arrayWithObjects:@"BluetoothPrefs",@"UpdatePrefs",@"LoginPrefs",@"MenuIconPrefs",@"SchedulingPrefs",nil];
 }
 
 - (NSArray *)toolbarDefaultItemIdentifiers:(NSToolbar*)toolbar
 {
 	// Can also have: NSToolbarSeparatorItemIdentifier.
-	return [NSArray arrayWithObjects:@"BluetoothPrefs",@"OldFilesPrefs",@"LoginPrefs",NSToolbarSeparatorItemIdentifier,@"UpdatePrefs",nil];
+	return [NSArray arrayWithObjects:@"BluetoothPrefs",NSToolbarFlexibleSpaceItemIdentifier,@"LoginPrefs",@"MenuIconPrefs",@"SchedulingPrefs",NSToolbarFlexibleSpaceItemIdentifier,@"UpdatePrefs",nil];
 }
 
 - (NSArray *)toolbarAllowedItemIdentifiers:(NSToolbar*)toolbar
 {
 	// Can also have: NSToolbarSeparatorItemIdentifier.
-    return [NSArray arrayWithObjects:@"BluetoothPrefs",@"OldFilesPrefs",@"LoginPrefs",@"UpdatePrefs",NSToolbarSeparatorItemIdentifier,NSToolbarFlexibleSpaceItemIdentifier,NSToolbarSpaceItemIdentifier,NSToolbarCustomizeToolbarItemIdentifier,nil];
+    return [NSArray arrayWithObjects:@"BluetoothPrefs",@"LoginPrefs",@"UpdatePrefs",@"MenuIconPrefs",@"SchedulingPrefs",NSToolbarSeparatorItemIdentifier,NSToolbarFlexibleSpaceItemIdentifier,NSToolbarSpaceItemIdentifier,NSToolbarCustomizeToolbarItemIdentifier,nil];
 }
 
 - (void)dealloc
@@ -181,9 +187,10 @@ void showPanelNumber(int panelNumber, NSRect viewBounds, NSView *viewPanel, NSSt
 	// De-allocate the necessary resources.
 	[window release];
 	[prefsPanel1 release];
-	[prefsPanel2 release];
 	[prefsPanel3 release];
 	[prefsPanel4 release];
+	[prefsPanel5 release];
+	[prefsPanel6 release];
 	[toolbarItems release];
     [super dealloc];
 }

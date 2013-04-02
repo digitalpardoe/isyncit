@@ -14,13 +14,26 @@
 
 - (void)awakeFromNib
 {
+	// Load the user preferences file into memory.
+	defaults = [NSUserDefaults standardUserDefaults];
+	
+	// Read the icon settings from user defaults.
+	menuBarIcon = [defaults boolForKey:@"ISI_AlternateMenuBarItem"];
+	
 	// Fill the menu bar item.
     menuBarItem = [[[NSStatusBar systemStatusBar]
             statusItemWithLength:NSSquareStatusItemLength] retain];
 	
 	// Set up the menu bar item & fill it.
     [menuBarItem setHighlightMode:YES];
-	[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIcon"]];
+	
+	if (menuBarIcon == TRUE) {
+		[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIconAlternate"]];
+	}
+	
+	if (menuBarIcon == FALSE) {
+		[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIcon"]];
+	}
 	
 	/* 
 	 * To set the status bar item as text use:
@@ -34,7 +47,6 @@
     [menuBarItem setEnabled:YES];
 	
 	// Read the bluetooth settings from user defaults.
-	defaults = [NSUserDefaults standardUserDefaults];
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
 	
 	// Pull to front, mainly for first runs.
@@ -42,6 +54,10 @@
 	
 	// First run, start-up checks.
 	startupChecks();
+	
+	// Start the scheduler.
+	schedulingControl = [[ISI_Scheduling alloc] init];
+	[schedulingControl goSchedule];
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender
@@ -155,6 +171,7 @@
     [menuMM_Out_SyncNow release];
 	[menuMM_Out release];
 	[menuBarItem release];
+	[schedulingControl release];
 	[defaults release];
 	[super dealloc];
 }
