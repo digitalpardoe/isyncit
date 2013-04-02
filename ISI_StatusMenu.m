@@ -23,20 +23,21 @@
     [statusItem setHighlightMode:YES];
 	
 	// Set the status bar item icon or text.
-    [statusItem setTitle:[NSString stringWithFormat:@"%C",0x27B2]];
+	[statusItem setImage:[NSImage imageNamed:@"ISI_MenuIcon"]];
 	 
 	/* 
-	 * To set the status bar item as an image create the image and use
-	 *		[statusItem setImage:[NSImage imageNamed:@"ISI_Menu"]];
-	 * instead of stringWithFormat.
+	 * To set the status bar item as text use:
+	 *		[statusItem setTitle:[NSString stringWithFormat:@"%C",0x27B2]];
+	 * instead of setImage.
 	 *
-	*/
+	 */
 	
+	// Set up the status bar item properties.
     [statusItem setMenu:theMenu];
     [statusItem setEnabled:YES];
 }
 
-// Remove the resouces when the application has been closed.
+// Perform operation to free resource allocations.
 -(void)dealloc
 {
 	

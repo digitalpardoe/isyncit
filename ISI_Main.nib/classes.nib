@@ -1,6 +1,12 @@
 {
     IBClasses = (
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {deleteOldVersion = id; }; 
+            CLASS = "ISI_Preferences"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
         {CLASS = "ISI_RoundedView"; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
         {
             CLASS = "ISI_StatusMenu"; 
@@ -9,9 +15,10 @@
             SUPERCLASS = NSObject; 
         }, 
         {
-            ACTIONS = {performSync = id; }; 
-            CLASS = "ISI_SyncController"; 
+            ACTIONS = {syncNow = id; }; 
+            CLASS = "ISI_Sync"; 
             LANGUAGE = ObjC; 
+            OUTLETS = {syncMenuItem = NSMenuItem; }; 
             SUPERCLASS = NSObject; 
         }, 
         {CLASS = "ISI_TransparentWindow"; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 

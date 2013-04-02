@@ -12,5 +12,8 @@
 
 int main(int argc, char *argv[])
 {
+	
+	// Get the application running, woo hoo.
     return NSApplicationMain(argc,  (const char **) argv);
+	
 }

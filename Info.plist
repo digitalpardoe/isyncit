@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
-	<string>iSyncIt 0.3, Copyright © digital:pardoe, 2006</string>
+	<string>iSyncIt 0.4, Copyright © digital:pardoe, 2006</string>
 	<key>CFBundleIconFile</key>
 	<string>ISI_Icon.icns</string>
 	<key>CFBundleIdentifier</key>
@@ -19,18 +19,18 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>NSMainNibFile</key>
 	<string>ISI_Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<string>1</string>
 	<key>SUFeedURL</key>
 	<string>http://digitalpardoe.co.uk/appcast/main/iSyncIt</string>
+	<key>NSUIElement</key>
+	<string>1</string>
 </dict>
 </plist>

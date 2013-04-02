@@ -9,5 +9,8 @@
  */
 
 #ifdef __OBJC__
+
+	// Does anyone know what this actually is, really is it needed?!?!
     #import <Cocoa/Cocoa.h>
+
 #endif

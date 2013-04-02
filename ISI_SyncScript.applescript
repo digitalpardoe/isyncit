@@ -1,5 +1,5 @@
 --
--- syncscript.applescript
+-- ISI_SyncScript.applescript
 --
 -- iSyncIt
 -- Simple Sync Software
@@ -10,7 +10,7 @@
 -- Set the location of the bluetooth controller.
 property bluetoothcontrolPath : "/usr/local/bin/BluetoothControl"
 
--- Check the current bluetooth status and turn it on if necessary.
+--Check the current bluetooth status and turn it on if necessary.
 set btWasOn to true
 if execBluetoothcontrol("status") ends with "off" then
 	set btWasOn to false
