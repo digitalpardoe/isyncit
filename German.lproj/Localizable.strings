@@ -88,3 +88,24 @@
 /* No comment provided by engineer. */
 "Last Sync" = "Letzte Synchronisation";
 
+/* No comment provided by engineer. */
+"Making a donation." = "Spenden.";
+
+/* No comment provided by engineer. */
+"Sync Complete" = "Synchronisation abgeschlossen";
+
+/* No comment provided by engineer. */
+"Synchronization of your devices has been completed." = "Synchronisation der Geräte abgeschlossen.";
+
+/* No comment provided by engineer. */
+"Bluetooth On" = "Bluetooth eingeschaltet";
+
+/* No comment provided by engineer. */
+"Your bluetooth hardware has been turned on." = "Bluetooth-Hardware wurde eingeschaltet.";
+
+/* No comment provided by engineer. */
+"Bluetooth Off" = "Bluetooth ausgeschaltet";
+
+/* No comment provided by engineer. */
+"Your bluetooth hardware has been turned off." = "Bluetooth-Hardware wurde ausgeschaltet.";
+

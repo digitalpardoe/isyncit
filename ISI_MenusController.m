@@ -12,8 +12,73 @@
 
 @implementation ISI_MenusController
 
+/*
+ * Growl Control Code
+ * Seperated for ease of access during current development.
+ *
+ */
+ 
+ 
+ - (void) initializeGrowl
+{
+	growlReady = YES;
+	
+	// Tells the Growl framework that this class will receive callbacks
+	[GrowlApplicationBridge setGrowlDelegate:self];
+	[self registrationDictionaryForGrowl];
+}
+
+- (NSDictionary*) registrationDictionaryForGrowl
+{
+	// For this application, only one notification is registered
+	NSArray* defaultNotifications = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
+	NSArray* allNotifications = [NSArray arrayWithObjects:@"1", @"2", @"3", nil];
+	
+	NSDictionary* growlRegistration = [NSDictionary dictionaryWithObjectsAndKeys: 
+		defaultNotifications, GROWL_NOTIFICATIONS_DEFAULT,
+		allNotifications, GROWL_NOTIFICATIONS_ALL, nil];
+	
+	return growlRegistration;
+}
+
+- (void) growlIsReady
+{
+	// Only get called when Growl is starting. Not called when Growl is already running so we leave growlReady to YES by default...
+	growlReady = YES;
+}
+
+- (NSString *) applicationNameForGrowl
+{
+	return [NSString stringWithFormat:@"iSyncIt"];
+}
+
+- (void)showGrowlNotification : (NSString *)growlName : (NSString *)growlTitle : (NSString *)growlDescription
+{
+	if (!growlReady)
+	{
+		return;
+	}
+
+	// Don't forget to create relevant localizations for the Growl alerts.
+	[GrowlApplicationBridge notifyWithTitle:[NSString stringWithFormat:NSLocalizedString(growlTitle, nil)]
+								description:[NSString stringWithFormat:NSLocalizedString(growlDescription, nil)]
+								notificationName:growlName
+								iconData:nil
+								priority:nil
+								isSticky:nil
+								clickContext:nil ];
+}
+ 
+ /*
+  * End Growl Control Code
+  *
+  */
+
 - (void)awakeFromNib
 {
+	// Pull to front, mainly for first runs.
+	[NSApp activateIgnoringOtherApps:YES];
+	
 	// First run, start-up checks.
 	startupChecks();
 	
@@ -23,12 +88,11 @@
 	[self readMenuDefaults];
 	
 	[self initialiseMenu];
+	
+	[self initializeGrowl];
 
 	// Read the bluetooth settings from user defaults.
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
-	
-	// Pull to front, mainly for first runs.
-	[NSApp activateIgnoringOtherApps:YES];
 	
 	// Start the scheduler.
 	schedulingControl = [[ISI_Scheduling alloc] init];
@@ -106,11 +170,13 @@
 	if (IOBluetoothPreferencesAvailable()) {
 		if ((BTPowerState() ? "on" : "off") == "on") {
 			BTSetPowerState(0);
+			[self showGrowlNotification : @"2" : @"Bluetooth Off" : @"Your bluetooth hardware has been turned off."];
 		} else {
 			BTSetPowerState(1);
+			[self showGrowlNotification : @"1" : @"Bluetooth On" : @"Your bluetooth hardware has been turned on."];
 		}
 	}
-	
+			
 	[self changeMenu];
 }
 
@@ -135,6 +201,7 @@
 	syncNow(enableBluetooth);
 	[self readMenuDefaults];
 	[self changeMenu];
+	[self showGrowlNotification : @"3" : @"Sync Complete" : @"Synchronization of your devices has been completed."];
 }
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender
@@ -193,7 +260,7 @@
 	// Forces the user into donation.
 	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
 	[NSApp activateIgnoringOtherApps:YES];
-	donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Making a donation.", [NSString stringWithFormat:NSLocalizedString(@"Please make a donation by clicking the button on the right hand side of the website.", nil)], NSLocalizedString(@"Donate", nil), nil, nil) == NSAlertDefaultReturn];
+	donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(NSLocalizedString(@"Making a donation.", nil), [NSString stringWithFormat:NSLocalizedString(@"Please make a donation by clicking the button on the right hand side of the website.", nil)], NSLocalizedString(@"Donate", nil), nil, nil) == NSAlertDefaultReturn];
 	if (donateChecking) {
 		[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"http://digitalpardoe.co.uk/"]];
 	}

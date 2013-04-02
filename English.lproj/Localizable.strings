@@ -88,3 +88,23 @@
 /* No comment provided by engineer. */
 "Last Sync" = "Last Sync";
 
+/* No comment provided by engineer. */
+"Making a donation." = "Making a donation.";
+
+/* No comment provided by engineer. */
+"Sync Complete" = "Sync Complete";
+
+/* No comment provided by engineer. */
+"Synchronization of your devices has been completed." = "Synchronization of your devices has been completed.";
+
+/* No comment provided by engineer. */
+"Bluetooth On" = "Bluetooth On";
+
+/* No comment provided by engineer. */
+"Your bluetooth hardware has been turned on." = "Your bluetooth hardware has been turned on.";
+
+/* No comment provided by engineer. */
+"Bluetooth Off" = "Bluetooth Off";
+
+/* No comment provided by engineer. */
+"Your bluetooth hardware has been turned off." = "Your bluetooth hardware has been turned off.";
