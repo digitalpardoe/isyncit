@@ -9,6 +9,7 @@
  */
 
 #import <Cocoa/Cocoa.h>
+#import "ISI_Bluetooth.h"
 
 @interface ISI_PrefController : NSObject
 {
@@ -16,5 +17,7 @@
 }
 
 - (IBAction)pref_Act_PerformCleanup:(id)sender;
+
+- (IBAction)pref_Act_AddToLogin:(id)sender;
 
 @end

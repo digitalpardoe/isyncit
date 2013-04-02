@@ -11,13 +11,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ISI_Sync : NSObject
-{	
-	NSUserDefaults *defaults;
-
-	BOOL enableBluetooth;
-	char *currentStatus[3];
+{
 }
-
-- (void)syncNow:(id)sender;
 
 @end

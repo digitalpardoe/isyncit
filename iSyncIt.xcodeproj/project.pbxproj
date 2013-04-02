@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* ISI_Main.m */; settings = {ATTRIBUTES = (); }; };
+		FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */; };
 		FA2D3F110A5C727500CA9EEC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
 		FA2D3F120A5C728000CA9EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165DFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */; };
@@ -17,6 +18,7 @@
 		FA4AEA0F0A59B70000B0557F /* ISI_Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */; };
 		FA4AEAB90A59B90A00B0557F /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
 		FA4AEABA0A59B90A00B0557F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */ = {isa = PBXBuildFile; fileRef = FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */; };
 		FAB950E40A681177008669D9 /* ISI_ChangeLog.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */; };
 		FAB950E50A681178008669D9 /* ISI_Menus.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E20A681177008669D9 /* ISI_Menus.nib */; };
 		FAB950E60A681178008669D9 /* ISI_Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = FAB950E30A681177008669D9 /* ISI_Preferences.nib */; };
@@ -49,30 +51,26 @@
 		089C165DFE840E0CC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* ISI_Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* ISI_Main.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Main.nib; sourceTree = "<group>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* iSyncIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSyncIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0DE6620A58607B0048564E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
+		FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
 		FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_ChangeLogController.h; sourceTree = "<group>"; };
 		FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_ChangeLogController.m; sourceTree = "<group>"; };
 		FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIcon.png; sourceTree = "<group>"; };
-		FA48CFE20A5D724A00467826 /* ISI_Preferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_Preferences.h; sourceTree = "<group>"; };
-		FA48CFE30A5D724A00467826 /* ISI_Preferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_Preferences.m; sourceTree = "<group>"; };
 		FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
 		FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ISI_Icon.icns; sourceTree = "<group>"; };
 		FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Bluetooth.h; sourceTree = "<group>"; };
 		FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Bluetooth.m; sourceTree = "<group>"; };
-		FA6016430A57FEB800F1F2D9 /* ISI_StatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StatusMenu.h; sourceTree = "<group>"; };
-		FA6016440A57FEB800F1F2D9 /* ISI_StatusMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StatusMenu.m; sourceTree = "<group>"; };
+		FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_LoginItem.tif; sourceTree = "<group>"; };
 		FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_ChangeLog.nib; sourceTree = "<group>"; };
 		FAB950E20A681177008669D9 /* ISI_Menus.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Menus.nib; sourceTree = "<group>"; };
 		FAB950E30A681177008669D9 /* ISI_Preferences.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ISI_Preferences.nib; sourceTree = "<group>"; };
 		FAB951110A6826AD008669D9 /* ISI_MenusController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_MenusController.h; sourceTree = "<group>"; };
 		FAB951120A6826AD008669D9 /* ISI_MenusController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_MenusController.m; sourceTree = "<group>"; };
-		FADC8BB80A5A785D00305F31 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
-		FADC8BB90A5A785D00305F31 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
 		FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_PrefItems.h; sourceTree = "<group>"; };
 		FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_PrefItems.m; sourceTree = "<group>"; };
 		FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ISI_Bluetooth.tif; sourceTree = "<group>"; };
@@ -103,21 +101,10 @@
 		080E96DDFE201D6D7F000001 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				FAB950D00A681076008669D9 /* Old Code */,
-				FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */,
-				FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */,
-				32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* ISI_Main.m */,
-				FAB951110A6826AD008669D9 /* ISI_MenusController.h */,
-				FAB951120A6826AD008669D9 /* ISI_MenusController.m */,
-				FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */,
-				FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */,
-				FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */,
-				FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */,
-				FAF8763B0A6A964600FDA7C1 /* ISI_PrefController.h */,
-				FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */,
-				FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */,
-				FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */,
+				FAE9AA330A6EBD6B00CF5F76 /* Application */,
+				FAE9AA320A6EBD4F00CF5F76 /* Preferences */,
+				FAE9AA340A6EBD8100CF5F76 /* Change Log */,
+				FAE9AA350A6EBDB800CF5F76 /* Misc */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -144,16 +131,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FAB950D10A6810B4008669D9 /* Old Resources */,
-				FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */,
-				FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */,
-				FAB950E20A681177008669D9 /* ISI_Menus.nib */,
-				FAB950E30A681177008669D9 /* ISI_Preferences.nib */,
-				FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */,
-				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
-				FA0DE6620A58607B0048564E /* Credits.rtf */,
-				8D1107310486CEB800E47090 /* Info.plist */,
-				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+				FAE9AA370A6EBDDE00CF5F76 /* Images */,
+				FAE9AA360A6EBDCD00CF5F76 /* Interface */,
+				FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -169,30 +149,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAB950D00A681076008669D9 /* Old Code */ = {
+		FAE9AA320A6EBD4F00CF5F76 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				FA6016430A57FEB800F1F2D9 /* ISI_StatusMenu.h */,
-				FA6016440A57FEB800F1F2D9 /* ISI_StatusMenu.m */,
-				FA48CFE20A5D724A00467826 /* ISI_Preferences.h */,
-				FA48CFE30A5D724A00467826 /* ISI_Preferences.m */,
-				FADC8BB80A5A785D00305F31 /* ISI_Sync.h */,
-				FADC8BB90A5A785D00305F31 /* ISI_Sync.m */,
+				FAF874FA0A6A5B3C00FDA7C1 /* ISI_PrefItems.h */,
+				FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */,
+				FAF8763B0A6A964600FDA7C1 /* ISI_PrefController.h */,
+				FAF8763C0A6A964600FDA7C1 /* ISI_PrefController.m */,
 			);
-			name = "Old Code";
+			name = Preferences;
 			sourceTree = "<group>";
 		};
-		FAB950D10A6810B4008669D9 /* Old Resources */ = {
+		FAE9AA330A6EBD6B00CF5F76 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* ISI_Main.nib */,
+				FAB951110A6826AD008669D9 /* ISI_MenusController.h */,
+				FAB951120A6826AD008669D9 /* ISI_MenusController.m */,
+				FAF876240A6A932000FDA7C1 /* ISI_WindowController.h */,
+				FAF876250A6A932000FDA7C1 /* ISI_WindowController.m */,
+				FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */,
+				FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */,
+				FA1F1FE50A6FF4F800844085 /* ISI_Sync.h */,
+				FA1F1FE60A6FF4F800844085 /* ISI_Sync.m */,
 			);
-			name = "Old Resources";
+			name = Application;
+			sourceTree = "<group>";
+		};
+		FAE9AA340A6EBD8100CF5F76 /* Change Log */ = {
+			isa = PBXGroup;
+			children = (
+				FA4847DE0A6AF900003B5095 /* ISI_ChangeLogController.h */,
+				FA4847DF0A6AF900003B5095 /* ISI_ChangeLogController.m */,
+			);
+			name = "Change Log";
+			sourceTree = "<group>";
+		};
+		FAE9AA350A6EBDB800CF5F76 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* ISI_Main.m */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		FAE9AA360A6EBDCD00CF5F76 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FAB950E10A681177008669D9 /* ISI_ChangeLog.nib */,
+				FAB950E20A681177008669D9 /* ISI_Menus.nib */,
+				FAB950E30A681177008669D9 /* ISI_Preferences.nib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		FAE9AA370A6EBDDE00CF5F76 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */,
+				FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */,
+				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FAE9AA380A6EBE4B00CF5F76 /* Text & Property List */ = {
+			isa = PBXGroup;
+			children = (
+				FA0DE6620A58607B0048564E /* Credits.rtf */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = "Text & Property List";
 			sourceTree = "<group>";
 		};
 		FAF875B50A6A85DE00FDA7C1 /* Toolbar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				FA662D190A6E4F3300D72C9E /* ISI_LoginItem.tif */,
 				FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */,
 				FAF875B00A6A85CD00FDA7C1 /* ISI_OldFiles.tif */,
 				FAF875B10A6A85CD00FDA7C1 /* ISI_Updates.tif */,
@@ -252,6 +286,7 @@
 				FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */,
 				FAF875B30A6A85CD00FDA7C1 /* ISI_OldFiles.tif in Resources */,
 				FAF875B40A6A85CD00FDA7C1 /* ISI_Updates.tif in Resources */,
+				FA662D1A0A6E4F3300D72C9E /* ISI_LoginItem.tif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +304,7 @@
 				FAF876270A6A932000FDA7C1 /* ISI_WindowController.m in Sources */,
 				FAF8763E0A6A964600FDA7C1 /* ISI_PrefController.m in Sources */,
 				FA4847E10A6AF900003B5095 /* ISI_ChangeLogController.m in Sources */,
+				FA1F1FE80A6FF4F800844085 /* ISI_Sync.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +342,7 @@
 					i386,
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;

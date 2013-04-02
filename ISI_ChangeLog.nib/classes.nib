@@ -4,14 +4,15 @@
         {
             CLASS = "ISI_ChangeLogController"; 
             LANGUAGE = ObjC; 
-            OUTLETS = {"changeLog_Out_Window" = id; }; 
+            OUTLETS = {"changeLog_Out_Window" = NSWindow; }; 
             SUPERCLASS = NSObject; 
         }, 
         {
             CLASS = "ISI_WindowController"; 
             LANGUAGE = ObjC; 
             SUPERCLASS = NSWindowController; 
-        }
+        }, 
+        {CLASS = NSLevelIndicator; LANGUAGE = ObjC; SUPERCLASS = NSControl; }
     ); 
     IBVersion = 1; 
 }

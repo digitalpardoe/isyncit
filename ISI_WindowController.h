@@ -10,9 +10,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-
-@interface ISI_WindowController : NSWindowController {
-
+@interface ISI_WindowController : NSWindowController
+{
 }
 
 @end

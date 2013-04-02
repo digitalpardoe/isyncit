@@ -12,7 +12,7 @@
 
 @interface ISI_ChangeLogController : NSObject
 {
-    IBOutlet id changeLog_Out_Window;
+    IBOutlet NSWindow *changeLog_Out_Window;
 }
 
 @end

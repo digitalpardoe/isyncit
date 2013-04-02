@@ -14,9 +14,11 @@
 
 - (void)awakeFromNib
 {
+	// Fill the menu bar item.
     menuBarItem = [[[NSStatusBar systemStatusBar]
             statusItemWithLength:NSSquareStatusItemLength] retain];
 	
+	// Set up the menu bar item & fill it.
     [menuBarItem setHighlightMode:YES];
 	[menuBarItem setImage:[NSImage imageNamed:@"ISI_MenuIcon"]];
 	
@@ -27,39 +29,9 @@
 	 *
 	 */
 	
+	// Initialise the menu bar so the user can operate the program.
     [menuBarItem setMenu:menuMM_Out];
     [menuBarItem setEnabled:YES];
-}
-
-- (void)syncNow:(id)sender
-{
-	// Read the bluetooth settings from user defaults.
-	defaults = [NSUserDefaults standardUserDefaults];
-	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
-	
-	// Assuming bluetooth is available and the user wishes it turn the power on (if needed).
-	if (IOBluetoothPreferencesAvailable()) {
-		if (enableBluetooth == TRUE) {
-			currentStatus[3] = BTPowerState() ? "on" : "off";
-			if (currentStatus[3] == "off") {
-				BTSetPowerState(1);
-			}
-		}
-	}
-	
-	// Perform the sync by writing in an AppleScript and excecuting.
-	NSString *syncNowString = @"tell application \"iSync\"\r if not (synchronize) then\r else\r repeat while (syncing is true)\r delay 5\r end repeat\r quit\r end if\r end tell";
-	NSAppleScript *syncNowScript = [[NSAppleScript alloc] initWithSource:syncNowString];
-	[syncNowScript executeAndReturnError:nil];
-	
-	// Assuming bluetooth is available reset it's state to the original.
-	if (IOBluetoothPreferencesAvailable()) {
-		if (enableBluetooth == TRUE) {
-			if (currentStatus[3] == "off") {
-				BTSetPowerState(0);
-			}
-		}
-	}
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender
@@ -92,6 +64,7 @@
 
 - (IBAction)menuMM_Act_ChangeLog:(id)sender
 {
+	// Makes sure the app is frontmost and displays the Change Log.
 	[NSApp activateIgnoringOtherApps:YES];
 	ISI_WindowController *changeLogWindow = [[ISI_WindowController alloc] initWithWindowNibName:@"ISI_ChangeLog"];
 	[changeLogWindow showWindow:self];
@@ -99,6 +72,7 @@
 
 - (IBAction)menuMM_Act_Preferences:(id)sender
 {
+	// Makes sure the app is frontmost and displays the Preferences.
 	[NSApp activateIgnoringOtherApps:YES];
 	ISI_WindowController *prefWindow = [[ISI_WindowController alloc] initWithWindowNibName:@"ISI_Preferences"];
 	[prefWindow showWindow:self];
@@ -106,11 +80,13 @@
 
 - (IBAction)menuMM_Act_SyncNow:(id)sender
 {
-	[self syncNow:(id)sender];
+	//[self syncNow:(id)sender];
+	syncNow();
 }
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender
 {
+	// Makes sure the app is frontmost and displays the About dialog.
 	[NSApp activateIgnoringOtherApps:YES];
 	[NSApp orderFrontStandardAboutPanel:(id)sender];
 }
@@ -160,14 +136,15 @@
 
 }
 
-- (void) dealloc {
+- (void) dealloc
+{
+	// De-allocate the necessary resources.
 	[menuBT_Out_SendFile release];
     [menuBT_Out_SetUpDev release];
     [menuBT_Out_TurnOn release];
     [menuMM_Out release];
     [menuMM_Out_Bluetooth release];
     [menuMM_Out_SyncNow release];
-	[defaults release];
 	[super dealloc];
 }
 

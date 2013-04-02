@@ -11,6 +11,7 @@
 #import <Cocoa/Cocoa.h>
 #import "ISI_Bluetooth.h"
 #import "ISI_WindowController.h"
+#import "ISI_Sync.h"
 
 @interface ISI_MenusController : NSObject
 {
@@ -23,13 +24,7 @@
 	IBOutlet NSMenuItem *menuMM_Out_CheckUpdates;
 	
 	NSStatusItem *menuBarItem;
-	NSUserDefaults *defaults;
-	
-	BOOL enableBluetooth;
-	char *currentStatus[3];
 }
-
-- (void)syncNow:(id)sender;
 
 - (IBAction)menuBM_Act_SendFile:(id)sender;
 

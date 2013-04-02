@@ -12,13 +12,14 @@
 		<string>277 403 470 206 0 0 1024 746 </string>
 		<key>14</key>
 		<string>277 423 470 166 0 0 1024 746 </string>
+		<key>65</key>
+		<string>131 363 470 206 0 0 1024 746 </string>
 	</dict>
 	<key>IBFramework Version</key>
 	<string>446.1</string>
 	<key>IBOpenObjects</key>
 	<array>
-		<integer>14</integer>
-		<integer>12</integer>
+		<integer>65</integer>
 	</array>
 	<key>IBSystem Version</key>
 	<string>8J135</string>

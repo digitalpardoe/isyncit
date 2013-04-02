@@ -10,7 +10,6 @@
 
 #import "ISI_WindowController.h"
 
-
 @implementation ISI_WindowController
 
 @end

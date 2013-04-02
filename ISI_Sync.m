@@ -12,8 +12,14 @@
 
 @implementation ISI_Sync
 
-- (void)syncNow:(id)sender
+// Perform the syncing and the controlling of the bluetooth.
+int syncNow()
 {
+	// Variable declarations.
+	NSUserDefaults *defaults;
+	BOOL enableBluetooth;
+	char *currentStatus[3];
+	
 	// Read the bluetooth settings from user defaults.
 	defaults = [NSUserDefaults standardUserDefaults];
 	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
@@ -41,12 +47,12 @@
 			}
 		}
 	}
-}
-
-- (void)dealloc
-{
+	
+	// Release necessary variables.
 	[defaults release];
-	[super dealloc];
+	
+	// Return to main program.
+	return EXIT_SUCCESS;
 }
 
 @end
