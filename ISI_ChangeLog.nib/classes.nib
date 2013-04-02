@@ -1,0 +1,17 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = "ISI_ChangeLogController"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"changeLog_Out_Window" = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = "ISI_WindowController"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

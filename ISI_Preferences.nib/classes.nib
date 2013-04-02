@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {"pref_Act_PerformCleanup" = id; }; 
+            CLASS = "ISI_PrefController"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"pref_Out_BTControlOption" = NSButton; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = "ISI_PrefItems"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                prefsPanel1 = NSView; 
+                prefsPanel2 = NSView; 
+                prefsPanel3 = NSView; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = "ISI_WindowController"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

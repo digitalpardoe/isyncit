@@ -9,11 +9,10 @@
  */
 
 #import "ISI_Sync.h"
-#import "ISI_Bluetooth.h"
 
 @implementation ISI_Sync
 
-- (IBAction)syncNow:(id)sender
+- (void)syncNow:(id)sender
 {
 	// Read the bluetooth settings from user defaults.
 	defaults = [NSUserDefaults standardUserDefaults];
@@ -28,17 +27,11 @@
 			}
 		}
 	}
-
-	// Change the title of the menu item (even though it stops when it runs).
-	[syncMenuItem setTitle:[NSString stringWithFormat:@"Syncing..."]];
 	
 	// Perform the sync by writing in an AppleScript and excecuting.
 	NSString *syncNowString = @"tell application \"iSync\"\r if not (synchronize) then\r else\r repeat while (syncing is true)\r delay 5\r end repeat\r quit\r end if\r end tell";
 	NSAppleScript *syncNowScript = [[NSAppleScript alloc] initWithSource:syncNowString];
 	[syncNowScript executeAndReturnError:nil];
-	
-	// Reset menu item title.
-	[syncMenuItem setTitle:[NSString stringWithFormat:@"Sync Now..."]];
 	
 	// Assuming bluetooth is available reset it's state to the original.
 	if (IOBluetoothPreferencesAvailable()) {
@@ -52,7 +45,6 @@
 
 - (void)dealloc
 {
-	[syncMenuItem release];
 	[defaults release];
 	[super dealloc];
 }
