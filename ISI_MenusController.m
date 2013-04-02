@@ -32,6 +32,10 @@
 	// Initialise the menu bar so the user can operate the program.
     [menuBarItem setMenu:menuMM_Out];
     [menuBarItem setEnabled:YES];
+	
+	// Read the bluetooth settings from user defaults.
+	defaults = [NSUserDefaults standardUserDefaults];
+	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender
@@ -81,7 +85,7 @@
 - (IBAction)menuMM_Act_SyncNow:(id)sender
 {
 	//[self syncNow:(id)sender];
-	syncNow();
+	syncNow(enableBluetooth);
 }
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender

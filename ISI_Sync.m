@@ -13,20 +13,14 @@
 @implementation ISI_Sync
 
 // Perform the syncing and the controlling of the bluetooth.
-int syncNow()
+int syncNow(BOOL defaultsValue)
 {
-	// Variable declarations.
-	NSUserDefaults *defaults;
-	BOOL enableBluetooth;
+	// Stores the current status of the bluetooth power.
 	char *currentStatus[3];
-	
-	// Read the bluetooth settings from user defaults.
-	defaults = [NSUserDefaults standardUserDefaults];
-	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
 	
 	// Assuming bluetooth is available and the user wishes it turn the power on (if needed).
 	if (IOBluetoothPreferencesAvailable()) {
-		if (enableBluetooth == TRUE) {
+		if (defaultsValue == TRUE) {
 			currentStatus[3] = BTPowerState() ? "on" : "off";
 			if (currentStatus[3] == "off") {
 				BTSetPowerState(1);
@@ -41,15 +35,12 @@ int syncNow()
 	
 	// Assuming bluetooth is available reset it's state to the original.
 	if (IOBluetoothPreferencesAvailable()) {
-		if (enableBluetooth == TRUE) {
+		if (defaultsValue == TRUE) {
 			if (currentStatus[3] == "off") {
 				BTSetPowerState(0);
 			}
 		}
 	}
-	
-	// Release necessary variables.
-	[defaults release];
 	
 	// Return to main program.
 	return EXIT_SUCCESS;

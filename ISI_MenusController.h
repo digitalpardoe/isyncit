@@ -24,6 +24,9 @@
 	IBOutlet NSMenuItem *menuMM_Out_CheckUpdates;
 	
 	NSStatusItem *menuBarItem;
+	
+	NSUserDefaults *defaults;
+	BOOL enableBluetooth;
 }
 
 - (IBAction)menuBM_Act_SendFile:(id)sender;
