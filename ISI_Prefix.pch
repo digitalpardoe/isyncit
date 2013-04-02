@@ -1,0 +1,13 @@
+/*
+ * ISI_Prefix.pch
+ *
+ * iSyncIt
+ * Simple Sync Software
+ * 
+ * Created By digital:pardoe
+ * 
+ */
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

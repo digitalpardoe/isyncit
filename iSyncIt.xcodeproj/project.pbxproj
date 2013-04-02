@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAppleScriptBuildPhase section */
+		FA86F6740A5820250049EAC1 /* AppleScript */ = {
+			isa = PBXAppleScriptBuildPhase;
+			buildActionMask = 2147483647;
+			contextName = "";
+			files = (
+				FA86F6840A5820520049EAC1 /* syncscript.applescript in AppleScript */,
+			);
+			isSharedContext = 0;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXAppleScriptBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		8D11072A0486CEB800E47090 /* ISI_Main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* ISI_Main.nib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* ISI_Main.m */; settings = {ATTRIBUTES = (); }; };
+		FA0DE6630A58607B0048564E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA0DE6620A58607B0048564E /* Credits.rtf */; };
+		FA24E9E00A57DDF4007E34DF /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24E9DF0A57DDF4007E34DF /* Sparkle.framework */; };
+		FA24E9F60A57DE4C007E34DF /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA24E9DF0A57DDF4007E34DF /* Sparkle.framework */; };
+		FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */; };
+		FA49F7C30A56E201004B7E73 /* ISI_BluetoothControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA49F69E0A56D842004B7E73 /* ISI_BluetoothControl.m */; };
+		FA49F7C40A56E20C004B7E73 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */; };
+		FA49F7C50A56E20C004B7E73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		FA49F7CF0A56E29F004B7E73 /* BluetoothControl in Copy Excecutables */ = {isa = PBXBuildFile; fileRef = FA49F7BB0A56E1E7004B7E73 /* BluetoothControl */; };
+		FA6016460A57FEB800F1F2D9 /* ISI_StatusMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6016440A57FEB800F1F2D9 /* ISI_StatusMenu.m */; };
+		FA86F6840A5820520049EAC1 /* syncscript.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = FA86F6650A581F540049EAC1 /* syncscript.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		FA86F6AB0A5823030049EAC1 /* ISI_SyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA86F6A90A5823030049EAC1 /* ISI_SyncController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA49F7BF0A56E1FC004B7E73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA49F7BA0A56E1E7004B7E73;
+			remoteInfo = BluetoothControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA24E9F30A57DE0D007E34DF /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA24E9F60A57DE4C007E34DF /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA24E9FD0A57DEBF007E34DF /* Copy Excecutables */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				FA49F7CF0A56E29F004B7E73 /* BluetoothControl in Copy Excecutables */,
+			);
+			name = "Copy Excecutables";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* ISI_Main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Main.m; sourceTree = "<group>"; };
+		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ISI_Main.nib; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* iSyncIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSyncIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0DE6620A58607B0048564E /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		FA24E9DF0A57DDF4007E34DF /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		FA49F69E0A56D842004B7E73 /* ISI_BluetoothControl.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_BluetoothControl.m; sourceTree = "<group>"; };
+		FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
+		FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ISI_Icon.icns; sourceTree = "<group>"; };
+		FA49F7BB0A56E1E7004B7E73 /* BluetoothControl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BluetoothControl; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6016430A57FEB800F1F2D9 /* ISI_StatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StatusMenu.h; sourceTree = "<group>"; };
+		FA6016440A57FEB800F1F2D9 /* ISI_StatusMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StatusMenu.m; sourceTree = "<group>"; };
+		FA86F6650A581F540049EAC1 /* syncscript.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = syncscript.applescript; sourceTree = "<group>"; };
+		FA86F6A80A5823030049EAC1 /* ISI_SyncController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_SyncController.h; sourceTree = "<group>"; };
+		FA86F6A90A5823030049EAC1 /* ISI_SyncController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_SyncController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA49F6B90A56D93C004B7E73 /* Cocoa.framework in Frameworks */,
+				FA24E9E00A57DDF4007E34DF /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA49F7B90A56E1E7004B7E73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA49F7C40A56E20C004B7E73 /* IOBluetooth.framework in Frameworks */,
+				FA49F7C50A56E20C004B7E73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA49F8190A56E55A004B7E73 /* iSyncIt */,
+				FA49F8160A56E542004B7E73 /* BluetoothControl */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA24E9DF0A57DDF4007E34DF /* Sparkle.framework */,
+				FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* iSyncIt.app */,
+				FA49F7BB0A56E1E7004B7E73 /* BluetoothControl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* iSyncIt */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = iSyncIt;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA0DE6620A58607B0048564E /* Credits.rtf */,
+				FA49F81E0A56E59E004B7E73 /* Interface */,
+				FA49F81D0A56E58E004B7E73 /* Property List */,
+				FA49F81C0A56E585004B7E73 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA09971B0A58326900A6A10E /* AppleScripts */ = {
+			isa = PBXGroup;
+			children = (
+				FA86F6650A581F540049EAC1 /* syncscript.applescript */,
+			);
+			name = AppleScripts;
+			sourceTree = "<group>";
+		};
+		FA09971C0A58327100A6A10E /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+				FA86F6A80A5823030049EAC1 /* ISI_SyncController.h */,
+				FA86F6A90A5823030049EAC1 /* ISI_SyncController.m */,
+			);
+			name = Sync;
+			sourceTree = "<group>";
+		};
+		FA09971D0A58327E00A6A10E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FA6016430A57FEB800F1F2D9 /* ISI_StatusMenu.h */,
+				FA6016440A57FEB800F1F2D9 /* ISI_StatusMenu.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		FA49F8160A56E542004B7E73 /* BluetoothControl */ = {
+			isa = PBXGroup;
+			children = (
+				FA49F69E0A56D842004B7E73 /* ISI_BluetoothControl.m */,
+			);
+			name = BluetoothControl;
+			sourceTree = "<group>";
+		};
+		FA49F8190A56E55A004B7E73 /* iSyncIt */ = {
+			isa = PBXGroup;
+			children = (
+				FA09971D0A58327E00A6A10E /* Menu */,
+				FA09971C0A58327100A6A10E /* Sync */,
+				FA09971B0A58326900A6A10E /* AppleScripts */,
+				32CA4F630368D1EE00C91783 /* ISI_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* ISI_Main.m */,
+			);
+			name = iSyncIt;
+			sourceTree = "<group>";
+		};
+		FA49F81C0A56E585004B7E73 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FA49F81D0A56E58E004B7E73 /* Property List */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = "Property List";
+			sourceTree = "<group>";
+		};
+		FA49F81E0A56E59E004B7E73 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				29B97318FDCFA39411CA2CEA /* ISI_Main.nib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* iSyncIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iSyncIt" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				FA24E9F30A57DE0D007E34DF /* Copy Frameworks */,
+				FA24E9FD0A57DEBF007E34DF /* Copy Excecutables */,
+				FA86F6740A5820250049EAC1 /* AppleScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA49F7C00A56E1FC004B7E73 /* PBXTargetDependency */,
+			);
+			name = iSyncIt;
+			productInstallPath = "$(HOME)/Applications";
+			productName = iSyncIt;
+			productReference = 8D1107320486CEB800E47090 /* iSyncIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA49F7BA0A56E1E7004B7E73 /* BluetoothControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA49F7C60A56E21F004B7E73 /* Build configuration list for PBXNativeTarget "BluetoothControl" */;
+			buildPhases = (
+				FA49F7B80A56E1E7004B7E73 /* Sources */,
+				FA49F7B90A56E1E7004B7E73 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BluetoothControl;
+			productName = BluetoothControl;
+			productReference = FA49F7BB0A56E1E7004B7E73 /* BluetoothControl */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iSyncIt" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* iSyncIt */;
+			projectDirPath = "";
+			targets = (
+				8D1107260486CEB800E47090 /* iSyncIt */,
+				FA49F7BA0A56E1E7004B7E73 /* BluetoothControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072A0486CEB800E47090 /* ISI_Main.nib in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				FA49F7870A56DD31004B7E73 /* ISI_Icon.icns in Resources */,
+				FA0DE6630A58607B0048564E /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* ISI_Main.m in Sources */,
+				FA6016460A57FEB800F1F2D9 /* ISI_StatusMenu.m in Sources */,
+				FA86F6AB0A5823030049EAC1 /* ISI_SyncController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA49F7B80A56E1E7004B7E73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA49F7C30A56E201004B7E73 /* ISI_BluetoothControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA49F7C00A56E1FC004B7E73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA49F7BA0A56E1E7004B7E73 /* BluetoothControl */;
+			targetProxy = FA49F7BF0A56E1FC004B7E73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		29B97318FDCFA39411CA2CEA /* ISI_Main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29B97319FDCFA39411CA2CEA /* English */,
+			);
+			name = ISI_Main.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = iSyncIt;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+		FA49F7C70A56E21F004B7E73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = BluetoothControl;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "iSyncIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iSyncIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA49F7C60A56E21F004B7E73 /* Build configuration list for PBXNativeTarget "BluetoothControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA49F7C70A56E21F004B7E73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
