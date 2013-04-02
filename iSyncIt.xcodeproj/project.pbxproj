@@ -33,7 +33,6 @@
 		FAD9246A0C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAD924680C7EEC96000DCC5F /* ISI_MenuIconAlternate.tif */; };
 		FAE219270C4E3B0400672183 /* ISI_Scheduling.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE219250C4E3B0400672183 /* ISI_Scheduling.m */; };
 		FAE21C400C4E68C400672183 /* relaunch.app in Resources */ = {isa = PBXBuildFile; fileRef = FAE21C3F0C4E68C400672183 /* relaunch.app */; };
-		FAE21C430C4E68D900672183 /* NSApplicationAdditions.h in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAE21C410C4E68D900672183 /* NSApplicationAdditions.h */; };
 		FAE21C440C4E68D900672183 /* NSApplicationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE21C420C4E68D900672183 /* NSApplicationAdditions.m */; };
 		FAF874FD0A6A5B3C00FDA7C1 /* ISI_PrefItems.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF874FB0A6A5B3C00FDA7C1 /* ISI_PrefItems.m */; };
 		FAF875B20A6A85CD00FDA7C1 /* ISI_Bluetooth.tif in Resources */ = {isa = PBXBuildFile; fileRef = FAF875AF0A6A85CD00FDA7C1 /* ISI_Bluetooth.tif */; };
@@ -52,7 +51,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FAF8787F0A6AC3E000FDA7C1 /* Sparkle.framework in Copy Frameworks */,
-				FAE21C430C4E68D900672183 /* NSApplicationAdditions.h in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;

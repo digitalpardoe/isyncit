@@ -15,15 +15,15 @@
 		<key>79</key>
 		<string>405 587 470 180 0 0 1280 1002 </string>
 		<key>88</key>
-		<string>243 95 470 253 0 0 1280 1002 </string>
+		<string>405 550 470 253 0 0 1280 1002 </string>
 	</dict>
 	<key>IBFramework Version</key>
 	<string>446.1</string>
 	<key>IBOpenObjects</key>
 	<array>
 		<integer>65</integer>
+		<integer>88</integer>
 		<integer>5</integer>
-		<integer>14</integer>
 	</array>
 	<key>IBSystem Version</key>
 	<string>8R218</string>

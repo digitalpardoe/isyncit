@@ -80,7 +80,7 @@
 		}
 	}
 	
-	NSString *tempString = [@"" stringByAppendingString:[[defaults objectForKey:@"ISI_LastSync"] descriptionWithCalendarFormat:@"%a %d %b, %H:%M" timeZone:nil locale:nil]];
+	NSString *tempString = [@"" stringByAppendingString:[[defaults objectForKey:@"ISI_LastSync"] descriptionWithCalendarFormat:@"%a %d %b, %H:%M" timeZone:[NSTimeZone systemTimeZone] locale:[[NSUserDefaults standardUserDefaults] dictionaryRepresentation]]];
 	[menuMM_Out_LastSync setTitle:[[[@"" stringByAppendingString:NSLocalizedString(@"Last Sync", nil)] stringByAppendingString:@": "] stringByAppendingString:tempString]];
 }
 
