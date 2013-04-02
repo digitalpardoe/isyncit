@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = "ISI_RoundedView"; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            CLASS = "ISI_StatusMenu"; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {theMenu = NSMenu; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {performSync = id; }; 
+            CLASS = "ISI_SyncController"; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = "ISI_TransparentWindow"; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }, 
+        {
+            ACTIONS = {checkForUpdates = id; }; 
+            CLASS = SUUpdater; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
