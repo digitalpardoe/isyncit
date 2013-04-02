@@ -26,6 +26,14 @@
 		[pref_Out_SchedulingCombo setEnabled:YES];
 		enableScheduling = YES;
 	}
+	
+	if (![[NSUserDefaults standardUserDefaults] boolForKey:@"ISI_EnableTimedScheduling"]) {
+		[pref_Out_SchedulingTime setEnabled:NO];
+		enableTimedScheduling = NO;
+	} else {
+		[pref_Out_SchedulingTime setEnabled:YES];
+		enableTimedScheduling = YES;
+	}
 }
 
 - (IBAction)pref_Act_SwitchBluetooth:(id)sender
@@ -51,19 +59,15 @@
 
 - (IBAction)pref_Act_ActivateSchedule:(id)sender
 {
-	ISI_Scheduling *schedulingControl = [[ISI_Scheduling alloc] init];
-
 	if (!enableScheduling) {
 		[pref_Out_SchedulingCombo setEnabled:YES];
 		enableScheduling = YES;
 		
-		if ([[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_SchedulingSettings"] == nil)
-		{
+		if ([[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_SchedulingSettings"] == nil) {
 			[[NSUserDefaults standardUserDefaults] setObject:@"15" forKey:@"ISI_SchedulingSettings"];
 		}
 		
 		[[NSUserDefaults standardUserDefaults] synchronize];
-		
 	} else {
 		[pref_Out_SchedulingCombo setEnabled:NO];
 		enableScheduling = NO;
@@ -71,7 +75,30 @@
 
 }
 
+- (IBAction)pref_Act_ActivateTimedSchedule:(id)sender
+{
+	if (!enableTimedScheduling) {
+		[pref_Out_SchedulingTime setEnabled:YES];
+		enableTimedScheduling = YES;
+		
+		if ([[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_TimedSchedulingSettings"] == nil) {
+			// Code to set the user default for time if it doesn't exist.
+		}
+		
+		[[NSUserDefaults standardUserDefaults] synchronize];
+	} else {
+		[pref_Out_SchedulingTime setEnabled:NO];
+		enableTimedScheduling = NO;
+	}
+
+}
+
 - (IBAction)pref_Act_ChangeSchedule:(id)sender
+{
+	[[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (IBAction)pref_Act_ChangeTimedSchedule:(id)sender
 {
 	[[NSUserDefaults standardUserDefaults] synchronize];
 }

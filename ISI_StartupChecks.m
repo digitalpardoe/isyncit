@@ -17,6 +17,7 @@ int startupChecks()
 	bluetoothCheck();
 	updateCheck();
 	iconCheck();
+	donateCheck();
 }
 
 int bluetoothCheck()
@@ -53,6 +54,20 @@ int iconCheck()
 	}
 
 	[iconChecking release];
+}
+
+int donateCheck()
+{
+	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
+	if (!donateChecking) {
+		donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Would you like to donate?", [NSString stringWithFormat:@"A lot of effort goes into writing and testing iSyncIt. If you like the results please consider making a donation via the button on the right of the website."], @"Donate", @"Not Now", nil) == NSAlertDefaultReturn];
+		[[NSUserDefaults standardUserDefaults] setObject:donateChecking forKey:@"ISI_Donation"];
+		[[NSUserDefaults standardUserDefaults] synchronize];
+		
+		if ([[NSUserDefaults standardUserDefaults] boolForKey:@"ISI_Donation"]) {
+			[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"http://digitalpardoe.co.uk/"]];
+		}
+	}
 }
 
 @end

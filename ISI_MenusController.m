@@ -160,6 +160,18 @@
 	}
 }
 
+- (IBAction)menuMM_Act_Donate:(id)sender
+{
+	// Forces the user into donation.
+	NSNumber *donateChecking = [[NSUserDefaults standardUserDefaults] objectForKey:@"ISI_Donation"];
+	[NSApp activateIgnoringOtherApps:YES];
+	donateChecking = [NSNumber numberWithBool:NSRunAlertPanel(@"Making a donation.", [NSString stringWithFormat:@"Please make a donation by clicking the button on the right hand side of the website."], @"Donate", nil, nil) == NSAlertDefaultReturn];
+	if (donateChecking) {
+		[[NSWorkspace sharedWorkspace] openURL: [NSURL URLWithString:@"http://digitalpardoe.co.uk/"]];
+	}
+}
+
+
 - (void)dealloc
 {
 	// De-allocate the necessary resources.

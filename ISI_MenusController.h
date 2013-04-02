@@ -48,4 +48,6 @@
 
 - (IBAction)menuMM_Act_AboutDialog:(id)sender;
 
+- (IBAction)menuMM_Act_Donate:(id)sender;
+
 @end

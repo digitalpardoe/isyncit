@@ -8,6 +8,7 @@
                 "menuBM_Act_TurnOn" = id; 
                 "menuMM_Act_AboutDialog" = id; 
                 "menuMM_Act_ChangeLog" = id; 
+                "menuMM_Act_Donate" = id; 
                 "menuMM_Act_Preferences" = id; 
                 "menuMM_Act_SyncNow" = id; 
             }; 

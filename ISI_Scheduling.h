@@ -14,12 +14,18 @@
 {
 	NSUserDefaults *defaults;
 	NSTimeInterval start;
+	NSTimeInterval otherStart;
 	NSTimer *timer;
+	NSTimer *timedTimer;
 }
 
 - (void)goSchedule;
 - (void)startTimer;
+- (void)startOtherTimer;
 - (void)stopTimer;
+- (void)stopOtherTimer;
 - (void)tick;
+- (void)otherTick;
+- (BOOL)timeIsNow;
 
 @end
