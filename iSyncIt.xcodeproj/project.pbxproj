@@ -52,14 +52,12 @@
 		FA48CFA00A5D6B3200467826 /* ISI_MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ISI_MenuIcon.png; sourceTree = "<group>"; };
 		FA48CFE20A5D724A00467826 /* ISI_Preferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_Preferences.h; sourceTree = "<group>"; };
 		FA48CFE30A5D724A00467826 /* ISI_Preferences.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_Preferences.m; sourceTree = "<group>"; };
-		FA49F69E0A56D842004B7E73 /* ISI_BluetoothControl.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_BluetoothControl.m; sourceTree = "<group>"; };
 		FA49F6A70A56D871004B7E73 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = /System/Library/Frameworks/IOBluetooth.framework; sourceTree = "<absolute>"; };
 		FA49F7860A56DD31004B7E73 /* ISI_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ISI_Icon.icns; sourceTree = "<group>"; };
 		FA4AEA0C0A59B70000B0557F /* ISI_Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_Bluetooth.h; sourceTree = "<group>"; };
 		FA4AEA0D0A59B70000B0557F /* ISI_Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_Bluetooth.m; sourceTree = "<group>"; };
 		FA6016430A57FEB800F1F2D9 /* ISI_StatusMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISI_StatusMenu.h; sourceTree = "<group>"; };
 		FA6016440A57FEB800F1F2D9 /* ISI_StatusMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISI_StatusMenu.m; sourceTree = "<group>"; };
-		FA86F6650A581F540049EAC1 /* ISI_SyncScript.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = ISI_SyncScript.applescript; sourceTree = "<group>"; };
 		FADC8BB80A5A785D00305F31 /* ISI_Sync.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ISI_Sync.h; sourceTree = "<group>"; };
 		FADC8BB90A5A785D00305F31 /* ISI_Sync.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ISI_Sync.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Sources */,
-				FA4AEA110A59B70700B0557F /* Source (Disabled) */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -138,15 +135,6 @@
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA4AEA110A59B70700B0557F /* Source (Disabled) */ = {
-			isa = PBXGroup;
-			children = (
-				FA86F6650A581F540049EAC1 /* ISI_SyncScript.applescript */,
-				FA49F69E0A56D842004B7E73 /* ISI_BluetoothControl.m */,
-			);
-			name = "Source (Disabled)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +233,7 @@
 					ppc,
 					i386,
 				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;

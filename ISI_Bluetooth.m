@@ -12,23 +12,17 @@
 
 @implementation ISI_Bluetooth
 
-// Set the blueooth power state.
+// Set the bluetooth power state using an integer; 0 = off, 1 = on.
 int BTSetPowerState(int powerState)
 {
-	
-	// Use the private framework to control blutooth (naughty, naughty).
 	IOBluetoothPreferenceSetControllerPowerState(powerState);
 	return EXIT_SUCCESS;
-	
 }
 
-// Get the bluetooth power state.
+// Return the power state with; BTPowerState() ? "on" : "off".
 int BTPowerState()
 {
-	
-	// Boring bit, yawn.
 	return IOBluetoothPreferenceGetControllerPowerState();
-	
 }
 
 @end

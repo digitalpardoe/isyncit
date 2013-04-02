@@ -5,13 +5,22 @@
             ACTIONS = {deleteOldVersion = id; }; 
             CLASS = "ISI_Preferences"; 
             LANGUAGE = ObjC; 
+            OUTLETS = {bluetoothControl = NSButton; }; 
             SUPERCLASS = NSObject; 
         }, 
         {CLASS = "ISI_RoundedView"; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
         {
+            ACTIONS = {bluetoothControl = id; bluetoothSendFiles = id; bluetoothSetDevice = id; }; 
             CLASS = "ISI_StatusMenu"; 
             LANGUAGE = ObjC; 
-            OUTLETS = {theMenu = NSMenu; }; 
+            OUTLETS = {
+                bluetoothMenuItem = NSMenuItem; 
+                bluetoothSendFile = NSMenuItem; 
+                bluetoothSetDev = NSMenuItem; 
+                bluetoothSubMenu = NSMenuItem; 
+                syncMenuItem = NSMenuItem; 
+                theMenu = NSMenu; 
+            }; 
             SUPERCLASS = NSObject; 
         }, 
         {

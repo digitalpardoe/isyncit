@@ -12,9 +12,9 @@
 
 @interface ISI_Preferences : NSObject
 {
-	
+	 IBOutlet NSButton *bluetoothControl;
 }
 
-// Perform action when button is clicked.
 - (IBAction)deleteOldVersion:(id)sender;
+
 @end

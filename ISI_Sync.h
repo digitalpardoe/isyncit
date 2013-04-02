@@ -12,12 +12,14 @@
 
 @interface ISI_Sync : NSObject
 {
-	
-	// Sync Now... menu item.
     IBOutlet NSMenuItem *syncMenuItem;
 	
+	NSUserDefaults *defaults;
+	
+	BOOL enableBluetooth;
+	char *currentStatus[3];
 }
 
-// Action to link to menu item.
 - (IBAction)syncNow:(id)sender;
+
 @end

@@ -13,60 +13,48 @@
 
 @implementation ISI_Sync
 
-// Performs bluetooth control and syncing.
 - (IBAction)syncNow:(id)sender
 {
+	// Read the bluetooth settings from user defaults.
+	defaults = [NSUserDefaults standardUserDefaults];
+	enableBluetooth = [defaults boolForKey:@"ISI_EnableBluetooth"];
 	
-	char *currentStatus[3];
-	
-	currentStatus[3] = BTPowerState() ? "on" : "off";
-	
-	/*
-	 * Acces bluetooth power state with the following:
-	 * BTPowerState() ? "on" : "off"
-	 *
-	 * Set bluetooth power state: 0 = off, 1 = on
-	 *
-	 */
-	
-	if (currentStatus[3] == "off") {
-		BTSetPowerState(1);
+	// Assuming bluetooth is available and the user wishes it turn the power on (if needed).
+	if (IOBluetoothPreferencesAvailable()) {
+		if (enableBluetooth == TRUE) {
+			currentStatus[3] = BTPowerState() ? "on" : "off";
+			if (currentStatus[3] == "off") {
+				BTSetPowerState(1);
+			}
+		}
 	}
-	
-	// Set the name of the menu item.
+
+	// Change the title of the menu item (even though it stops when it runs).
 	[syncMenuItem setTitle:[NSString stringWithFormat:@"Syncing..."]];
 	
-	// Put the AppleScript in a string, no one likes visible AppleScript.
+	// Perform the sync by writing in an AppleScript and excecuting.
 	NSString *syncNowString = @"tell application \"iSync\"\r if not (synchronize) then\r else\r repeat while (syncing is true)\r delay 5\r end repeat\r quit\r end if\r end tell";
-	
-	// Change that string into a nice AppleScript Variable.
 	NSAppleScript *syncNowScript = [[NSAppleScript alloc] initWithSource:syncNowString];
-	
-	// Excecute the AppleScript.
 	[syncNowScript executeAndReturnError:nil];
 	
-	
-	// Reset the menu item.
+	// Reset menu item title.
 	[syncMenuItem setTitle:[NSString stringWithFormat:@"Sync Now..."]];
 	
-	if (currentStatus[3] == "off") {
-		BTSetPowerState(0);
+	// Assuming bluetooth is available reset it's state to the original.
+	if (IOBluetoothPreferencesAvailable()) {
+		if (enableBluetooth == TRUE) {
+			if (currentStatus[3] == "off") {
+				BTSetPowerState(0);
+			}
+		}
 	}
-	
-	
-
 }
 
-// Perform operation to free resource allocations.
-- (void) dealloc
+- (void)dealloc
 {
-	
-	// Release the menu item.
 	[syncMenuItem release];
-	
-	// Release all other application components.
+	[defaults release];
 	[super dealloc];
-	
 }
 
 @end

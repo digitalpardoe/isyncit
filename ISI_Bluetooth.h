@@ -9,12 +9,9 @@
  */
 
 #import <Cocoa/Cocoa.h>
-#import <Foundation/Foundation.h>
 
-// Huh, why's this here.
 @interface ISI_Bluetooth : NSObject
 {
-
 }
 
 @end

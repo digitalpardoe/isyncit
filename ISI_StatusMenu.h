@@ -12,13 +12,20 @@
 
 @interface ISI_StatusMenu : NSObject
 {
-
-	// The status item that will be added to the System Status bar.
     NSStatusItem *statusItem;
-
-    // The menu to be attatched to the status item.
+	
     IBOutlet NSMenu *theMenu;
-
+	IBOutlet NSMenuItem *syncMenuItem;
+	IBOutlet NSMenuItem *bluetoothMenuItem;
+	IBOutlet NSMenuItem *bluetoothSubMenu;
+	IBOutlet NSMenuItem *bluetoothSetDev;
+	IBOutlet NSMenuItem *bluetoothSendFile;
 }
+
+- (IBAction)bluetoothControl:(id)sender;
+
+- (IBAction)bluetoothSetDevice:(id)sender;
+
+- (IBAction)bluetoothSendFiles:(id)sender;
 
 @end
